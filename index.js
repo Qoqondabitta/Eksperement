@@ -3,20 +3,20 @@
 //console.log(a + b);
 //====================================================== if start
 
-//let x = -4;
-//let y = -4;
-//
-//if ((-5 < x && x <= 0) && (-5 < y && y  <= 0)) {
-//    console.log('3-chi chorak');
-//} else if((0 < x && x <= 5) && (0 < y && y <= 5)) {
-//    console.log('1-chi chorak');
-//} else if((0 < x && x <= 5) && (-5 <= y && y < 0)) {
-//    console.log('4-chichorak');
-//} else if((-5 < x && x <= 0) && (0 < y && y <= 6)) {
-//    console.log('2-chi chorak');    
-//} else { 
-//    console.log('ha kalenga wuniyam hato qildinmi');
-//}
+let x = -4;
+let y = -4;
+
+if ((-5 < x && x <= 0) && (-5 < y && y  <= 0)) {
+    console.log('3-chi chorak');
+} else if((0 < x && x <= 5) && (0 < y && y <= 5)) {
+    console.log('1-chi chorak');
+} else if((0 < x && x <= 5) && (-5 <= y && y < 0)) {
+    console.log('4-chichorak');
+} else if((-5 < x && x <= 0) && (0 < y && y <= 6)) {
+    console.log('2-chi chorak');    
+} else { 
+    console.log('ha kalenga wuniyam hato qildinmi');
+}
 //=====================================================================================================================
 //let a = 3;
 //let b = 4;
