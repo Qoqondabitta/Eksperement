@@ -49,8 +49,34 @@
 //    }
 //}
 //========================================
-let i = 1
-while (i < 4) {
-    //++i
-    console.log(`Number ${i++}!`);    
+//let i = 1;
+//
+//while (i < 4) {
+//    console.log(`Number ${i++}!`);
+//}
+//=========================================================================
+let i = 0;
+
+while (i++ < 3) {
+    console.log(i);
 }
+
+//console.log(`====================`);
+//
+//let j = 3;
+//
+//while (j) {
+//    console.log(j--);
+//}
+//
+//console.log(`====================`);
+//
+//let c = 0;
+//
+//while (++c < 5) {
+//    console.log(c);
+//}
+
+// let i = 5;
+// console.log(i++);
+// console.log(i);
