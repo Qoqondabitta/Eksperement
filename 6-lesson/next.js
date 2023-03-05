@@ -115,15 +115,24 @@
 //        console.log('he');
 //        break;
 //}
-//==============================================================
-let name = 'Abdulahad'
-
-function it(name) {
-    console.log(name);
+//==============================================================================
+//function me() {
+//    
+//}
+//
+//console.log(me);
+// ===========================================================================
+//let name = 'Abdulahad'
+//
+//function it(name) {
+//    console.log(name);
+//}
+//
+//it('Abdulahad')
+//it('Sarvar')
+//it('Samandar')
+//it('Ahmadali')
+// ========================================================================
+function name(params) {
+    
 }
-
-it('Abdulahad')
-it('Sarvar')
-it('Samandar')
-it('Ahmadali')
-
