@@ -227,7 +227,57 @@
 //
 //console.log(parseInt(a())); 
 //clean code === chiroyli manoli nomlash getGpa
+//=============================================================
+//function min (a, b) {
+//    if (a < b) {
+//        console.log(a);
+//    } else if (b < a) {
+//        console.log(b);
+//    } else {
+//        console.log(a);
+//    }
+//}
+//
+//min(2, 2);
+//========================================================================
+//function pow(a, b) {
+//    console.log(+`${a ** b}`);
+//}
+//
+//pow(3, 5)
+//================================================================
+// function checkAge(age) {
+//     if (age => 18) {
+//         return true;
+//     } else {
+//         return ('Do your parens allow you?');
+//     }
+// }
+
+// console.log(checkAge(8)); 
+
+// function second(old) {
+//     old > 18 ? console.log(true) : console.log('Do your parens allow you?');  
+// }
+
+// second(10);
 
 
 
+//function second(old) {
+//    old > 18 || old === 'Do your parens allow you?'
+//    console.log();    
+//}
+//
+//second(17)
 
+//const ask = (question, yes, no) => {
+//    if (console.log(question)) yes();
+//    else no()
+//}
+//
+//ask(
+//    "Do you agree?",
+//    function() {console.log("You agreed.");},
+//    function() {console.log("You canceled the execution.");},
+//);
