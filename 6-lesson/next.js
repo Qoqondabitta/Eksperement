@@ -229,22 +229,22 @@
 //clean code === chiroyli manoli nomlash getGpa
 //=============================================================
 //function min (a, b) {
-//    if (a < b) {
-//        console.log(a);
-//    } else if (b < a) {
-//        console.log(b);
-//    } else {
-//        console.log(a);
-//    }
+//   if (a < b) {
+//       console.log(a);
+//   } else {
+//       console.log(b);
+//   }
 //}
 //
-//min(2, 2);
+//min(2, 1);
 //========================================================================
-//function pow(a, b) {
-//    console.log(+`${a ** b}`);
-//}
-//
-//pow(3, 5)
+function pow(a, b) {
+    console.log(a ** b);
+}
+
+pow(3, 5)
+pow(3, 3)
+pow(3, 5)
 //================================================================
 // function checkAge(age) {
 //     if (age => 18) {
@@ -254,10 +254,10 @@
 //     }
 // }
 
-// console.log(checkAge(8)); 
+// console.log(checkAge(8));
 
 // function second(old) {
-//     old > 18 ? console.log(true) : console.log('Do your parens allow you?');  
+//     old > 18 ? console.log(true) : console.log('Do your parens allow you?');
 // }
 
 // second(10);
@@ -265,9 +265,9 @@
 
 
 //function second(old) {
-//    old > 18 || old === 'Do your parens allow you?'
-//    console.log();    
+//    old > 18 || 'Do your parens allow you?'
 //}
+//console.log(20);
 //
 //second(17)
 
