@@ -133,6 +133,101 @@
 //it('Samandar')
 //it('Ahmadali')
 // ========================================================================
-function name(params) {
-    
-}
+//function a() {
+//    alert("Hello my friend")    
+//}
+//=========================================================================================
+//function it(a) {
+//    return a / 100;
+//}
+//
+//console.log(it(5) === 5);
+//console.log(parseInt(it(5)));
+//==================================
+// defaul parametre
+//function it(a) {
+//    if (a === undefined) {
+//        console.log('Not necessary');
+//    } else {
+//        console.log(a);
+//    }
+//}
+//
+//it(1)
+//it()
+//========================================================
+//function expression
+//func('Abdulahad', 16, 7)
+//func('Abdulahad', 17, 7.5)
+//func('Humoyun', 17, 5.5)
+//func('Qizbola', 17, 6.5)
+//func('Bowqa qizbola', 17, 7.5)
+//const func = function (name, age, score) {
+//    console.log(`${name} - 'sinfdoshlar`, (`${age} - "yosh"`), `${score} - 'IELTS bal'`);
+//}
+//
+//func('Abdulahad', 16, 7)
+//func('Abdulahad', 17, 7.5)
+//func('Humoyun', 17, 5.5)
+//func('Qizbola', 17, 6.5)
+//func('Bowqa qizbola', 17, 7.5)
+//function functions (name, age, score) {
+//    console.log(`${name} - 'sinfdoshlar`, (`${age} - "yosh"`), `${score} - 'IELTS bal'`);
+//} 
+//========================================================================================================
+//const arrow = () => 'hey';
+//
+//console.log(arrow());
+//==========================================================================================
+//
+//
+//function it(a) {
+//   console.log("hello my friend") 
+//   console.log("hello my cousine") 
+//   console.log("hello my friend") 
+//   console.log("hello my friend") 
+//   console.log("hello my friend") 
+//   console.log("hello my friend") 
+//   console.log("hello my friend") 
+//   console.log("hello my fellow")
+//}
+//===================================================
+//function declaration, function expression, arrow function
+///funcDec('Abdulahad', 17) // function call
+/// function funcDec (name, age) {
+///     console.log(age, name);
+/// }
+//console.log(a);
+//let a  = 'me';
+// 2) function expression
+//const a = function (name, age) {
+//    console.log(`${name} - 'student`, age);
+//}
+//a('Abdulahad', 17)
+//=============================================================
+// 3) arrow function 
+//const a = () => 'hey'; // this
+//
+//console.log(a());
+// default parametre
+//function tg(surname) {
+//    if (surname === undefined) {
+//        console.log('not essenitial');
+//    } else {
+//        console.log(surname);
+//    }
+//}
+//
+//tg('Sultonov')
+//====================================================================
+//
+//function a (name) {    
+//    console.log(name);
+//}
+//
+//console.log(parseInt(a())); 
+//clean code === chiroyli manoli nomlash getGpa
+
+
+
+
