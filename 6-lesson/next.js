@@ -238,13 +238,13 @@
 //
 //min(2, 1);
 //========================================================================
-function pow(a, b) {
-    console.log(a ** b);
-}
-
-pow(3, 5)
-pow(3, 3)
-pow(3, 5)
+//function pow(a, b) {
+//    console.log(a ** b);
+//}
+//
+//pow(3, 5)
+//pow(3, 3)
+//pow(3, 5)
 //================================================================
 // function checkAge(age) {
 //     if (age => 18) {
@@ -281,3 +281,118 @@ pow(3, 5)
 //    function() {console.log("You agreed.");},
 //    function() {console.log("You canceled the execution.");},
 //);
+//========================================================
+//Homework
+// let user = {}
+// console.log(user);
+//let user = {name : 'John'}
+//console.log(user.name);
+//console.log(user['name']);
+// let user = {name : 'John', surname : 'Smith'}
+
+// console.log(user.name, user.surname);
+// console.log(user['name'], user['surname']);
+//=============================================================
+// let user = {name : 'John', surname : 'Smith', name : 'Pete'}
+
+// console.log(user.name, user.surname);
+// console.log(user['name'], user['surname']);
+// let user = {name : 'John', surname : 'Smith', name : 'Pete'}
+
+// delete user.name
+// console.log(user.name, user.surname);
+// console.log(user['name'], user['surname']);
+//=======================================================
+
+
+
+// let res = 0;
+// if (v[0] > res) {
+//     res = v[0];
+// } 
+// if (v[1] > res) {
+//     res = v[1];
+// } 
+// console.log(res);
+//     if (v[2] > res) {
+//         res = v[2];
+// }
+// console.log(res);
+// let v = Object.values(obj);
+// console.log(v);
+// function name(jamshid) {
+//     let res = 0
+//     for (i = 0; i < jamshid; i++) {
+//         jamshid.
+//     }
+//     // console.log(res);
+// }
+
+// name(v)
+
+// let obj = {
+//     eshmat: 10,
+//     toshmat: 5,
+//     gulmat: 200
+// }
+// let sum = 0
+// const plus = (str) => {
+//     for (i in str) {
+//         sum += str[i]
+//     }
+//     console.log(obj);
+// }
+// plus(obj)
+//================================
+// let a = 'he';
+
+// function expres() {
+//     let a= 'me';
+//     console.log(a);
+// }
+
+// expres()
+//=========================================
+// let a = 'he';
+
+// function expres() {
+//     console.log(a);
+//     let a= 'me';
+// }
+
+// expres()
+//=========================================
+// let a = 'Habib'
+
+// switch (a) {
+//     case 'Messi':
+//         console.log(`7-ta oltin to'p, 6-ta oltin butsa, Jahon chempioni, 2-ta the best, 2-marta Jahon Chempionati eng yaxshi oyinchisi.`);
+//         break;
+//     case 'Ronaldo' :
+//         console.log(`5-ta oltin top, 4-ta oltin butsa`);
+//         break;
+//     case 'Habib':
+//         console.log(`UFC da maglubyatsiz seriya yagona rekord, P4P ning qiroli`);
+//         break;
+//     case 'McGregor':
+//         console.log(`iki vazn chempionlik kamari sohibi, jangini eng kop muhlis tomosha qilgan`);
+//     default:
+//         console.log(`Va bu sensan hechvaqosiz`);
+//         break;
+// }
+//==========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
