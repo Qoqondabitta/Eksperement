@@ -62,3 +62,71 @@
 
 // console.log(obj);
 //==================================================
+// let key = 'title';
+
+// let obj = {
+//     name : 'Abdulahad',
+//     'date of birth' : 17,
+//     [key] : 'study' // title : 'study'
+// }
+// obj.name = 'Sarvar'
+// obj.info = 'boy'
+// console.log(obj[key]);
+// console.log(obj['title']);
+// console.log(obj.title);
+//=====================================
+// let obj = {
+//     name : 'Abdulahad',
+//     'date of birth' : 17    
+// }
+
+// let user = obj;
+
+// obj.name = 'Sarvar'
+// obj.age = 18
+
+// console.log(user);
+// console.log(user == obj);
+// console.log(user=== obj);
+//===================================================
+// let obj = {
+//     name : 'Abdulahad',
+//     'date of birth' : 17    
+// }
+
+// let user = structuredClone(obj)
+
+// obj.name = 'Man'
+
+// console.log(user);
+// console.log(obj);
+// console.log(user==obj);
+// console.log(user===obj);
+//======================================================
+// let a ={
+//     me : 'he',
+//     he : 'sun'
+// }
+
+// let b = {
+//     she : 'it'
+// }
+
+// delete b
+// b =null
+
+// console.log(Object.assign(a, b));
+//=======================================================
+// let a ={
+//     me : 'he',
+//     he : 'sun'
+// }
+// let b = {
+//     she : 'it'
+// }
+
+
+// obj = {...a, ...b}
+
+// console.log(obj);
+//================================================
