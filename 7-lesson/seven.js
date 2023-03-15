@@ -169,14 +169,16 @@
 // console.log(Object.assign(obj, user));
 // console.log(obj == user);
 // console.log(obj === user);
-let obj = {
-        a : 3
-    }
+// let obj = {
+//         a : 3
+//     }
     
-    let user = {
-        b : 5
-    }
-    let f = Object.assign(obj)
-    console.log(f);
-    console.log(obj == f);
-    console.log(obj === user);
+//     let user = {
+//         b : 5
+//     }
+//     let f = Object.assign(obj)
+//     console.log(f);
+//     console.log(obj == f);
+//     console.log(obj === user);
+//=================================================== 
+//     console.log(obj ===);

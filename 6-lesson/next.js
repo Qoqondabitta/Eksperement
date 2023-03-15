@@ -2,13 +2,13 @@
 //    console.log('Sarvar');
 //    console.log('Abdulloh aka');
 //    continue
-//    console.log('me');     
+//    console.log('me');
 //}
 //====================================
-//for ( i = 1; i < 4; i++){    
+//for ( i = 1; i < 4; i++){
 //   for( j = 3; j > 1; j--)
-//   console.log(j + i); 
-//   
+//   console.log(j + i);
+//
 //}
 //===========================================
 //for (let i = 0; i < 98; i++) {
@@ -24,7 +24,7 @@
 //    } else {
 //        console.log(i, 'natural son');
 //    }
-//    
+//
 //}
 //===================================================================================================
 //for (let i = 0; i < 10; i++) {
@@ -34,14 +34,14 @@
 //        } else {
 //            console.log(i, `-natural son`);
 //        }
-//        
-//    }    
+//
+//    }
 //}
 //===============================================================
 //while ( i = 1) {
 //    console.log(`number ${i}!`);
-//    console.log(++i); 
-//    console.log(i < 4); 
+//    console.log(++i);
+//    console.log(i < 4);
 //}
 //for (let i = 3; i < 100; i++) {
 //    if (i%2==1) {
@@ -117,7 +117,7 @@
 //}
 //==============================================================================
 //function me() {
-//    
+//
 //}
 //
 //console.log(me);
@@ -134,7 +134,7 @@
 //it('Ahmadali')
 // ========================================================================
 //function a() {
-//    alert("Hello my friend")    
+//    alert("Hello my friend")
 //}
 //=========================================================================================
 //function it(a) {
@@ -173,7 +173,7 @@
 //func('Bowqa qizbola', 17, 7.5)
 //function functions (name, age, score) {
 //    console.log(`${name} - 'sinfdoshlar`, (`${age} - "yosh"`), `${score} - 'IELTS bal'`);
-//} 
+//}
 //========================================================================================================
 //const arrow = () => 'hey';
 //
@@ -182,13 +182,13 @@
 //
 //
 //function it(a) {
-//   console.log("hello my friend") 
-//   console.log("hello my cousine") 
-//   console.log("hello my friend") 
-//   console.log("hello my friend") 
-//   console.log("hello my friend") 
-//   console.log("hello my friend") 
-//   console.log("hello my friend") 
+//   console.log("hello my friend")
+//   console.log("hello my cousine")
+//   console.log("hello my friend")
+//   console.log("hello my friend")
+//   console.log("hello my friend")
+//   console.log("hello my friend")
+//   console.log("hello my friend")
 //   console.log("hello my fellow")
 //}
 //===================================================
@@ -205,7 +205,7 @@
 //}
 //a('Abdulahad', 17)
 //=============================================================
-// 3) arrow function 
+// 3) arrow function
 //const a = () => 'hey'; // this
 //
 //console.log(a());
@@ -221,11 +221,11 @@
 //tg('Sultonov')
 //====================================================================
 //
-//function a (name) {    
+//function a (name) {
 //    console.log(name);
 //}
 //
-//console.log(parseInt(a())); 
+//console.log(parseInt(a()));
 //clean code === chiroyli manoli nomlash getGpa
 //=============================================================
 //function min (a, b) {
@@ -261,8 +261,6 @@
 // }
 
 // second(10);
-
-
 
 //function second(old) {
 //    old > 18 || 'Do your parens allow you?'
@@ -304,15 +302,13 @@
 // console.log(user['name'], user['surname']);
 //=======================================================
 
-
-
 // let res = 0;
 // if (v[0] > res) {
 //     res = v[0];
-// } 
+// }
 // if (v[1] > res) {
 //     res = v[1];
-// } 
+// }
 // console.log(res);
 //     if (v[2] > res) {
 //         res = v[2];
@@ -340,9 +336,20 @@
 //     for (i in str) {
 //         sum += str[i]
 //     }
-//     console.log(obj);
+//     console.log(sum);
 // }
 // plus(obj)
+
+let obj = {
+  eshmat: 10,
+  toshmat: 5,
+  gulmat: 200,
+};
+let sum = 0;
+for (i in obj) {
+  sum += obj[i];
+}
+console.log(sum);
 //================================
 // let a = 'he';
 
@@ -381,18 +388,3 @@
 //         break;
 // }
 //==========================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

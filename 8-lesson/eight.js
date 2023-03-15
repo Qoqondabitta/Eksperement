@@ -117,3 +117,61 @@
 
 // console.log(newB);
 // console.log(a.b);
+//========================================================
+// function e() {
+//     return 'f';
+// }
+
+// let a = {
+//     b : 'c',
+//     d : function () {
+//         return 'u'
+//     },
+//     e,
+//     h () {
+//         return 'hi';
+//     }
+// }
+
+// console.log(a['h']);
+//============================================================
+// let a = {
+//     me : 'hge'
+// }
+
+// a = null
+
+// console.log(a);
+//=================================================
+// let a = {
+//     me : 'hge',
+//     g ()  {
+//         return () => {
+//             //    console.log(`yes ${a.me}`);
+//                console.log(`yes ${this.me}`); 
+//         }
+//     }
+// }
+
+// a = null
+
+// // console.log(a);
+// // console.log(a.g);
+// console.log(a.g); 
+//==========================================================
+// function a () {
+//     console.log('m');
+// }
+
+// let obj = {
+//     hey () {
+//         console.log('h9');
+//     },
+//     a,
+//     k : function () {
+//         console.log('klmn');
+//     }
+// }
+
+// console.log(a.hey());
+//==========================================================
