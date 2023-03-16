@@ -44,10 +44,6 @@
 // console.log(f.trimStart().length);
 // console.log(a.toLocaleUpperCase(0, 2, 7));
 
-
-
-
-
 // function tel(num) {
 //     console.log(num.padStart(13, '+998'));
 // }
@@ -57,8 +53,8 @@
 // tel('930088217')
 // tel('930067413')
 //===================================================================
-let b = 'a'
-let a = `Abdulahad and Sardor and Anvar`
+// let b = 'a'
+// let a = `Abdulahad and Sardor and Anvar`
 
 // console.log(a);
 // console.log(b[3]);
@@ -91,3 +87,79 @@ let a = `Abdulahad and Sardor and Anvar`
 //     console.log(i);
 // }
 // console.log(b.localeCompare('A'));
+//===================================================================
+//                     Homework
+
+// let a = 'Web-Brain Academy'
+
+// if (a.includes('Aca')) {
+//     console.log('yes');
+// } else {
+//     console.log('no');
+// }
+//=========================================================
+//Task2
+// let surname = 'abaabbb'
+// console.log(surname);
+// let a = 0;
+// let b = 0;
+// let d = 'd';
+// let u = 'u';
+// let l = 'l';
+// let k = 'k';
+// let h = 'h';
+// let e = 'e';
+// let j = 'j';
+// let o = 'o';
+// let n = 'n';
+// let s = 's';
+// let x = 'x';
+
+// for (i = 0; i < surname.length; i++){
+//     if ( surname[i] == a) {
+//        a++
+//     } else {
+//         b++
+//     }
+
+// }
+
+// console.log(a, b);
+//========================================================
+// function truncate(title, number) {
+//     console.log(title.slice(0, number));
+// }
+
+// truncate('webbrain academy', 10)
+//===========================================================
+// function currency(str) {
+//    if (str[i] = '$') {
+
+// }
+// }
+
+// currency('$1200')
+// let res = {}
+// function GetCount(title) {
+//     for(i of title) {
+//         if (res[i]) {
+//             ++res[i]
+//         } else {
+//             res[i] = 1
+//         }
+//     }
+//     console.log(res);
+// }
+
+// GetCount('webbrainacademy')
+// let res = "";
+// function truncate(res, curency) {
+//   for (i of curency) {
+//     if (i !== "$") {
+//       res += i;
+//     }
+//   }
+//   console.log(res);
+// }
+// truncate(res, "$1200");
+
