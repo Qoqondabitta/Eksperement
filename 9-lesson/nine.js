@@ -162,4 +162,85 @@
 //   console.log(res);
 // }
 // truncate(res, "$1200");
+// let a = 'webbrain academy';
+// let b = 'webbrain academy';
 
+// if (a === b) {
+//     console.log('Boshqalarga qaraganda koproq oxwawrogi');
+// } else if (a.includes(b)) {
+//     console.log('sal oxwawrogi');
+// } else {
+//     console.log('bowqlarga qaraganda oxwamaydigani');
+// }
+//===============================================================
+// function first(a, b) {
+//     if (a === b) {
+//     console.log('Boshqalarga qaraganda koproq oxwawrogi');
+// } else if (a.includes(b)) {
+//     console.log('sal oxwawrogi');
+// } else {
+//     console.log('bowqlarga qaraganda oxwamaydigani');
+// }
+// }
+
+// first('webbrain academy', 'Academy')
+//===============================================================
+// function quantity(a) {
+//     let res = {};
+//     for (i of a) {
+//         if ([i] in res) {
+//             ++res[i]
+//         } else {
+//             res[i] = 1
+//         }
+//     } console.log(res);
+// }
+
+// quantity(`webbrainacademy`)
+//============================================================
+// function word(a) {
+//         if (a.startsWith([0]) == a.endsWith([a.length])) {
+//             console.log(`ustoz aytgan so'z`);
+//         } else {
+//             console.log(`ustoz aytgan so'zni teskarisi`);
+//         }
+// }
+
+// word('kiyib') // ustoz aytgan soz
+
+// console.log(a.indexOf('kiy') == a.lastIndexOf('kiy'));
+// if (a.indexOf('kiy') == a.lastIndexOf('kiy')) {
+//     console.log(`ustoz aytgan so'z`);
+// } else {
+//     console.log(`ustoz aytgan so'zni teskarisi`);
+// }
+
+// let b = `kiyik`;
+
+// function word(a) {
+//     for (i of a) {
+//         if (a.startsWith([0]) == a.endsWith([a.length -1])) {
+//             console.log(`ustoz aytgan so'z`);
+//         } else {
+//             console.log(`ustoz aytgan so'zni teskarisi`);
+//         }
+//     }
+// }
+
+// word('kiyib')
+
+function pananim(a) {
+  // for (i of a) {
+  if (a[0] == a[a.length - 1] && a[1] == a[a.length -2] && a[2] == a[a.length -3]) {
+    console.log(`ustoz aytgan so'z`);
+  } else {
+    console.log(`ustoz aytgan so'zni teskarisi`);
+  }
+  // }
+}
+
+pananim(`noouoon`);
+
+// let a = `kiyik`;
+
+// console.log(a[a.length -2]);
