@@ -229,18 +229,29 @@
 
 // word('kiyib')
 
-function pananim(a) {
-  // for (i of a) {
-  if (a[0] == a[a.length - 1] && a[1] == a[a.length -2] && a[2] == a[a.length -3]) {
-    console.log(`ustoz aytgan so'z`);
-  } else {
-    console.log(`ustoz aytgan so'zni teskarisi`);
-  }
-  // }
-}
+// function pananim(a) {
+//   // for (i of a) {
+//   if (a[0] == a[a.length - 1] && a[1] == a[a.length -2] && a[2] == a[a.length -3]) {
+//     console.log(`ustoz aytgan so'z`);
+//   } else {
+//     console.log(`ustoz aytgan so'zni teskarisi`);
+//   }
+//   // }
+// }
 
-pananim(`noouoon`);
+// pananim(`noouiuoon`);
 
 // let a = `kiyik`;
 
 // console.log(a[a.length -2]);
+//======================================================
+// function curency(a) {
+//   if (isNaN(a[0])) {
+//     console.log(+(a.slice(1)));
+//   } else {
+//     console.log(parseInt(a));
+//   }
+// }
+
+// curency(`$5000`)
+//=======================================
