@@ -296,3 +296,81 @@
 //   console.log(res);
 // }
 // last(`web brain academy`)
+// function repeat(a) {
+//   let res = ''
+//   for(i of a) {
+//       res += i + i      
+//   }
+//   console.log(res);
+// }
+// repeat('webbraaainn')
+//=================================================
+// function counting(a) {
+//   let res = ''
+//   for (i in a) {
+//     if(i in res) {
+//       i += res++
+//     } else {
+//       i += res
+//     }
+//   }
+//   console.log(res);
+// }
+
+// counting('weeebbbbbraaiinn')
+//======================================================
+// let a = 107;
+// console.log(a.toString(2));
+// function binary(number) {
+//   let b = ''
+//   for(i in number) {
+// if (i === i+1) {
+//   b += i++
+// } 
+//   }
+// }
+
+// binary(`10001111111001`)
+//======================================================
+// const text = (str) => {
+//     let res = ""
+//     let count = 1
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === str[i + 1]) {
+//             count++
+//         } else {
+//             res += str[i]
+//             if (count > 1) {
+//                 res += count
+//                 count = 1
+//             }
+//         }
+//     }
+//     console.log(res)
+// }
+// text("weebbbrrrraaaaaiiiiiinnnnnnn")
+//==================================================
+// function getBynary(num) {
+//     let bynar = num.toString(2);
+//     let one = "";
+//     let zero = "";
+//     for (vl in bynar) {
+//         switch(bynar[vl]) {
+//             case "1":
+//             one += "1";
+//             break;
+//             case "0":
+//             zero += "0";
+//         }
+//     }
+//     console.log(bynar);
+//     if (one > zero){
+//       console.log(`1 dan ${one.length} ta qatnashgan`);
+//     } else {
+//       console.log(`0 dan ${zero.length} ta qatnashgan`);
+//     }
+    
+    
+// }
+// getBynary(5);
+//=======================================================
