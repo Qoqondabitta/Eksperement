@@ -255,3 +255,19 @@
 
 // curency(`$5000`)
 //=======================================
+// function password(a) {
+//   let obj = {number:0, letter:0, char:0}
+//   for (i of a) {
+//     if (isFinite(i)) {
+//       obj.number++
+//     } else if (i.toLowerCase() !== i.toUpperCase()) {
+//       obj.letter++
+//     } else {
+//       obj.char++
+//     }
+//   } 
+//   console.log(obj);
+// }
+
+// password('Adn_6554@#$%Abdulakhad')
+//=========================================================
