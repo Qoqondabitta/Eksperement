@@ -271,3 +271,28 @@
 
 // password('Adn_6554@#$%Abdulakhad')
 //=========================================================
+// function last(a) {
+//   let res = ' '
+//    for ( i in a) { 
+       
+//     if((a[i -1] === ' ' || a[i-1] === undefined)) {
+//       console.log(a[i].toUpperCase());
+//     } else {
+//       console.log(a[i]);
+//     }
+//    } console.log(res += a[i]);
+// }
+
+// last(`web brain academy`)
+//===============================================
+// function last(a) {
+//   let res = ' '
+//    for ( i in a) { 
+//     res += 
+//     a[i-1] === " " || a[i-1] === undefined 
+//     ? a[i].toUpperCase()
+//     : a[i];
+//   }
+//   console.log(res);
+// }
+// last(`web brain academy`)
