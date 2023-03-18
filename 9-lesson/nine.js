@@ -231,15 +231,18 @@
 
 // function pananim(a) {
 //   // for (i of a) {
-//   if (a[0] == a[a.length - 1] && a[1] == a[a.length -2] && a[2] == a[a.length -3]) {
+//   if (
+//     a[0] == a[a.length - 1] &&
+//     a[1] == a[a.length - 2] &&
+//     a[2] == a[a.length - 3]
+//   ) {
 //     console.log(`ustoz aytgan so'z`);
 //   } else {
 //     console.log(`ustoz aytgan so'zni teskarisi`);
 //   }
-//   // }
 // }
 
-// pananim(`noouiuoon`);
+// pananim(`nomn`);
 
 // let a = `kiyik`;
 
@@ -265,7 +268,7 @@
 //     } else {
 //       obj.char++
 //     }
-//   } 
+//   }
 //   console.log(obj);
 // }
 
@@ -273,8 +276,8 @@
 //=========================================================
 // function last(a) {
 //   let res = ' '
-//    for ( i in a) { 
-       
+//    for ( i in a) {
+
 //     if((a[i -1] === ' ' || a[i-1] === undefined)) {
 //       console.log(a[i].toUpperCase());
 //     } else {
@@ -287,9 +290,9 @@
 //===============================================
 // function last(a) {
 //   let res = ' '
-//    for ( i in a) { 
-//     res += 
-//     a[i-1] === " " || a[i-1] === undefined 
+//    for ( i in a) {
+//     res +=
+//     a[i-1] === " " || a[i-1] === undefined
 //     ? a[i].toUpperCase()
 //     : a[i];
 //   }
@@ -299,7 +302,7 @@
 // function repeat(a) {
 //   let res = ''
 //   for(i of a) {
-//       res += i + i      
+//       res += i + i
 //   }
 //   console.log(res);
 // }
@@ -326,29 +329,29 @@
 //   for(i in number) {
 // if (i === i+1) {
 //   b += i++
-// } 
+// }
 //   }
 // }
 
 // binary(`10001111111001`)
 //======================================================
-// const text = (str) => {
-//     let res = ""
-//     let count = 1
-//     for (let i = 0; i < str.length; i++) {
-//         if (str[i] === str[i + 1]) {
-//             count++
-//         } else {
-//             res += str[i]
-//             if (count > 1) {
-//                 res += count
-//                 count = 1
-//             }
-//         }
+// function text(str) {
+//   let res = "";
+//   let count = 1;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === str[i + 1]) {
+//       count++;
+//     } else {
+//       res += str[i];
+//       if (count > 1) {
+//         res += count;
+//         count = 1;
+//       }
 //     }
-//     console.log(res)
+//   }
+//   console.log(res);
 // }
-// text("weebbbrrrraaaaaiiiiiinnnnnnn")
+// text("weebbbrrrraaaaaiiiiiinnnnnnn");
 //==================================================
 // function getBynary(num) {
 //     let bynar = num.toString(2);
@@ -369,8 +372,20 @@
 //     } else {
 //       console.log(`0 dan ${zero.length} ta qatnashgan`);
 //     }
-    
-    
+
 // }
-// getBynary(5);
+// getBynary(107);
 //=======================================================
+
+let num = Math.round(Math.random() * 100);
+num = num.toString(2);
+let bir = 0;
+let res = "";
+for (let i = 0; i < num.length; i++) {
+  if (num[i] === num[i + 1] && num[i] == 1) {
+    bir++;
+    res = `${bir + 1} - ta bir`;
+  }
+}
+console.log(num);
+console.log(res);
