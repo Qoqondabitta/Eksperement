@@ -146,3 +146,33 @@
 // };
 
 // console.log(camel('-web-brain-academy').split('-').join(''));
+let v = [5, 4, 3, 2, 1]
+// let b = new Array(5)
+
+v[3]=10
+// console.log(v.toString());
+// console.log(v.join(''));
+// console.log(v.pop());
+// v.push(2)
+// v.shift()
+// v.unshift(3)
+// v.pop()
+// console.log(v.concat([6, 7, 8], [true]));
+// console.log(v.includes(1));
+// console.log(v.indexOf(7));
+// console.log(v.lastIndexOf(7));
+// console.log(v.reverse());
+// console.log(v.length)
+// console.log(v.join('+'));
+// console.log(v.toString());
+// console.log(Array.isArray(v));
+// v.slice(1, 3)
+// console.log(v);
+// console.log(v.slice(1,3));
+console.log(v.splice(1, 3), v);
+// console.log(v);
+// console.log(b);
+
+
+
+
