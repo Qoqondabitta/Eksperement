@@ -197,3 +197,26 @@
 
 // restrict([1, 1, 1, 2, 3, 6, 6, 10])
 // ==========================================
+// let a = 'we66ra55inacad4my'
+// let b = ''
+// for(i of a) {
+//     if (isFinite(i)) b+=i
+    
+// }
+// console.log(b);
+//====================================
+// function test(A, S) {
+//     let count = 0;
+//     let n = 0;
+//     while (n < A.length) {
+//       for(let i=n;i<=A.length;i++){
+//           let fragment=A.slice(n,i)
+//           if(fragment.length){
+//               eval((`${fragment.join("+")})/${fragment.length}`))===S?count++:null;
+//           }
+//       }
+//       n++;
+//     }
+//     return count;
+//   }
+//   console.log(test([0, 4, 3, -1], 2));
