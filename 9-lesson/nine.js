@@ -185,21 +185,9 @@
 
 // first('webbrain academy', 'Academy')
 //===============================================================
-// function quantity(a) {
-//     let res = {};
-//     for (i of a) {
-//         if ([i] in res) {
-//             ++res[i]
-//         } else {
-//             res[i] = 1
-//         }
-//     } console.log(res);
-// }
-
-// quantity(`webbrainacademy`)
 //============================================================
 // function word(a) {
-//         if (a.startsWith([0]) == a.endsWith([a.length])) {
+  //         if (a.startsWith([0]) == a.endsWith([a.length])) {
 //             console.log(`ustoz aytgan so'z`);
 //         } else {
 //             console.log(`ustoz aytgan so'zni teskarisi`);
@@ -277,7 +265,7 @@
 // function last(a) {
 //   let res = ' '
 //    for ( i in a) {
-
+  
 //     if((a[i -1] === ' ' || a[i-1] === undefined)) {
 //       console.log(a[i].toUpperCase());
 //     } else {
@@ -302,25 +290,38 @@
 // function repeat(a) {
 //   let res = ''
 //   for(i of a) {
-//       res += i + i
-//   }
-//   console.log(res);
-// }
-// repeat('webbraaainn')
-//=================================================
-// function counting(a) {
-//   let res = ''
-//   for (i in a) {
-//     if(i in res) {
-//       i += res++
-//     } else {
-//       i += res
-//     }
-//   }
-//   console.log(res);
-// }
+  //       res += i + i
+  //   }
+  //   console.log(res);
+  // }
+  // repeat('webbraaainn')
+  //=================================================
+  function quantity(b) {
+  let res = {};
+  for (i of b) {
+          if ([i] in res) {
+              ++res[i]
+          } else {
+              res[i] = 1
+          }
+      } console.log(res);
+  }
+  
+  quantity(`webbrainacademy`);
 
-// counting('weeebbbbbraaiinn')
+function counting(a) {
+  let res = ''
+  for (i in a) {
+    if(i in res) {
+      i += res++
+    } else {
+      i += res
+    }
+  }
+  console.log(res);
+}
+
+counting('weeebbbbbraaiinn')
 //======================================================
 // let a = 107;
 // console.log(a.toString(2));
@@ -377,15 +378,15 @@
 // getBynary(107);
 //=======================================================
 
-let num = Math.round(Math.random() * 100);
-num = num.toString(2);
-let bir = 0;
-let res = "";
-for (let i = 0; i < num.length; i++) {
-  if (num[i] === num[i + 1] && num[i] == 1) {
-    bir++;
-    res = `${bir + 1} - ta bir`;
-  }
-}
-console.log(num);
-console.log(res);
+// let num = Math.round(Math.random() * 100);
+// num = num.toString(2);
+// let bir = 0;
+// let res = "";
+// for (let i = 0; i < num.length; i++) {
+//   if (num[i] === num[i + 1] && num[i] == 1) {
+//     bir++;
+//     res = `${bir + 1} - ta bir`;
+//   }
+// }
+// console.log(num);
+// console.log(res);

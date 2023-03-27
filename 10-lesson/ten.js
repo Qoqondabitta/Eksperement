@@ -146,10 +146,11 @@
 // };
 
 // console.log(camel('-web-brain-academy').split('-').join(''));
-let v = [5, 4, 3, 2, 1]
+// let v = [5, 4, 3, 2, 1]
 // let b = new Array(5)
-
-v[3]=10
+// let a = [1, 2, 3]
+// console.log([] + '0');
+// v[3]=10
 // console.log(v.toString());
 // console.log(v.join(''));
 // console.log(v.pop());
@@ -169,7 +170,7 @@ v[3]=10
 // v.slice(1, 3)
 // console.log(v);
 // console.log(v.slice(1,3));
-console.log(v.splice(1, 3), v);
+// console.log(v.splice(1, 3), v);
 // console.log(v);
 // console.log(b);
 
