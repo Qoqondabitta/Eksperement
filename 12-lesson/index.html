@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cars {
+            width: 98vw;
+            height: 120vh;            
+            background-image: url(./image/jakob-rosen-ANI4uqB2Zwg-unsplash.jpg);
+            background-size: cover;
+            background-position: center;            
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Cars</h1> -->
+    <div class="cars">
+        <button onclick="change(1)">Change</button>
+        <input id="nm" type="text" placeholder="brand">
+        <input id="engine" type="text" placeholder="engine">
+        <input id="year" type="text" placeholder="year">
+        <button onclick="add()" class="all btn4">Add</button>
+        <button onclick="read()" class="btn1 all">Car brands</button><br>
+        <button onclick="sortByEngine()" class="all btn2">Sort By Engine</button>
+        <button onclick="del(1)" class="btn3 all">Delete</button>
+    </div>
+    <script src="./twelve.js"></script>
+</body>
+</html>
