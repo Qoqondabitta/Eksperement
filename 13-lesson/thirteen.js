@@ -23,3 +23,9 @@
 
 // hoursMinuts(':')
 // ====================================================
+let a = {name:'me', age:17, gender:'male', info:{test:'IELTS'}}
+
+
+let {name, age, gender, info:{test}} = a
+
+console.log(name, age, gender);
