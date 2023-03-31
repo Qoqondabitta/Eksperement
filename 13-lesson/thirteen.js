@@ -12,9 +12,21 @@
 // ===============================================
 // const short = (months,sign) => {
 //     let date = new Date();
-//     console.log(`${months[date.getMonth()].slice(0,3)}${sign}${date.getDate()}th${sign}${date.getFullYear()}`); 
+//     console.log(
+//         `${months[date.getMonth()].slice(0,3)}${sign}${date.getDate()}th${sign}${date.getFullYear()}`);
 // }
-// short(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], ' ')
+// short(['January', 
+// 'February', 
+// 'March', 
+// 'April', 
+// 'May', 
+// 'June', 
+// 'July', 
+// 'August', 
+// 'September', 
+// 'October', 
+// 'November', 
+// 'December'], ' ')
 // ============================================================
 // const hoursMinuts = (sign) => {
 //     let date = new Date();
@@ -23,9 +35,30 @@
 
 // hoursMinuts(':')
 // ====================================================
-let a = {name:'me', age:17, gender:'male', info:{test:'IELTS'}}
+// let a = {name:'me', age:17, gender:'male', info:{test:'IELTS'}}
 
+// let {name, age, gender, info:{test}} = a
 
-let {name, age, gender, info:{test}} = a
+// console.log(name, age, gender);
+// =====================================================
+// const moment = () => {
+//     const format = () => {
+//         let LT = [function justTime  (sign=':') {
+//             let date = new Date();
+//             return console.log(`${date.getHours()}${sign}${date.getSeconds()} 'PM`);
+//         } ]
+//     }
+// }
 
-console.log(name, age, gender);
+// moment('LT')
+// ====================================================
+// function just() {
+//    test.name = "web";
+// }
+
+// just();
+// console.log(just);
+// ============================================================
+// let a = 5.0035;
+
+// console.log(a.join());

@@ -184,7 +184,6 @@
 // // let b = 'bew'
 // console.log(res2);
 
-
 // function restrict (a) {
 //     let combain = []
 //     for(let i = 0; i<a.length;i++){
@@ -201,7 +200,6 @@
 // let b = ''
 // for(i of a) {
 //     if (isFinite(i)) b+=i
-    
 // }
 // console.log(b);
 //====================================
@@ -220,3 +218,41 @@
 //     return count;
 //   }
 //   console.log(test([0, 4, 3, -1], 2));
+
+
+// let str = "10001000000010001";
+// function nnool(a) {
+//   let b = [];
+//   let s = 0;
+//   let kk = [];
+//   for (i = 0; i < a.length; i++) {
+//     a[i] == "1" ? b.push(i) : s
+//     a[i] == "1" ? s += 1 : s
+//   }
+//   function fnuls(b) {
+//     let o = b.splice(0, 1);
+//     let p = b.splice(0, 1);
+//     let gg = p - o - 1;
+//     b.unshift(p[0]);
+//     return gg;
+//   }
+//   for (q = 0; q < s; q++) {
+//     let nn = fnuls(b);
+//     kk.push(nn);
+//   }
+//   return Math.max(...kk);
+// }
+// console.log(nnool(str));
+
+// let str = "web"
+// let str1 = "bew"
+// function get(str, str1) {
+//     let res = str.split("")
+//     let res1 = str1.split("")
+//     res.sort((a, b) => { return a.localeCompare(b) })
+//     res1.sort((a, b) => { return a.localeCompare(b) })
+//     res = res.toString()
+//     res = res1.toString()
+//     console.log(res == res1);
+// }
+// get(str, str1)
