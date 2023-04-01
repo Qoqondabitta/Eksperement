@@ -96,9 +96,17 @@
 // let c = JSON.parse(json)
 // console.log(c);
 // let a = 11
-
-// if (a % 2 !== 0 && a % 3 !== 0 && a % 5 !== 0) {
-//     console.log('tub son');
-// } else {
-//     console.log('karali son');
+// for (i=1;i<100;i++) {
+//     // console.log(i);
+//     if ( i == 2 || i == 3 || i == 5)console.log(`${i}- tub son`);
+//     else if ((i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0 && i % 11 !== 0)) console.log(`${i}- tub son`);                
+//     else console.log(`${i}- karali son`);
+    
+// // console.log(i);
 // }
+for (i=1;i<100;i++) {
+    if ( (i == 2 || i == 3 || i == 5))console.log(`${i}- tub son`);
+    else if ((i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0 && i % 11 !== 0)) console.log(`${i}- tub son`);                
+    else console.log(`${i}- karali son`);
+}
+
