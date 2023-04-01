@@ -1,0 +1,104 @@
+// new Map Theme
+// let b = new Map();
+// 
+// a.name = 'me'
+// b.name = 'he'
+
+// b.set('name', 'myself')
+// console.log(a);
+// console.log(a,b.name);
+// console.log(b,a.name);
+// console.log(b.size);
+// console.log(b.get('name'));
+// b.set(123, 'she')
+// b.set(true, 'she')
+// console.log(b.has(123));
+// console.log(b.has(1234));
+// console.log(b.get(123));
+// console.log(b);
+// console.log(b.delete(123));
+// console.log(b);
+// b.clear();
+// console.log(b);
+
+
+// console.log(Object.entries(a));
+// console.log(Object.values(a));
+// console.log(Object.keys(a));
+// let b = new Map([['age', 17], ['name', 'me']]);
+// console.log(b);
+// console.log(b.values());
+// console.log(b.keys());
+// console.log(b.entries());
+// for(i of b) {
+//     console.log(i);
+// }for(i of b.keys()) {
+//     console.log(i);
+// }for(i of b.values()) {
+//     console.log(i);
+// }for(i of b.entries()) {
+//     console.log(i);
+// }
+// console.log(a.keys);
+// let c = b.entries();
+// c.next()
+// c.next()
+// console.log(c.next());
+// b.set('age', 18)
+// console.log(Object.fromEntries(b).age);
+// console.log(b.age);
+// console.log(Object.fromEntries(b));
+// b.forEach((b)=>{console.log(b);})
+// new Set Theme
+// let a = {age:17}
+// let b = new Set();
+// b.add(a)
+// b.add(a)
+// b.add('d')
+// console.log(b);
+// console.log(b.has(a));
+// Distructure
+// let age = 16
+// let a = {age:17, name:'me', child:{title:'student'}}
+
+// let {age:newName, name, child:{title}} = a;
+
+// // console.log(a.age);
+// // console.log(newName, title);
+
+// const c = ([title]) =>  console.log(title);
+
+// c('he')
+// distructure array
+// let a = [1, 2, 3, 4, 5]
+
+// let [ikki,,uch] = a
+
+// console.log(ikki);
+// =====================newDate======================
+// let a = new Date();
+
+// console.log(a.getHours());
+// console.log(a.getSeconds());
+// console.log(a.getMilliseconds());
+// console.log(a.getDay());
+// console.log(a.getMonth());
+// console.log(a.getDate());
+// console.log(a.getFullYear());
+// console.log(a.getTime()) // `1970 yildan bowlkab hisoblaganda milisekundlarni chqariberadi
+// =============JSON=====================
+// let b = {age:17, name:'me'}
+
+// console.log(JSON.stringify(b));
+
+// let a = {"age":17,"name":"me"}
+
+// let c = JSON.parse(json)
+// console.log(c);
+// let a = 11
+
+// if (a % 2 !== 0 && a % 3 !== 0 && a % 5 !== 0) {
+//     console.log('tub son');
+// } else {
+//     console.log('karali son');
+// }
