@@ -104,9 +104,28 @@
     
 // // console.log(i);
 // }
-for (i=1;i<100;i++) {
-    if ( (i == 2 || i == 3 || i == 5))console.log(`${i}- tub son`);
-    else if ((i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0 && i % 11 !== 0)) console.log(`${i}- tub son`);                
-    else console.log(`${i}- karali son`);
-}
+// for (i=1;i<100;i++) {
+//     if ( (i == 2 || i == 3 || i == 5))console.log(`${i}- tub son`);
+//     else if ((i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0 && i % 11 !== 0)) console.log(`${i}- tub son`);                
+//     else console.log(`${i}- karali son`);
+// }
+// let n = -5.678
 
+// console.log(Number(n));
+// console.log(Math.floor(n));
+// console.log(Math.trunc(n));
+// console.log(Math.round(n));
+// console.log(Math.sign(n));
+// console.log(parseInt(n));
+// let title = 'name';
+// let obj = {
+//     name:'webbrain',
+//     title:'IT Center',
+//     [title]:'Webbrain Academy',
+//     title,
+// }
+
+// console.log(obj[title]);
+// console.log(obj.title);
+// console.log(obj.name);
+console.log(null??'webbrain');
