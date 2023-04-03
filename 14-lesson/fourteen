@@ -91,10 +91,9 @@
 
 // console.log(JSON.stringify(b));
 
-// let a = {"age":17,"name":"me"}
-
-// let c = JSON.parse(json)
-// console.log(c);
+// let a = `{"age":17,"name":"me"}`
+// console.log(JSON.parse(a));
+// ====================================
 // let a = 11
 // for (i=1;i<100;i++) {
 //     // console.log(i);
@@ -130,27 +129,37 @@
 // console.log(obj.name);
 // console.log(null??'webbrain');
 // ============================================
-let a = {
-    name : 'Abdulakhad',
-    age : 17, 
-    gender : 'male',
-    title : 'student',
-    status : 'single'
-}
+// let a = {
+//     name : 'Abdulakhad',
+//     age : 17, 
+//     gender : 'male',
+//     title : 'student',
+//     status : 'single'
+// }
 
-let b = {
-    name : 'Unknown',
-    age : 'Unknown',
-    gender : 'Unknown',
-    title : 'Person',
-    status : 'Unknown'
-}
+// let b = {
+//     name : 'Unknown',
+//     age : 'Unknown',
+//     gender : 'Unknown',
+//     title : 'Person',
+//     status : 'Unknown'
+// }
 
-function getInfo(a, b, c) {
-    console.log(`${this.name} is ${this.age} and ${this.gender}. He is ${this.title} and ${this.status}`);
-    console.log(a, b, c);
-}
+// function getInfo(a, b, c) {
+//     console.log(`${this.name} is ${this.age} and ${this.gender}. He is ${this.title} and ${this.status}`);
+//     console.log(a, b, c);
+// }
 
-getInfo.call(a, 'IELTS 7.5', 'SAT 1370', '41 universities')
-getInfo.apply(b, ['IELTS 7.5', 'SAT 1370', '41 universities'])
-getInfo.bind(a, 'IELTS 7.5', 'SAT 1370', '41 universities')()
+// getInfo.call(a, 'IELTS 7.5', 'SAT 1370', '41 universities')
+// getInfo.apply(b, ['IELTS 7.5', 'SAT 1370', '41 universities'])
+// getInfo.bind(a, 'IELTS 7.5', 'SAT 1370', '41 universities')()
+// setTimeout((a, b)=>{console.log(a, b); console.log(1);}, 9000, 'hey', 'you')
+// const trial = ({trait, id, place}) => {
+//     console.log(trait, id, place);
+// }
+
+// trial({trait : 'I have entered', id : 41, place : 'universities'})
+const array = ([one, two, three]) => {
+    console.log(one, two, three);
+}
+array(['I have entered', 41, 'universities'])
