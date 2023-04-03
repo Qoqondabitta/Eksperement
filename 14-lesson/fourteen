@@ -128,4 +128,29 @@
 // console.log(obj[title]);
 // console.log(obj.title);
 // console.log(obj.name);
-console.log(null??'webbrain');
+// console.log(null??'webbrain');
+// ============================================
+let a = {
+    name : 'Abdulakhad',
+    age : 17, 
+    gender : 'male',
+    title : 'student',
+    status : 'single'
+}
+
+let b = {
+    name : 'Unknown',
+    age : 'Unknown',
+    gender : 'Unknown',
+    title : 'Person',
+    status : 'Unknown'
+}
+
+function getInfo(a, b, c) {
+    console.log(`${this.name} is ${this.age} and ${this.gender}. He is ${this.title} and ${this.status}`);
+    console.log(a, b, c);
+}
+
+getInfo.call(a, 'IELTS 7.5', 'SAT 1370', '41 universities')
+getInfo.apply(b, ['IELTS 7.5', 'SAT 1370', '41 universities'])
+getInfo.bind(a, 'IELTS 7.5', 'SAT 1370', '41 universities')()
