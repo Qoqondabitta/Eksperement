@@ -89,7 +89,7 @@
 // =============JSON=====================
 // let b = {age:17, name:'me'}
 
-// console.log(JSON.stringify(b));
+// console.log(JSON.stringify(b, Object.keys(b).filter((vl) => vl !='name'),4));
 
 // let a = `{"age":17,"name":"me"}`
 // console.log(JSON.parse(a));
@@ -159,7 +159,47 @@
 // }
 
 // trial({trait : 'I have entered', id : 41, place : 'universities'})
-const array = ([one, two, three]) => {
-    console.log(one, two, three);
+// const array = ([one, two, three]) => {
+//     console.log(one, two, three);
+// }
+// array(['I have entered', 41, 'universities'])
+// let a = {
+//     honor : 'I have entered',
+//     number : 41,
+//     place : 'univeersities' 
+// }
+
+// Object.entries(a).map(([key, value]) => {
+//     console.log(value);
+// })
+let a = {
+    Frontend : [
+        {name : 'React', salary : 1000},
+        {name : 'Vue', salary : 1000}
+    ],
+    Mobile : {
+        ios : [
+            {name : 'Jack', salary : 1500},
+            {name : 'Rose', salary : 1500}
+        ],
+        Android : [
+            {name : 'Tom', salary : 2000},
+            {name : 'Anna', salary : 2000}
+        ]
+    } 
 }
-array(['I have entered', 41, 'universities'])
+
+let salary = 0;
+const getSalary = (data) => {
+    Object.values(data).forEach((values)=>{
+        if (Array.isArray(values)) {
+            let res = values.reduce((prev, cur)=>prev + cur.salary, 0);
+            salary += res
+        } else {
+            getSalary(values)
+        }
+    })
+}
+
+getSalary(a);
+console.log(salary);
