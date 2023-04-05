@@ -231,23 +231,31 @@
 
 // console.log(a.toPrecision(4));
 // console.log(a.toFixed(3));
-function binary(word) {
+// function binary(word) {
 
-    let a ='weebrainn'
-    let res = "";
-    let count = 1;
-    for ( i = 0; i < a.length; i++) {
-        if (a[i] === a[i+1]) {
-            count++
-        } else {
-            res += a[i]
-            if (count > 1) {
-                res += count
-                count = 1
-            }
-            console.log(res);
-        }
-        // console.log(a[i]+1);
-        // if (i == )
-    }
+//     let a ='weebrainn'
+//     let res = "";
+//     let count = 1;
+//     for ( i = 0; i < a.length; i++) {
+//         if (a[i] === a[i+1]) {
+//             count++
+//         } else {
+//             res += a[i]
+//             if (count > 1) {
+//                 res += count
+//                 count = 1
+//             }
+//             console.log(res);
+//         }
+//         // console.log(a[i]+1);
+//         // if (i == )
+//     }
+// }
+let ac =  {
+    name : 'me',
+    age : 17,
+    title : 'student'
 }
+
+console.log(Object.getOwnPropertyDescriptor(ac, 'name'));
+// console.log(Object.getOwnPropertyDescriptor(ac));
