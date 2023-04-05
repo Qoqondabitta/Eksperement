@@ -172,34 +172,82 @@
 // Object.entries(a).map(([key, value]) => {
 //     console.log(value);
 // })
-let a = {
-    Frontend : [
-        {name : 'React', salary : 1000},
-        {name : 'Vue', salary : 1000}
-    ],
-    Mobile : {
-        ios : [
-            {name : 'Jack', salary : 1500},
-            {name : 'Rose', salary : 1500}
-        ],
-        Android : [
-            {name : 'Tom', salary : 2000},
-            {name : 'Anna', salary : 2000}
-        ]
-    } 
-}
+// let a = {
+//     Frontend : [
+//         {name : 'React', salary : 1000},
+//         {name : 'Vue', salary : 1000}
+//     ],
+//     Mobile : {
+//         ios : [
+//             {name : 'Jack', salary : 1500},
+//             {name : 'Rose', salary : 1500}
+//         ],
+//         Android : [
+//             {name : 'Tom', salary : 2000},
+//             {name : 'Anna', salary : 2000}
+//         ]
+//     } 
+// }
 
-let salary = 0;
-const getSalary = (data) => {
-    Object.values(data).forEach((values)=>{
-        if (Array.isArray(values)) {
-            let res = values.reduce((prev, cur)=>prev + cur.salary, 0);
-            salary += res
+// let salary = 0;
+// const getSalary = (data) => {
+//     Object.values(data).forEach((values)=>{
+//         if (Array.isArray(values)) {
+//             let res = values.reduce((prev, cur)=>prev + cur.salary, 0);
+//             salary += res
+//         } else {
+//             getSalary(values)
+//         }
+//     })
+// }
+
+// getSalary(a);
+// console.log(salary);
+// let a = [1, 2, 3, 9, 4, 6, 5, 5, 7]
+// let d = 0
+// let b = a.sort((a,b)=>b - a)
+// // console.log(b.splice(0,2))
+// // console.log(b);
+// let c = b.splice(0,2)
+// console.log(c);
+// console.log(c);
+// console.log(c);
+// let c = b[0] - b[1]
+// console.log(c);
+// c 
+
+// console.log(b);
+// function lastNumber(arr) {
+//     while (arr.length > 1) {
+//         let array = arr.sort((a, b) => a - b);
+//         let res = array[array.length - 1] - array[array.length - 2];
+//         array.splice(array.length - 2, 2);
+//         res ? array.push(res) : null;
+//     }
+//     return arr;
+// }
+// console.log(lastNumber([12, 43, 12, 13, 42]));
+// let a = 3.00546
+
+// console.log(a.toPrecision(4));
+// console.log(a.toFixed(3));
+function binary(word) {
+
+    let a ='weebrainn'
+    let res = "";
+    let count = 1;
+    for ( i = 0; i < a.length; i++) {
+        if (a[i] === a[i+1]) {
+            count++
         } else {
-            getSalary(values)
+            res += a[i]
+            if (count > 1) {
+                res += count
+                count = 1
+            }
+            console.log(res);
         }
-    })
+        // console.log(a[i]+1);
+        // if (i == )
+    }
 }
-
-getSalary(a);
-console.log(salary);
