@@ -251,11 +251,32 @@
 //         // if (i == )
 //     }
 // }
-let ac =  {
-    name : 'me',
-    age : 17,
-    title : 'student'
+// let ac =  {
+//     name : 'me',
+//     age : 17,
+//     title : 'student'
+// }
+
+// console.log(Object.getOwnPropertyDescriptor(ac, 'name'));
+// console.log(Object.defineProperty(ac));
+// console.log(Object.getOwnPropertyDescriptor(ac));
+// ========================NFE==============================
+// const first = function second (value) {
+//     // second.title = 'web'
+//     console.log(`Hi ${value}`);
+//     return second
+// }
+
+// first('Abdulakhad')
+// ==============Immadiately Envoked Function Expression==============
+let b = '';
+const math = (a) => {    
+    if (a === 1) return b += 1
+    else {
+        b += a.toString();              
+        return math(a - 1)
+    }    
 }
 
-console.log(Object.getOwnPropertyDescriptor(ac, 'name'));
-// console.log(Object.getOwnPropertyDescriptor(ac));
+math(3)
+console.log(eval(b.split('').join('*')));
