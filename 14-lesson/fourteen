@@ -268,15 +268,72 @@
 // }
 
 // first('Abdulakhad')
-// ==============Immadiately Envoked Function Expression==============
-let b = '';
-const math = (a) => {    
-    if (a === 1) return b += 1
-    else {
-        b += a.toString();              
-        return math(a - 1)
-    }    
-}
+// ==============Faktorial solving==============
+// let b = '';
+// const math = (a) => {    
+//     if (a === 1) return b += 1
+//     else {
+//         b += a.toString();              
+//         return math(a - 1)
+//     }    
+// }
 
-math(3)
-console.log(eval(b.split('').join('*')));
+// math(3)
+// console.log(eval(b.split('').join('*')));
+// ============================================================
+let list = [
+    {id : 1, name : 'Toshmat', title : 'CEO'},
+    {id : 1, name : 'Eshmat', title : 'CTO'},
+    {id : 1, name : 'Toshmat', title : 'CEO'},
+    {id : 1, name : 'Eshmat', title : 'CTO'}
+]
+
+let big = {ceo:[], cto:[]}
+
+list.map((value)=>{
+    if (value.title === 'CEO') {
+    let {ceo} = big
+    let a = list.filter((value)=>{value.title==='CEO'})
+    let b = [...ceo]
+    // let b = [...ceo, value]
+    console.log(b);
+    }
+ else { 
+    list.filter((value)=>value.title==='CTO')
+}
+})
+
+// let big = {ceo:[], cto:[]}
+
+// let b = list.sort((a, b) => a.title.localeCompare(b.title)).map((value)=>{
+//     if (value.title === 'CEO') {
+//         // [...res.ceo, list.value]
+//         let c = [...big.ceo, value]
+//         // console.log(c);
+                 
+//     }  
+//     if (value.title === 'CTO') {        
+//         let d = [...big.cto, value]
+//         // console.log(d);
+//     }
+// })
+
+// console.log(big);
+
+
+// function password(a) {
+//   let obj = {number:0, letter:0, char:0}
+//   for (i of a) {
+//     if (isFinite(i)) {
+//       obj.number++
+//     } else if (i.toLowerCase() !== i.toUpperCase()) {
+//       obj.letter++
+//     } else {
+//       obj.char++
+//     }
+//   }
+//   console.log(obj);
+// }
+
+// password('Adn_6554@#$%Abdulakhad')
+
