@@ -24,7 +24,7 @@
 // ============================================
 let a = [2, 3]
 
-console. log(a.at[1]);
+console. log(a[a.length-1]);
 // const fib = (b) => {
 //     for(i in a) {
 //         // console.log([a.length-2], [a.length-1]);
