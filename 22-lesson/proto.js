@@ -34,3 +34,51 @@
 // }
 
 // a.remove(5)
+// =========================reviewing proto by myself============
+// let a = {age:17}
+// let b = {name:'me'}
+
+// a.__proto__=b
+// console.log(a);
+// console.log(a.name) // the data in b object are set in a object's
+                    // proto but we cannot see it when we call a object
+                    // as data of b is in proto not in a object,
+                    // that is to say, behind a scene
+// ====================prototype================================
+// let a = {name:'John', last:'Smith'}
+// let b = {name:'Harry', last:'Kane'}
+// let c = {name: 'Leo', last:'Li'}
+
+// Object.prototype.getFullName = function(){
+//     console.log(this.name, this.last);
+//     return this;
+// }
+
+// b.getFullName()
+// =================prototype with string========================
+// let a = 'John';
+// let b = 'Smith';
+// let c = 'Kane'
+
+// String.prototype.getFirstLetter = function (value){
+//     console.log(value.slice(0, 1));
+// }
+// a.__proto__.getSecondLetter = function (value) {
+//     console.log(value.slice(0, 1));
+// }
+
+// // c.getFirstLetter(c)
+// b.getSecondLetter(b)
+// ===================================================
+// let a = {name:'John', last:'Smith'}
+// let b = {name:'Harry', last:'Kane'}
+// let c = {name: 'Leo', last:'Li'}
+
+// Object.prototype.remove = function (value){
+//     // console.log(value);
+//     delete this.value
+//     // console.log(this);
+// }
+
+// a.remove('last')
+// console.log(a.last);
