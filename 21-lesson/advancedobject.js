@@ -19,3 +19,17 @@
 // }                       // object key like name in node js
 // =====================================================================
 // console.log(Object.getOwnPropertyDescriptor(a, 'name'));
+// let a = {
+//     name:'John', 
+//     last:'Smith',
+//     get getFullName(){
+//         console.log(this.name, this.last);
+//     },
+//     set getFullName (value) {
+//         // console.log(value);
+//         this.name = value.name
+//         this.last = value.last
+//     } 
+// }
+// a.getFullName = {name : "Harry", last:'Kane'}
+// a.getFullName
