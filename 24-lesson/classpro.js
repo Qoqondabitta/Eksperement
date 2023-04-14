@@ -127,3 +127,19 @@
 // let c = new a()
 // // c.getInfo()
 // console.log(c);
+// =============================Homework=============================
+class Animals {
+    constructor (name){
+        this.name = name
+    }
+}
+class Rabbit extends Animals {
+    constructor(name){
+        // this.name = name
+        super(name)
+        // this.created = Date.now()
+        // super.name = this.name
+        }
+}
+let rabbit = new Rabbit('White Rabbit')
+console.log(rabbit.name);
