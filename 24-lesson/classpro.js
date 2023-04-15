@@ -128,18 +128,146 @@
 // // c.getInfo()
 // console.log(c);
 // =============================Homework=============================
-class Animals {
-    constructor (name){
-        this.name = name
-    }
-}
-class Rabbit extends Animals {
-    constructor(name){
-        // this.name = name
-        super(name)
-        // this.created = Date.now()
-        // super.name = this.name
-        }
-}
-let rabbit = new Rabbit('White Rabbit')
-console.log(rabbit.name);
+// =================task 1========================
+// class Animals {
+//     constructor (name){
+//         this.name = name
+//     }
+// }
+// class Rabbit extends Animals {
+//     constructor(name){
+//         // this.name = name
+//         super(name)
+//         // this.created = Date.now()
+//         // super.name = this.name
+//         }
+// }
+// let rabbit = new Rabbit('White Rabbit')
+// console.log(rabbit.name);
+// ============================================================
+// class a {
+//     constructor(value){
+//         console.log(value);
+//     }
+// }
+// let b = new a('Is it right!');
+// class a {
+//     name = "I" // we are putting I into this
+//     constructor(value){
+//         console.log(this.name);
+//     }
+// }
+// let b = new a();
+// console.log(b);
+// =================================================================
+// class a {
+//     constructor (value){
+//         console.log(value);
+//     }
+//     // name = 'web'
+//     age = 0
+//     getAge (){
+//         // console.log(++this.age);
+//     }
+// }
+// let b = new a('Is it right?') // 1-object
+// // let c = new a() // 2-object
+// // b.getAge()
+// // b.getAge()
+// // b.getAge()
+// // c.getAge()
+// // console.log(b);
+// class a {    
+//     constructor (value){
+//         this.value = value
+//     }
+// }
+// let b = new a('Is it right?') // 1-object
+// console.log(b.value);
+// let c = new a() // 2-object
+// ===========================================================
+// class a {    
+//     ['we' + 'brain'](value){
+//         console.log(value);
+//     }
+// }
+// let b = new a()
+// b.webrain('hey')
+// =======================================================
+// class a {    
+//     speed(speed){
+//         console.log(`Lion runs ${speed}km per hour`);
+//     }
+// }
+// class b extends a {
+//     getInfo(){
+//         console.log('Lion');
+//     }
+// }
+// let c = new b('Lion')
+// c.speed(50)
+// ===========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
