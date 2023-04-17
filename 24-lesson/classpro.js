@@ -207,7 +207,107 @@
 // let c = new b('Lion')
 // c.speed(50)
 // ===========================================================
+// class a {
+//     constructor(name){
+//         this.name = name
+//         console.log(name);
+//     }
+// }
+// class b extends a {
+//     constructor(name){
+//         super(name)
+//     }
+// }
+// let c = new b('Hi')
+// c.name
+// =====================================================
+// class a {
+//     name = 'me'
+//     set getInfo(value){
+//         console.log(value);
+//     }
+//     get getInfo(){
+//         console.log(`${this.name}`);
+//     }
+// }
+// let b = new a();
+// b.getInfo = 'myself'
+// b.getInfo
+// ================================================================
+// class a{
+//     getParent(){
+//         console.log('You are right, finally! It is the parent section of our class.');
+//     }
+// }
+// class b extends a{
+//     getInfo(){
+//         console.log('You are in the child section!');  
+//         // super.getParent()      
+//     }
+//     getBoth(){
+//         this.getInfo()
+//         super.getParent()
+//     }
+// }
+// let c = new b()
+// // c.getParent()
+// c.getBoth()
+// ==============================================================
+// class a {
+//     #name = 'myself'
+//     get getInfo(){
+//         console.log(`${this.#name}`);
+//     }
+//     set getInfo(value){
+//         this.#name = value
+//         console.log(value);
+//     }
+// }
+// let b = new a()
+// b.getInfo
+// // console.log(b.value);
+// =====================================================
+// class a{
+//     static age = 0
+//     static getAge(){
+//         console.log(++this.age);
+//     }
+// }
+// let b = new a()
+// // let c = new a()
+// a.getAge()
+// a.getAge()
+// a.getAge()
+// a.getAge()
+// c.getAge()
+// =============================================================
+// class a extends Array{}
 
+// let b = new a()
+// console.log(b instanceof Array);
+// console.log(b instanceof Object);
+// class a extends Number{}
+// let d = [];
+
+// let b = new a()
+// console.log(d instanceof Array);
+// console.log(b instanceof Object);
+// =========================================================
+// class a {
+//     _name = 'web'
+// }
+// let v = {
+//     name : 'we',
+//     getInfo(){
+//         console.log('me');
+//     }
+// }
+// // let c = new a()
+// Object.assign(a.prototype, v)
+// // console.log(v._name);
+// let c = new a()
+// // console.log(c);
+// console.log(c._name);
 
 
 

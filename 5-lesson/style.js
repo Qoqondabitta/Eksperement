@@ -4,7 +4,7 @@
 //================================================================================================================
 //let a="ECMAScript";
 //
-//if (a === "ECMAScipt") {
+//if (a === "ECMAScript") {
 //    console.log("right");
 //} else {
 //    console.log(`You don't know "ESCMAScript"!`);

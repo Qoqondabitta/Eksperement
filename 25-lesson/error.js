@@ -60,19 +60,19 @@
 //     // console.log('Ups, something went wrong!');
 // }
 // ============================================================
-let database = {
-    us1 :{
-        username:'John',
-        password :111,
-        FullName: 'John Smith'
-    },
-    us2 :{
-        username:'Harry',
-        password :222,
-        FullName: 'Harry Kane'
-    }
-}
-console.log('started');
+// let database = {
+//     us1 :{
+//         username:'John',
+//         password :111,
+//         FullName: 'John Smith'
+//     },
+//     us2 :{
+//         username:'Harry',
+//         password :222,
+//         FullName: 'Harry Kane'
+//     }
+// }
+// console.log('started');
 // ==================promise:then, catch and finally=================
 // let promise = new Promise((resolve, reject)=>{
 //     if (database.us1.username==='John'&&database.us1.password===111) {
