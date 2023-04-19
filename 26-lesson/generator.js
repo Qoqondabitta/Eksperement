@@ -1,10 +1,10 @@
-function* data(){
-    yield 1
-    yield 2
-}
+// function* data(){
+//     yield 1
+//     yield 2
+// }
 
-const generator = data()
-const gr1  = data()
+// const generator = data()
+// const gr1  = data()
 
 // console.log(generator.next());
 // console.log(generator.next());
@@ -19,4 +19,11 @@ const gr1  = data()
     // console.log(i);
 // }
 // ======================array spread operator===================
-console.log([...generator]);
+// console.log([...generator]);
+try {
+    console.log(number);
+    console.log(a);
+} catch (error) {
+    console.log(error.name);
+    console.log(error.message);
+}
