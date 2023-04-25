@@ -133,5 +133,89 @@
 //     console.log('finished');
 // };
 // getData();
+// ========================25/04/2023======================
+// let a = {
+//     Sam : {
+//         name : 'Sam',
+//         password : 12344321,
+//         fullName : 'Sam Murphy'
+//     },
+//     Peter : {
+//         name : 'John',
+//         password : 1116554,
+//         fullName : 'Peter Parker'
+//     }
+// }
+// console.log('started...');
+// const login = (check, lg, pw, callback)=>{
+//     setTimeout(()=>{
 
+//         if (check.name === lg && check.password===pw) {
+//             return callback(`${check.fullName}, welcome to Facebook`)
+//         } else {
+//             return callback('Ups, wrong password, try again later.')
+//         }
+//     }, 3000)
+// }
+// login(a.Sam, 'Sam', 12344321, (b)=>{
+//     console.log(b);
+//     console.log('finished');
+// })
+// =============================================================
+// =============================================================
+// =============================================================
+// =============================================================
+// =============================================================
+// =============================================================
+// =============================================================
+// =============================================================
+// const login = (check, lg, pw)=>{
+//     setTimeout(()=>{
 
+//         if (check.name === lg && check.password===pw) {
+//             return `${check.fullName}, welcome to Facebook`
+//         } else {
+//             return 'Ups, wrong password, try again later.'
+//         }
+//     }, 1000)
+// }
+// // const login = (check, lg, pw)=>{
+// //     if (check.name === lg && check.password===pw) {
+// //         return console.log(`${check.fullName}, welcome to Facebook`);
+// //     } else {
+// //         return console.log('Ups, wrong password, try again later.');
+// //     }
+// // }
+// let b = login(a.Sam, 'Sam', 12344321)
+// console.log(b);
+// =============================================================
+// =============================================================
+// =============================================================
+// =============================================================
+// console.log('finished');
+let a = {
+    John : {
+        name : 'John',
+        password : 12344321,
+        fullName : 'John Smith'
+    },
+    Peter : {
+        name : 'Peter',
+        password : 6554,
+        fullName : 'Peter Parker'
+    }
+}
+console.log('started'); //1
+const login = (check, lg, pw, callback)=>{
+    setTimeout(()=>{
+        if (check.name===lg && check.pw===pw) {
+            return callback(`${check.fullName}, welcome to the Facebook!`) //2
+        } else {
+            return callback(`Sorry, but password or login is wrong!`) //2
+        }
+    }, 1000)
+}
+login(a.John, 'John', 12344321, (b)=>{
+    console.log(b);
+    console.log('finished'); //3
+})
