@@ -236,7 +236,7 @@
 // ================================================================
 // class a{
 //     getParent(){
-//         console.log('You are right, finally! It is the parent section of our class.');
+//         console.log('You are right, finally!');
 //     }
 // }
 // class b extends a{
