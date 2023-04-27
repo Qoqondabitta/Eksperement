@@ -223,10 +223,32 @@
 
 
 
-let a = {
-    name : 'a',
-    b : 'c'
-}
-for (i in a){
-    console.log(a[i]);
-}
+// let a = {
+//     name : 'a',
+//     b : 'c'
+// }
+// for (i in a){
+//     console.log(a[i]);
+// }
+// let a = 13
+// let b = {x:24, y:21, z:18}
+// const getMin = (c)=>{
+//     for(i in b){
+//         d=`${b[i]-c}`
+//     }
+//     console.log(Math.min(d));        
+// }
+// getMin(a)
+// let a = 'beautiful'
+// count=0
+// let no = 0
+// for(i of a){
+//     if (i==='a'||i==='e'||i==='i'||i==='o'||i==='u') {
+//         ++count
+//     } else {
+//         no++
+//     }
+// }
+// console.log(`${++count}-that letters`)
+// console.log(`${no++}-not that letter`)
+// ===========================================================
