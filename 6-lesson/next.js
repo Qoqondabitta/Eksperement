@@ -340,16 +340,16 @@
 // }
 // plus(obj)
 
-let obj = {
-  eshmat: 10,
-  toshmat: 5,
-  gulmat: 200,
-};
-let sum = 0;
-for (i in obj) {
-  sum += obj[i];
-}
-console.log(sum);
+// let obj = {
+//   eshmat: 10,
+//   toshmat: 5,
+//   gulmat: 200,
+// };
+// let sum = 0;
+// for (i in obj) {
+//   sum += obj[i];
+// }
+// console.log(sum);
 //================================
 // let a = 'he';
 
@@ -388,3 +388,24 @@ console.log(sum);
 //         break;
 // }
 //==========================================================
+// =======================Optional chaining==========================
+// let user = {
+//   name : 'John',
+//   surname : {surname : 'Smith'}
+// }
+// console.log(user.surname.surname);
+// delete user.surname
+// console.log(user.surname?.surname);
+// let user = {
+//   name : 'John'
+// }
+// user = null
+// console.log(user?.name);
+function makeUser(){
+  return{
+      name:"John",
+      ref:this
+  };
+}
+let user=makeUser();
+console.log(user.ref.name)
