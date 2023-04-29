@@ -46,7 +46,7 @@
 //     console.log(error.name);
 //     console.log(error.message);
 // }
-// 
+//
 // try {
 //     throw new Error('Ups, something went wrong!')
 // } catch (error){
@@ -113,7 +113,7 @@
 //             return callback(console.log('No'))
 //         }
 //     })
-// } 
+// }
 // login('John', 111, (check)=>{
 //     // console.log(check);
 //     console.log('finished');
@@ -220,9 +220,6 @@
 //     console.log('finished'); //3
 // })
 
-
-
-
 // let a = {
 //     name : 'a',
 //     b : 'c'
@@ -236,7 +233,7 @@
 //     for(i in b){
 //         d=`${b[i]-c}`
 //     }
-//     console.log(Math.min(d));        
+//     console.log(Math.min(d));
 // }
 // getMin(a)
 // let a = 'beautiful'
@@ -252,3 +249,57 @@
 // console.log(`${++count}-that letters`)
 // console.log(`${no++}-not that letter`)
 // ===========================================================
+// let ladder = {
+//     step : 0,
+//     up(){
+//         this.step++
+//     },
+//     down(){
+//         this.step--
+//     },
+//     showStep : function(){
+//         console.log(this.step);
+//     }
+// };
+// console.log(ladder.up().down().showStep().down().showStep());
+// let a = '1010100'
+// let b = 0
+// let c = 0
+// for(i in a){
+//     if (a[i]==='1') {
+//         ++b
+//     } else {
+//         ++c
+//     }
+// }
+// console.log(`1- dan ${b} ta`);
+// console.log(`0- dan ${c} ta`);
+// const calculate = (a, b, c)=>{
+//     console.log(Math.max(a, b, c)-Math.min(a, b, c));
+// }
+// calculate(12, 43, 78)
+// const randomInteger = (a)=>{
+//     let a = Math.random()*100
+//     let b = parseInt(a)
+//     if(b<a){
+//         console.log(b);
+//     } else {
+//         b=b/2
+//         console.log(parseInt(b));
+//     }
+//     // console.log(b);
+// }
+// randomInteger(50)
+
+// console.log(Math.random(5)*10);
+
+// let a = 123456
+// let b = 0
+// const calculator = (a)=>{
+//     let c = a.toString()
+//     for(i in c){
+//         b += +c[i]   
+//     }
+//     console.log(b);
+// }
+// calculator(a)
