@@ -401,11 +401,76 @@
 // }
 // user = null
 // console.log(user?.name);
-function makeUser(){
-  return{
-      name:"John",
-      ref:this
-  };
+// function makeUser(){
+//   return{
+//       name:"John",
+//       ref:this
+//   };
+// }
+// let user=makeUser();
+// console.log(user.ref.name)
+// ===========================================
+// const random = ()=>{  
+//   let second = parseInt((Math.random()*100)/2)
+//   return second === 0 ? second = 1 : console.log(second);
+  
+// }
+// random()
+// ==========================================================
+let players = {
+  Captain : {
+    name : 'Harry Kane',
+    number : 10,
+    fullName(){
+      console.log(this.name, this.number);
+    }
+  },
+  Goalkeeper : {
+    name : 'Jordan Pickford',
+    number : 1,
+    fullName(){
+      console.log(this.name, this.number);
+    }  
+  },
+  Defender : {
+    name : 'Trent Alexander-Arnold',
+    number : 66,
+    fullName(){
+      console.log(this.name, this.number);
+    }
+  },
+  Midfielder : {
+    name : 'Jude Bellingham',
+    number : 20,
+    fullName(){
+      console.log(this.name, this.number);
+    }
+  }
 }
-let user=makeUser();
-console.log(user.ref.name)
+console.log('started');
+function findPlayer(player, optional, ){
+  setTimeout(()=>{
+    if(player === optional.name){
+      (optional.fullName())
+    } else {
+      (console.log('There is not such a player in England national team'))
+    }
+  }, 2000)
+}
+let next = findPlayer('Jude Bellingham', players.Midfielder)
+console.log(next);
+console.log('finished');
+
+// function findPlayer(player, optional, callback){
+//   setTimeout(()=>{
+//     if(player === optional.name){
+//       return callback(optional.fullName())
+//     } else {
+//       return callback(console.log('There is not such a player in England national team'))
+//     }
+//   }, 2000)
+// }
+// findPlayer('Jude Bellingham', players.Midfielder, (final)=>{
+//   final
+//   console.log('finished');
+// })
