@@ -304,28 +304,28 @@
 // }
 // calculator(a)
 // =====================================
-let players = {
-  Captain : {
-    name : 'Harry Kane',
-    number : 10,
-    fullName : `Harry kane`
-  },
-  Goalkeeper : {
-    name : 'Jordan Pickford',
-    number : 1,
-    fullName : `Jordan Pickford`
-  },
-  Defender : {
-    name : 'Trent Alexander-Arnold',
-    number : 66,
-    fullName : `Trent Alexander-Arnold`
-  },
-  Midfielder : {
-    name : 'Jude Bellingham',
-    number : 20,
-    fullName : `${this.name} plays under the number ${this.number}`
-  }
-}
+// let players = {
+//   Captain : {
+//     name : 'Harry Kane',
+//     number : 10,
+//     fullName : `Harry kane`
+//   },
+//   Goalkeeper : {
+//     name : 'Jordan Pickford',
+//     number : 1,
+//     fullName : `Jordan Pickford`
+//   },
+//   Defender : {
+//     name : 'Trent Alexander-Arnold',
+//     number : 66,
+//     fullName : `Trent Alexander-Arnold`
+//   },
+//   Midfielder : {
+//     name : 'Jude Bellingham',
+//     number : 20,
+//     fullName : `${this.name} plays under the number ${this.number}`
+//   }
+// }
 
 // console.log('started');
 // let check = new Promise((resolve, reject)=>{
@@ -359,28 +359,79 @@ let players = {
 // ]);
 // all.then((res)=>console.log(res)).catch((error)=>console.log(error))
 // ============================================================================
-console.log('started');
-let check = new Promise((resolve, reject)=>{
-  setTimeout(()=>{
-    if(players.Captain.name === 'Harry Kane' && players.Captain.number === 10){
-      resolve('Harry Kane plays under the number 10')
-    } else {
-      reject ('There is no such a player in England national soccer team')
-    }
-  }, 2000)
-});
+// console.log('started');
+// let check = new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     if(players.Captain.name === 'Harry Kane' && players.Captain.number === 10){
+//       resolve('Harry Kane plays under the number 10')
+//     } else {
+//       reject ('There is no such a player in England national soccer team')
+//     }
+//   }, 2000)
+// });
 // let final = async ()=>{
 //   res = await check
 //   console.log(res);
 //   console.log('finished');
 // }
-async function final(){
-  res = await check
-  console.log(res);
-  console.log('finished');
-}
-final()
+// async function final(){
+//   res = await check
+//   console.log(res);
+//   console.log('finished');
+// }
+// final()
 
 
 
 // check.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+// ================================video tutorial on callback functions=======================================================
+let player = {
+  forward : {
+    name : 'HLuis',
+    number : 9,
+    origin : 'England'
+  },
+  "Right Winger" : {
+    name : 'Lionel',
+    number : 10,
+    origin : 'Argentina'
+  }
+}
+console.log('started');
+let promise = new Promise((resolve, reject)=>{
+  setTimeout(()=>{
+    if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 10){
+      resolve('Lionel Messi is from Argentina.')
+    } else {
+      reject('Ouh, sorry but there is no such a player with the information provided above!')
+    }
+  }, 2000)
+})
+let all = Promise.all([
+  new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 10){
+        resolve('Lionel Messi is from Argentina.')
+      } else {
+        reject('Ouh, sorry but there is no such a player with the information provided above!')
+      }
+    }, 2000)
+  }),
+  new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 1){
+        resolve('Lionel Messi is from Argentina.')
+      } else {
+        reject('Ouh, sorry but there is no such a player with the information provided above!')
+      }
+    }, 2000)
+  })
+])
+all.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+// let async = async()=>{
+//   res = await promise
+//   console.log(promise);
+//   console.log('finished');
+// }
+// async()
+// promise.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
