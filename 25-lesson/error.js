@@ -303,3 +303,84 @@
 //     console.log(b);
 // }
 // calculator(a)
+// =====================================
+let players = {
+  Captain : {
+    name : 'Harry Kane',
+    number : 10,
+    fullName : `Harry kane`
+  },
+  Goalkeeper : {
+    name : 'Jordan Pickford',
+    number : 1,
+    fullName : `Jordan Pickford`
+  },
+  Defender : {
+    name : 'Trent Alexander-Arnold',
+    number : 66,
+    fullName : `Trent Alexander-Arnold`
+  },
+  Midfielder : {
+    name : 'Jude Bellingham',
+    number : 20,
+    fullName : `${this.name} plays under the number ${this.number}`
+  }
+}
+
+// console.log('started');
+// let check = new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     if(players.Captain.name === 'Harry Kane' && players.Captain.number === 10){
+//       resolve('Harry Kane plays under the number 10')
+//     } else {
+//       reject ('There is no such a player in England national soccer team')
+//     }
+//   }, 2000)
+// });
+// let all = Promise.all([
+//   new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       if(players.Captain.name === 'Harry' && players.Captain.number === 10){
+//         resolve('Harry Kane plays under the number 10')
+//       } else {
+//         reject ('There is no such a player in England national soccer team')
+//       }
+//     }, 2000)
+//   }),
+//   new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       if(players.Captain.name === 'Harry' && players.Captain.number === 10){
+//         resolve('Harry Kane plays under the number 10')
+//       } else {
+//         reject ('There is no such a player in England national soccer team')
+//       }
+//     }, 2000)
+//   })
+// ]);
+// all.then((res)=>console.log(res)).catch((error)=>console.log(error))
+// ============================================================================
+console.log('started');
+let check = new Promise((resolve, reject)=>{
+  setTimeout(()=>{
+    if(players.Captain.name === 'Harry Kane' && players.Captain.number === 10){
+      resolve('Harry Kane plays under the number 10')
+    } else {
+      reject ('There is no such a player in England national soccer team')
+    }
+  }, 2000)
+});
+// let final = async ()=>{
+//   res = await check
+//   console.log(res);
+//   console.log('finished');
+// }
+async function final(){
+  res = await check
+  console.log(res);
+  console.log('finished');
+}
+final()
+
+
+
+// check.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
