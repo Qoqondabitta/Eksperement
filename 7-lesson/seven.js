@@ -15,7 +15,7 @@
 // console.log(dec('man'));
 //====================================================
 // let obj = {
-//     name : 'Abdulahad',
+//     name : 'John',
 //     Age : 17
 // }
 
@@ -25,7 +25,7 @@
 // console.log(user==obj);
 // console.log(user=== obj);
 // let obj = {
-//     name : 'Abdulahad',
+//     name : 'John',
 //     Age : 17
 // }
 
@@ -39,7 +39,7 @@
 // console.log(user=== obj);
 //=====================================================
 // let obj = {
-//     name : 'Abdulahad',
+//     name : 'John',
 //     Age : 17
 // }
 
@@ -50,7 +50,7 @@
 // console.log(Object.assign(obj, user));
 //=========================================================
 // let obj = {
-//     name : 'Abdulahad',
+//     name : 'John',
 //     Age : 17
 // }
 
@@ -65,24 +65,24 @@
 // let key = 'title';
 
 // let obj = {
-//     name : 'Abdulahad',
+//     name : 'John',
 //     'date of birth' : 17,
 //     [key] : 'study' // title : 'study'
 // }
-// obj.name = 'Sarvar'
+// obj.name = 'John'
 // obj.info = 'boy'
 // console.log(obj[key]);
 // console.log(obj['title']);
 // console.log(obj.title);
 //=====================================
 // let obj = {
-//     name : 'Abdulahad',
+//     name : 'John',
 //     'date of birth' : 17    
 // }
 
 // let user = obj;
 
-// obj.name = 'Sarvar'
+// obj.name = 'John'
 // obj.age = 18
 
 // console.log(user);
@@ -90,7 +90,7 @@
 // console.log(user=== obj);
 //===================================================
 // let obj = {
-//     name : 'Abdulahad',
+//     name : 'John',
 //     'date of birth' : 17    
 // }
 
@@ -182,3 +182,41 @@
 //     console.log(obj === user);
 //=================================================== 
 //     console.log(obj ===);
+// ======================================================================================================
+// let a = 'Bro6554#$5'
+// let obj = {letter:0, number:0, sign:0}
+// for(i of a){
+//     if(i.toLocaleLowerCase()!== i.toLocaleUpperCase()){
+//         obj.letter++
+//     } else if (isNaN(i)===false){
+//         obj.number++
+//     } else {
+//         obj.sign++
+//     }
+// }
+// console.log(obj);
+// let password = 'John6554@#$%Smith'
+
+// let obj = {letter : 0, number : 0, sign : 0}
+// for(value of password){
+//     if(value.toUpperCase()!==value.toLowerCase()){
+//         obj.letter++
+//     } else if(isNaN(value)===false){
+//         obj.number++
+//     } else {
+//         obj.sign++
+//     }
+// }
+// console.log(obj);
+// ==============================================================================================
+let a = 'antonyJoshua'
+let obj = {}
+// let count = 0
+for(i in a){
+    if(obj[i]){
+        obj[i]=obj[i]+1
+    } else {
+        obj[i] = 1
+    }
+}
+console.log(obj);
