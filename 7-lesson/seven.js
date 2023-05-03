@@ -209,14 +209,75 @@
 // }
 // console.log(obj);
 // ==============================================================================================
-let a = 'antonyJoshua'
-let obj = {}
-// let count = 0
-for(i in a){
-    if(obj[i]){
-        obj[i]=obj[i]+1
-    } else {
-        obj[i] = 1
-    }
-}
-console.log(obj);
+// let a = 'antonyJoshua'
+// let obj = {}
+// // let count = 0
+// for(i in a){
+//     if(obj[i]){
+//         obj[i]=obj[i]+1
+//     } else {
+//         obj[i] = 1
+//     }
+// }
+// console.log(obj);
+// ==============================================================================================================================
+// const telephoneNumber = (number)=>{    
+//     if (number.slice(0, 4)==='+998'){
+//         console.log(number);
+//     } else {
+//         console.log(number.padStart(17, '+998 '))
+//     }
+// }
+// telephoneNumber('+998 90 111 65 54')
+// =====================================================================================================================
+// const currency = (number)=>{
+//     let gain = ''
+//     for(i of number){if(isNaN(i)===false)gain += i}
+//     console.log(gain);
+// }
+// currency('$1200')
+// ===================================================================================================================
+// const number = (a)=>{
+//     let b = a.split(' ')
+//     let obj = {countryCode:'', companyCode:'', cityCode:'', telephoneCode:''}
+//     for(i of b[0]){
+//         obj.countryCode += i
+//     }
+//     for(j of b[1]){
+//         obj.companyCode += j
+//     }
+//     for(l of b[2]){
+//         obj.cityCode += l
+//     }
+//     for(f of b[3]){
+//         obj.telephoneCode += f
+//     }
+//     console.log(obj);
+// }
+// number('+998 90 111 6554')
+// ===================================================================================================================
+// const divide = (b, number)=>{return console.log(b.slice(0, number))}; 
+// divide('antonyJoshua', 12)
+// ====================================================================================================================
+// let a = 'web brain academy it center'
+// let b = ''
+// for(i in a){
+//     if (a[i-1]===' ' || a[i-1]=== undefined) {
+//         b += a[i].toUpperCase()
+//     } else {
+//         b += a[i]
+//     }
+// }
+// console.log(b);
+// ===================================================================================================================
+// const check = (a, b)=>{
+//     if (a.includes(b)===true) {
+//         console.log('Yes');
+//     } else {
+//         console.log("No");
+//     }
+// }
+// check('webAcademy', 'web')
+// let a = 'webAcademy'`
+
+// console.log(a.search());
