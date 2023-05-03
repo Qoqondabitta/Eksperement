@@ -421,56 +421,66 @@ let players = {
   Captain : {
     name : 'Harry Kane',
     number : 10,
-    fullName(){
-      console.log(this.name, this.number);
-    }
+    fullName : `Harry kane`
   },
   Goalkeeper : {
     name : 'Jordan Pickford',
     number : 1,
-    fullName(){
-      console.log(this.name, this.number);
-    }  
+    fullName : `Jordan Pickford`
   },
   Defender : {
     name : 'Trent Alexander-Arnold',
     number : 66,
-    fullName(){
-      console.log(this.name, this.number);
-    }
+    fullName : `Trent Alexander-Arnold`
   },
   Midfielder : {
     name : 'Jude Bellingham',
     number : 20,
-    fullName(){
-      console.log(this.name, this.number);
-    }
+    fullName : `${this.name} plays under the number ${this.number}`
   }
 }
 console.log('started');
-function findPlayer(player, optional, ){
-  setTimeout(()=>{
-    if(player === optional.name){
-      (optional.fullName())
-    } else {
-      (console.log('There is not such a player in England national team'))
-    }
-  }, 2000)
-}
-let next = findPlayer('Jude Bellingham', players.Midfielder)
-console.log(next);
-console.log('finished');
+// function findPlayer(player, optional, ){
+//   setTimeout(()=>{
+//     if(player === optional.name){
+//       (optional.fullName())
+//     } else {
+//       (console.log('There is not such a player in England national team'))
+//     }
+//   }, 2000)
+// }
+// let next = findPlayer('Jude Bellingham', players.Midfielder)
+// console.log(next);
+// console.log('finished');
 
 // function findPlayer(player, optional, callback){
 //   setTimeout(()=>{
 //     if(player === optional.name){
-//       return callback(optional.fullName())
+//       return callback(optional.fullName)
 //     } else {
 //       return callback(console.log('There is not such a player in England national team'))
 //     }
 //   }, 2000)
 // }
 // findPlayer('Jude Bellingham', players.Midfielder, (final)=>{
-//   final
+//   console.log(final)
 //   console.log('finished');
 // })
+// ================================================
+// let b = -1.345
+// let a = 1.565
+
+// console.log(Math.round(a));
+// console.log(a.toPrecision(2));
+// console.log(a.toPrecision(4));
+// console.log(a.toFixed(1));
+// console.log(a.toFixed(2));
+// console.log(a.toFixed(3));
+// console.log(a.toFixed(4));
+// console.log(Math.SQRT1_2);
+// console.log(parseInt(a));
+// console.log(Math.trunc(a));
+// console.log(Math.ceil(a));
+// console.log(Math.floor(a));
+// console.log(Math.ceil(b));
+// console.log(Math.floor(b));

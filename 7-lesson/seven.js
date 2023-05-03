@@ -278,6 +278,97 @@
 //     }
 // }
 // check('webAcademy', 'web')
-// let a = 'webAcademy'`
+// let a = 'webAcademy'
 
 // console.log(a.search());
+// ================================================================================================================
+// let a = 'webAcademy'
+// console.log(a.search(/aca/i)); 
+// console.log(a.concat(' is good person, I think so.').length);
+// console.log(a.length);
+// console.log(a.padStart(4, ' a'));
+
+// console.log(a.charAt[-1]);
+// console.log(a.at(-1));
+// =============================================================================================================
+let athlete = {
+    MMA : {
+        name : 'Kabib',
+        record : '29-0',
+        fullName : 'Kabib Nurmagomedov' 
+    },
+    soccer : {
+        name : 'Messi',
+        record : '7-6-4-2-1',
+        fullName : 'Lionel Messi'
+    }
+}
+console.log('started');
+// ================================================async await function=======================================================
+let a = new Promise((resolve, reject)=>{
+    setTimeout(() => {
+        
+        if(athlete.MMA.name === 'Kabib' && athlete.MMA.record === '29-0'){
+            return resolve(`${athlete.MMA.fullName} has one of the amazing careers in UFC history.`)
+        } else {
+            return reject('Sorry to inform this, but there is no such an athlete with data provided above')
+        }
+    }, 3000);
+})
+const check = async()=>{
+    res = await a
+    console.log(res);
+    console.log('finished');
+}
+check()
+// ========================================Promise=============================================================
+// let a = new Promise((resolve, reject)=>{
+//     setTimeout(() => {
+        
+//         if(athlete.MMA.name === 'Kabib' && athlete.MMA.record === '29-0'){
+//             return resolve(`${athlete.MMA.fullName} has one of the amazing careers in UFC history.`)
+//         } else {
+//             return reject('Sorry to inform this, but there is no such an athlete with data provided above')
+//         }
+//     }, 3000);
+// })
+// let all = Promise.all([
+//     new Promise((resolve, reject)=>{
+//     setTimeout(() => {
+        
+//         if(athlete.MMA.name === 'Kabib' && athlete.MMA.record === '29-0'){
+//             return resolve(`${athlete.MMA.fullName} has one of the amazing careers in UFC history.`)
+//         } else {
+//             return reject('Sorry to inform this, but there is no such an athlete with data provided above')
+//         }
+//     }, 3000);
+// }),
+// new Promise((resolve, reject)=>{
+//     setTimeout(() => {
+        
+//         if(athlete.MMA.name === 'Kabib' && athlete.MMA.record === '29-0'){
+//             return resolve(`${athlete.MMA.fullName} has one of the amazing careers in UFC history.`)
+//         } else {
+//             return reject('Sorry to inform this, but there is no such an athlete with data provided above')
+//         }
+//     }, 3000);
+// })
+// ])
+// all.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+// a.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+// ====================================================callback========================================================================
+// function check(lg, pw, callback){
+//     setTimeout(() => {        
+//         if(athlete.MMA.name === lg && athlete.MMA.record === pw){
+//             return callback(`${athlete.MMA.fullName} has one of the amazing careers in UFC history.`)
+//         } else {
+//             return callback('Sorry to inform this, but there is no such an athlete with data provided above')
+//         }
+//     }, 2000);
+// }
+// check('Kabib', '29-0', (final)=>{
+//     console.log(final);
+//     console.log('finished');
+// })
+// console.log(last);
+// console.log('finished');

@@ -244,7 +244,7 @@
 //   }
 // }
 
-// curency(`$5000`)
+// currency(`$5000`)
 //=======================================
 // function password(a) {
 //   let obj = {number:0, letter:0, char:0}
@@ -260,7 +260,7 @@
 //   console.log(obj);
 // }
 
-// password('Adn_6554@#$%Abdulakhad')
+// password('Adn_6554@#$%Adam')
 //=========================================================
 // function last(a) {
 //   let res = ' '
@@ -307,7 +307,7 @@
       } console.log(res);
   }
   
-  quantity(`webbrainacademy`);
+  quantity(`web-brain`);
 
 function counting(a) {
   let res = ''

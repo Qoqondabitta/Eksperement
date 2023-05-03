@@ -385,53 +385,68 @@
 
 // check.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
 // ================================video tutorial on callback functions=======================================================
-let player = {
-  forward : {
-    name : 'HLuis',
-    number : 9,
-    origin : 'England'
-  },
-  "Right Winger" : {
-    name : 'Lionel',
-    number : 10,
-    origin : 'Argentina'
-  }
-}
-console.log('started');
-let promise = new Promise((resolve, reject)=>{
-  setTimeout(()=>{
-    if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 10){
-      resolve('Lionel Messi is from Argentina.')
-    } else {
-      reject('Ouh, sorry but there is no such a player with the information provided above!')
-    }
-  }, 2000)
-})
-let all = Promise.all([
-  new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 10){
-        resolve('Lionel Messi is from Argentina.')
-      } else {
-        reject('Ouh, sorry but there is no such a player with the information provided above!')
-      }
-    }, 2000)
-  }),
-  new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-      if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 1){
-        resolve('Lionel Messi is from Argentina.')
-      } else {
-        reject('Ouh, sorry but there is no such a player with the information provided above!')
-      }
-    }, 2000)
-  })
-])
-all.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
-// let async = async()=>{
-//   res = await promise
-//   console.log(promise);
-//   console.log('finished');
+// let player = {
+//   forward : {
+//     name : 'HLuis',
+//     number : 9,
+//     origin : 'England'
+//   },
+//   "Right Winger" : {
+//     name : 'Lionel',
+//     number : 10,
+//     origin : 'Argentina'
+//   }
 // }
-// async()
-// promise.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+// console.log('started');
+// let promise = new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 10){
+//       resolve('Lionel Messi is from Argentina.')
+//     } else {
+//       reject('Ouh, sorry but there is no such a player with the information provided above!')
+//     }
+//   }, 2000)
+// })
+// let all = Promise.all([
+//   new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 10){
+//         resolve('Lionel Messi is from Argentina.')
+//       } else {
+//         reject('Ouh, sorry but there is no such a player with the information provided above!')
+//       }
+//     }, 2000)
+//   }),
+//   new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//       if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 1){
+//         resolve('Lionel Messi is from Argentina.')
+//       } else {
+//         reject('Ouh, sorry but there is no such a player with the information provided above!')
+//       }
+//     }, 2000)
+//   })
+// ])
+// all.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+// // let async = async()=>{
+// //   res = await promise
+// //   console.log(promise);
+// //   console.log('finished');
+// // }
+// // async()
+// // promise.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+// ================================================================
+// let a = 1234564874896
+// let b = 0
+// const calculator = (a)=>{
+//     let c = a.toString()
+//     for(i in c){
+//         b += +c[i]   
+//     }
+//     console.log(b);
+// }
+// calculator(a)
+// let a = 1.0465
+// console.log(toFixed(a));
+// ====================================================================================
+
