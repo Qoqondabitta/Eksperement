@@ -173,6 +173,9 @@
 // console.log(v.splice(1, 3), v);
 // console.log(v);
 // console.log(b);
+// =====================================04.05.2023=============================================
+// let a = 'academy';
+// console.log(a.valueOf('a'));
 
 
 
