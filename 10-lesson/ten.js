@@ -176,7 +176,39 @@
 // =====================================04.05.2023=============================================
 // let a = 'academy';
 // console.log(a.valueOf('a'));
-
-
-
-
+// let a = ['he', 'me']
+// a[0] = 'she'
+// console.log(a[0]);
+// let a = ['a', 1, true] 
+// for(i = 0; i < a.length; i++){
+//     console.log(a[i]);
+// }
+// let b = new Array(1)
+// console.log(b);
+// let a = ['me', 'he']
+// console.log(a.reverse());
+// let a = 'me+and+you'
+// console.log(a.split('+'));
+// ====================================================================================================
+// let a = {}
+// let e = 'academy, It center, brain'
+// let b =  e.toLowerCase()
+// let d= ''
+// for(i in b){if(b[i].toUpperCase() !== b[i].toLowerCase()){d += b[i]}}
+// for(j of d){
+//     if (a[j]) a[j]++
+//     else a[j] = 1    
+// }
+// console.log(a);
+// ================================================================================================
+// let a = '-list-style-image'
+// let b = ''
+// for(i in a){
+//     if (a[i-1] === '-') b += a[i].toUpperCase()
+//     else if(a[i].toUpperCase() !== a[i].toLowerCase()) b += a[i]    
+// }
+// console.log(b);
+// =================================================================================================
+// const comparison = (a, b, c, d)=>{c = a.join(); d = b.join(); return console.log(c == d); };
+// comparison([1, 2, 3, true, 'barcelona'], [1, 2, 3, true, 'barcelona is better than real madrid']);
+// =================================================================================================
