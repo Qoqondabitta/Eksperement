@@ -212,3 +212,17 @@
 // const comparison = (a, b, c, d)=>{c = a.join(); d = b.join(); return console.log(c == d); };
 // comparison([1, 2, 3, true, 'barcelona'], [1, 2, 3, true, 'barcelona is better than real madrid']);
 // =================================================================================================
+// let a = 23415
+// let d = 0
+// while (a) {
+//     d += a % 10
+//     a = parseInt(a / 10)
+// }
+// console.log(d);
+// ===========================================================================================
+// let a = 'academy'
+// for
+console.log([] + '0');
+console.log([] + 0);
+console.log([]=='0');
+console.log([]==0);
