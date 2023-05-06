@@ -222,7 +222,26 @@
 // ===========================================================================================
 // let a = 'academy'
 // for
-console.log([] + '0');
-console.log([] + 0);
-console.log([]=='0');
-console.log([]==0);
+// console.log([] + '0');
+// console.log([] + 0);
+// console.log([]=='0');
+// console.log([]==0);
+// ==========================================================================================
+  let cars = [
+    {id:1, year:1998, engine:1, brand:`Tico`},
+    {id:2, year:2005, engine:1.2, brand:`Matiz`},
+    {id:3, year:2010, engine:1.6, brand:`Gentra`},
+    {id:4, year:2010, engine:1.5, brand:`Cobalt`},
+    {id:5, year:2012, engine:2, brand:`Malibu`},
+    {id:6, year:2000, engine:1.2, brand:`Damas`},
+    {id:7, year:2018, engine:2.4, brand:`Tracker`}
+]
+// let res = cars.filter((value)=>value.year<2000) // 2000 before 2000
+// let res = cars.filter((value)=>value.year<=2010) // 2010 before 2010
+// let res = cars.filter((value)=>value.year>=2010) // after 2010
+// let res = cars.sort((a, b)=>a.engine-b.engine) // sort according to the strength of engine
+// let res = cars.sort((a, b)=>a.year-b.year) // sort according to the year of production
+// let res = cars.sort((a, b)=>a.brand.localeCompare(b.brand)) // sort according to the alphabet order
+// let res = cars.map((value)=>value.year<2000 ? {...value, status : 'old'} : value) 
+// let res = cars.map((value)=>value.year<2000 ? {...value, status : 'old'} : value.year<=2010 ? {...value, status : 'moderate'} : value.year>2010 ? {...value, status : 'new'} : value) 
+// console.log(res);

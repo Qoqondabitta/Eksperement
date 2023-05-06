@@ -240,21 +240,13 @@
 // const number = (a)=>{
 //     let b = a.split(' ')
 //     let obj = {countryCode:'', companyCode:'', cityCode:'', telephoneCode:''}
-//     for(i of b[0]){
-//         obj.countryCode += i
-//     }
-//     for(j of b[1]){
-//         obj.companyCode += j
-//     }
-//     for(l of b[2]){
-//         obj.cityCode += l
-//     }
-//     for(f of b[3]){
-//         obj.telephoneCode += f
-//     }
+//     for(i of b[0]){obj.countryCode += i}
+//     for(j of b[1]){obj.companyCode += j}
+//     for(l of b[2]){obj.cityCode += l}
+//     for(f of b[3]){obj.telephoneCode += f}
 //     console.log(obj);
-// }
-// number('+998 90 111 6554')
+// };number('+998 90 111 6554')
+
 // ===================================================================================================================
 // const divide = (b, number)=>{return console.log(b.slice(0, number))}; 
 // divide('antonyJoshua', 12)
@@ -291,36 +283,36 @@
 // console.log(a.charAt[-1]);
 // console.log(a.at(-1));
 // =============================================================================================================
-let athlete = {
-    MMA : {
-        name : 'Kabib',
-        record : '29-0',
-        fullName : 'Kabib Nurmagomedov' 
-    },
-    soccer : {
-        name : 'Messi',
-        record : '7-6-4-2-1',
-        fullName : 'Lionel Messi'
-    }
-}
-console.log('started');
+// let athlete = {
+//     MMA : {
+//         name : 'Kabib',
+//         record : '29-0',
+//         fullName : 'Kabib Nurmagomedov' 
+//     },
+//     soccer : {
+//         name : 'Messi',
+//         record : '7-6-4-2-1',
+//         fullName : 'Lionel Messi'
+//     }
+// }
+// console.log('started');
 // ================================================async await function=======================================================
-let a = new Promise((resolve, reject)=>{
-    setTimeout(() => {
+// let a = new Promise((resolve, reject)=>{
+//     setTimeout(() => {
         
-        if(athlete.MMA.name === 'Kabib' && athlete.MMA.record === '29-0'){
-            return resolve(`${athlete.MMA.fullName} has one of the amazing careers in UFC history.`)
-        } else {
-            return reject('Sorry to inform this, but there is no such an athlete with data provided above')
-        }
-    }, 3000);
-})
-const check = async()=>{
-    res = await a
-    console.log(res);
-    console.log('finished');
-}
-check()
+//         if(athlete.MMA.name === 'Kabib' && athlete.MMA.record === '29-0'){
+//             return resolve(`${athlete.MMA.fullName} has one of the amazing careers in UFC history.`)
+//         } else {
+//             return reject('Sorry to inform this, but there is no such an athlete with data provided above')
+//         }
+//     }, 3000);
+// })
+// const check = async()=>{
+//     res = await a
+//     console.log(res);
+//     console.log('finished');
+// }
+// check()
 // ========================================Promise=============================================================
 // let a = new Promise((resolve, reject)=>{
 //     setTimeout(() => {
@@ -372,3 +364,100 @@ check()
 // })
 // console.log(last);
 // console.log('finished');
+// ========================================================================================================================
+// let athlete = {
+//     soccer : {
+//         position : 'Forward',
+//         number : '10',
+//         fullName : 'Harry Kane'
+//     },
+//     MMA : {
+//         position : 'Undefeated champion',
+//         number : '29-0',
+//         fullName : 'Jorge Smith'
+//     }
+// }
+// function check(lg, pw){
+//     setTimeout(() => {        
+//         console.log(athlete.soccer.position);
+//         if (athlete.soccer.position === lg && athlete.soccer.number === pw) {
+//             return `${athlete.soccer.fullName} shu`
+//         } else {
+//             return `No there is no such a player with data above`
+//         }
+//     }, 1000);
+// }
+// let next = check('Forward', '10')
+// // console.log(next);
+// console.log(next);
+// ==============================================================================================================================
+// let a = {name : 'bob'}
+// let b = {city : 'dad'}
+// console.log(Object.assign(b, a));//
+// console.log(a); // {name :" bob" }
+// console.log(b); // {city:dad name : "bob"}
+// ====================================================================
+// console.log(Object.assign(b, b));//{city :"dad" city:"dad"}
+// console.log(Object.assign(a, a));// {name : "name" name :"name"}
+// console.log(b); //{city :"dad"}
+// console.log(a); //{name : "name"}
+// console.log(b); //{city :"dad"}
+// ==============================================================
+// let c = {...a, ...b}
+// console.log(a); //{name : "bob"}
+// console.log(b); // {city:dad}
+// console.log(c); // {name : "bob" city:dad}
+// =====================================================================
+// let named = {
+//     title : 'Student',
+//     grade : '11',
+//     fullName : 'Harry Kane',
+//     getData(){
+//         console.log(`${this.title} is ${this.grade}-th grade`);//
+//     }
+// }
+// let city = named
+
+// named = null;
+// console.log(named.grade);//null 
+// console.log(named.title);//null
+// console.log(city.title);//student
+// console.log(city.grade);// 11
+// console.log(city.fullName);//'Harry Kane'
+// console.log(city.getData());// student 11 
+// console.log(named.getData()); // student is 11 - th grade
+// console.log(city);//null
+// console.log(named.fullName());//'Harry Kane'
+// ===========================================================================================
+// let a = 'aba'
+
+// let b = ``
+// for(i in a){
+
+
+
+
+//     if (a[i].localCompare(a[i+1])===-1) {
+//         let c = a.substring(a[i], 1)
+//         b += c
+//     } 
+    
+// }
+// console.log(b);
+// =======================================================================================
+// let a = 'simultaneously'
+// let gainer = '';
+// let alphabet = `'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+// 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'`
+// for (v of alphabet){
+
+//     for(val in a){
+//         if (v.localeCompare(a[val]) === 0) {
+//             gainer += a[val]
+//         }
+//     }
+// }
+// console.log(gainer);
+// ====================================================================================================
+// let ac = 'academy'
+// console.log(ac.valueOf('brain'));
