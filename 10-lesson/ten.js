@@ -245,3 +245,6 @@
 // let res = cars.map((value)=>value.year<2000 ? {...value, status : 'old'} : value) 
 // let res = cars.map((value)=>value.year<2000 ? {...value, status : 'old'} : value.year<=2010 ? {...value, status : 'moderate'} : value.year>2010 ? {...value, status : 'new'} : value) 
 // console.log(res);
+let a = ['we']
+a[0] = 'me'
+console.log(a[0]);
