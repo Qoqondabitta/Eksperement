@@ -227,15 +227,15 @@
 // console.log([]=='0');
 // console.log([]==0);
 // ==========================================================================================
-  let cars = [
-    {id:1, year:1998, engine:1, brand:`Tico`},
-    {id:2, year:2005, engine:1.2, brand:`Matiz`},
-    {id:3, year:2010, engine:1.6, brand:`Gentra`},
-    {id:4, year:2010, engine:1.5, brand:`Cobalt`},
-    {id:5, year:2012, engine:2, brand:`Malibu`},
-    {id:6, year:2000, engine:1.2, brand:`Damas`},
-    {id:7, year:2018, engine:2.4, brand:`Tracker`}
-]
+//   let cars = [
+//     {id:1, year:1998, engine:1, brand:`Tico`},
+//     {id:2, year:2005, engine:1.2, brand:`Matiz`},
+//     {id:3, year:2010, engine:1.6, brand:`Gentra`},
+//     {id:4, year:2010, engine:1.5, brand:`Cobalt`},
+//     {id:5, year:2012, engine:2, brand:`Malibu`},
+//     {id:6, year:2000, engine:1.2, brand:`Damas`},
+//     {id:7, year:2018, engine:2.4, brand:`Tracker`}
+// ]
 // let res = cars.filter((value)=>value.year<2000) // 2000 before 2000
 // let res = cars.filter((value)=>value.year<=2010) // 2010 before 2010
 // let res = cars.filter((value)=>value.year>=2010) // after 2010
@@ -245,6 +245,72 @@
 // let res = cars.map((value)=>value.year<2000 ? {...value, status : 'old'} : value) 
 // let res = cars.map((value)=>value.year<2000 ? {...value, status : 'old'} : value.year<=2010 ? {...value, status : 'moderate'} : value.year>2010 ? {...value, status : 'new'} : value) 
 // console.log(res);
-let a = ['we']
-a[0] = 'me'
-console.log(a[0]);
+// let a = ['we']
+// a[0] = 'me'
+// console.log(a[0]);
+// =============================================================================================
+// let a = 'academy'
+// let b = ''
+// for(i = 0; i>97 && i<127; i++){
+//   for(j in a){
+//     if (i.localCompare(a[j])==0) {
+//       b += a[j]
+//     }
+//   }
+// }
+// console.log(b);
+// =============================================================================================
+// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let b = a.reduce((initial, current)=>{
+//   // console.log(initial, current);
+//   return initial + current 
+// }, 0)
+// console.log(b);
+// ==============================================================================================
+  let cars = [
+    {id:1, year:1998, engine:1, brand:`Tico`},
+    {id:2, year:2005, engine:1.2, brand:`Matiz`},
+    {id:3, year:2010, engine:1.6, brand:`Gentra`},
+    {id:4, year:2010, engine:1.5, brand:`Cobalt`},
+    {id:5, year:2012, engine:2, brand:`Malibu`},
+    {id:6, year:2000, engine:1.2, brand:`Damas`},
+    {id:7, year:2018, engine:2.4, brand:`Tracker`}
+]
+// const sortByYear = ()=>{
+//   cars.sort((a, b)=>a.year-b.year)  
+// }
+// sortByYear()
+// console.log(cars);
+// ==============================================================================================
+// cars.sort((a, b)=>a.year-b.year)  
+// console.log(cars);
+// ==============not fine enough the below code==============================
+// const check = () => {
+//   cars.includes((value)=>value.id===1)
+// }
+// check()
+// console.log(cars);
+// =============================================================
+// const deleteUser = (id)=>{
+//   let res = cars.filter((value)=> value.id !== id)
+//   cars = res
+// }
+// deleteUser(1)
+// console.log(cars);
+// ===================================================================
+// const addUser = (again) => {  // first way
+  // cars.push(again)            // of adding
+// }                             // new car brand
+// const addUser = (again) => {
+//   cars = [...cars, again]
+// }
+// addUser({id:cars.length+1, year : 2022, engine:2, brand:'Oni'})
+// console.log(cars);
+// =================================================================================================
+const updateUser = (info)=>{
+  let res = cars.map((value)=>value.id === info.id ? {...value, [info.brand]: info.name}:value)
+  cars = res
+} 
+updateUser({id:2, brand:'brand', name:'Oni'})
+updateUser({id:2, brand:'year', name:2022})
+console.log(cars);
