@@ -256,3 +256,32 @@
 //     console.log(res == res1);
 // }
 // get(str, str1)
+// ==========================================================================
+let cars = [
+    {id:1, year:1998, engine:1, brand:`Tico`},
+    {id:1, year:1998, engine:1, brand:`Tico`},
+    {id:2, year:2005, engine:1.2, brand:`Matiz`},
+    {id:3, year:2010, engine:1.6, brand:`Gentra`},
+    {id:4, year:2010, engine:1.5, brand:`Cobalt`},
+    {id:5, year:2012, engine:2, brand:`Malibu`},
+    {id:6, year:2000, engine:1.2, brand:`Damas`},
+    {id:7, year:2018, engine:2.4, brand:`Tracker`}
+]
+// let res = cars.filter((value)=>value.id % 2 === 1)
+// let res = cars.sort((a,b)=>a.brand.localeCompare(b.brand)) 
+// let res = cars.find((value)=>value.id===1)
+// let resFilter = cars.filter((value)=>value.id===1)
+// console.log('===========');
+// console.log(resFilter);
+// let res = a.findIndex((value)=>value===3)
+// console.log(a.flat(Infinity));
+// let res = a.some((value)=>value % 2 === 0) 
+// let res = a.every((value)=>value % 2 === 0)
+// let res = a.forEach((value)=>console.log(value))
+// let res = a.map((value)=>console.log(value))
+// let a = [1, 2, 3, [4], 5, 6, 7]
+// let res = a.flatMap((value)=>value + 1)
+let a = [1, 2, 3, 4, 5, 6, 7]
+let res = a.reduce((sum, current)=>{console.log(sum, current) 
+return current}, 0)
+// console.log(res);
