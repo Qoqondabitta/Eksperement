@@ -449,4 +449,78 @@
 // let a = 1.0465
 // console.log(toFixed(a));
 // ====================================================================================
-
+// ======just recalling callback, promise and async await====================
+// let player = {
+//     Barcelona : {
+//         name : 'Lionel',
+//         position : 'Right Winger',
+//         number : '10 and he is captain'
+//     }, 
+//     Liverpool : {
+//         name : 'Jordan Henderson',
+//         position : 'Midfielder',
+//         number : '14 and he is captain'
+//     }
+// }
+// console.log('started');
+// ======================================async await function=============================================
+// let promise = new Promise((resolve, reject)=>{
+//     setTimeout(() => {        
+//         if (player.Barcelona.name==='Lionel' && player.Barcelona.position==='Right Winger') {
+//             resolve(`${player.Barcelona.name} plays under the number ${player.Barcelona.number}.`)
+//         } else {
+//             reject('Ouh, sorry but there is no such a player with the data given')
+//         }
+//     }, 1000);
+// })
+// const another = async()=>{
+//     let res = await promise
+//     console.log(res);
+//     console.log('finished');
+// }
+// another()
+// ======================================promise and promise all========================================
+// let promise = new Promise((resolve, reject)=>{
+//     setTimeout(() => {
+        
+//         if (player.Barcelona.name==='Lionel' && player.Barcelona.position==='Right Winger') {
+//             resolve(`${player.Barcelona.name} plays under the number ${player.Barcelona.number}.`)
+//         } else {
+//             reject('Ouh, sorry but there is no such a player with the data given')
+//         }
+//     }, 1000);
+// })
+// // promise.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=> console.log('finished'))
+// let all = Promise.all([
+//     promise = new Promise((resolve, reject)=>{
+//         setTimeout(() => {
+            
+//             if (player.Barcelona.name==='Lionel' && player.Barcelona.position==='Right Winger') {
+//                 resolve(`${player.Barcelona.name} plays under the number ${player.Barcelona.number}.`)
+//             } else {
+//                 reject('Ouh, sorry but there is no such a player with the data given')
+//             }
+//         }, 1000);
+//     }),
+//     promise = new Promise((resolve, reject)=>{
+//         setTimeout(() => {
+            
+//             if (player.Barcelona.name==='Lionel' && player.Barcelona.position==='Right Winger') {
+//                 resolve(`${player.Barcelona.name} plays under the number ${player.Barcelona.number}.`)
+//             } else {
+//                 reject('Ouh, sorry but there is no such a player with the data given')
+//             }
+//         }, 1000);
+//     })
+// ])
+// all.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+// ========================================Callback====================================================
+// function login(lg, pw, callback){
+    //     setTimeout(() => {        
+        //         if(lg === player.Barcelona.name && pw === player.Barcelona.position){
+//             return callback(`${player.Barcelona.name} plays under the number ${player.Barcelona.number}.`)
+//             } else return callback('Ouh, sorry but there is no such a player with the data given')
+//         }, 3000);
+// }
+// login('Lionel', 'Right Winger', (par)=>{console.log(par);console.log('finished');})
+// console.log(take);
