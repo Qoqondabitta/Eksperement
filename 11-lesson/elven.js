@@ -257,16 +257,6 @@
 // }
 // get(str, str1)
 // ==========================================================================
-let cars = [
-    {id:1, year:1998, engine:1, brand:`Tico`},
-    {id:1, year:1998, engine:1, brand:`Tico`},
-    {id:2, year:2005, engine:1.2, brand:`Matiz`},
-    {id:3, year:2010, engine:1.6, brand:`Gentra`},
-    {id:4, year:2010, engine:1.5, brand:`Cobalt`},
-    {id:5, year:2012, engine:2, brand:`Malibu`},
-    {id:6, year:2000, engine:1.2, brand:`Damas`},
-    {id:7, year:2018, engine:2.4, brand:`Tracker`}
-]
 // let res = cars.filter((value)=>value.id % 2 === 1)
 // let res = cars.sort((a,b)=>a.brand.localeCompare(b.brand)) 
 // let res = cars.find((value)=>value.id===1)
@@ -281,7 +271,43 @@ let cars = [
 // let res = a.map((value)=>console.log(value))
 // let a = [1, 2, 3, [4], 5, 6, 7]
 // let res = a.flatMap((value)=>value + 1)
-let a = [1, 2, 3, 4, 5, 6, 7]
-let res = a.reduce((sum, current)=>{console.log(sum, current) 
-return current}, 0)
+// let a = [1, 2, 3, 4, 5, 6, 7]
+// let res = a.reduce((sum, current)=>{console.log(sum, current) 
+// return current}, 0)
 // console.log(res);
+// let a =  [1, 2, 3, 3, 4, 5, 6, 7]
+// let b = 'web'
+// console.log(a.splice(0, 3));
+// console.log(a.slice(0, -1));
+// console.log(b.slice(0, -1));
+// console.log(a.substr(1, 3));
+// Array.from('web1gg57', (value)=>{if (isNaN(value)===false) {
+    //     return console.log(value);
+    // }})
+    
+    // let ar =[1,2,3,4,5,6,9, 10]
+    // let res = ar.reduce((sum, current)=>{
+        //     return sum + current
+        // })
+        // console.log(res);
+let cars = [
+    {id:1, year:1998, engine:1, brand:`Spark`},
+    {id:2, year:2005, engine:1.2, brand:`Traverse`},
+    {id:3, year:2010, engine:1.6, brand:`Tahoe`},
+    {id:4, year:2010, engine:1.5, brand:`Cobalt`},
+    {id:5, year:2012, engine:2, brand:`Malibu`},
+    {id:6, year:2000, engine:1.2, brand:`Sonata`},
+    {id:7, year:2018, engine:2.4, brand:`Tracker`}
+]
+const check =  (n, info)=>{    
+    let res = cars.map((value)=>{
+        return value.id === n ? {...value, ...info} : value
+    })
+    console.log(res);
+}
+check(4, {brand : 'Chevrolet'})
+check(5, {engine : 3})
+check(6, {year : 2005, engine : 5, brand : 'Spark'})
+
+
+
