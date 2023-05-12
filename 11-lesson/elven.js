@@ -290,24 +290,88 @@
         //     return sum + current
         // })
         // console.log(res);
-let cars = [
-    {id:1, year:1998, engine:1, brand:`Spark`},
-    {id:2, year:2005, engine:1.2, brand:`Traverse`},
-    {id:3, year:2010, engine:1.6, brand:`Tahoe`},
-    {id:4, year:2010, engine:1.5, brand:`Cobalt`},
-    {id:5, year:2012, engine:2, brand:`Malibu`},
-    {id:6, year:2000, engine:1.2, brand:`Sonata`},
-    {id:7, year:2018, engine:2.4, brand:`Tracker`}
-]
-const check =  (n, info)=>{    
-    let res = cars.map((value)=>{
-        return value.id === n ? {...value, ...info} : value
-    })
-    console.log(res);
+// let cars = [
+//     {id:1, year:1998, engine:1, brand:`Spark`},
+//     {id:2, year:2005, engine:1.2, brand:`Traverse`},
+//     {id:3, year:2010, engine:1.6, brand:`Tahoe`},
+//     {id:4, year:2010, engine:1.5, brand:`Cobalt`},
+//     {id:5, year:2012, engine:2, brand:`Malibu`},
+//     {id:6, year:2000, engine:1.2, brand:`Sonata`},
+//     {id:7, year:2018, engine:2.4, brand:`Tracker`}
+// ]
+// const check =  (n, info)=>{    
+//     let res = cars.map((value)=>{
+//         return value.id === n ? {...value, ...info} : value
+//     })
+//     console.log(res);
+// }
+// check(4, {brand : 'Chevrolet'})
+// check(5, {engine : 3})
+// check(6, {year : 2005, engine : 5, brand : 'Spark'})
+// let count = 0
+// let count1 = 0
+// Array.from('AbAnmadsafjwpfASSKLKJSHIGUDevnm', (value)=>{
+//     if(value === value.toUpperCase()){
+//         count++
+//     } else {
+//         count1++
+//     }
+// })
+// console.log(`${count} - Uppercase`)
+// console.log(`${count1} - Lowercase`)        
+// ==========================================================================
+// let b = ''
+// Array.from('web@c@demy', (value)=>{
+//     if (value === '@') {
+//         value = 'a'
+//     }
+//     b += value
+// })
+// console.log(b);
+// Array.from('webAca24895743demy', (value)=>{if (isNaN(value)===false) {console.log(value);}})
+// ===========================================================================================
+// let a  = 'weeddddnhin'
+// let c = []
+// let d = []
+// for(i of a.split('')){
+//     if (c.includes(i)===true) {
+//         d.push(i)
+//     } else {
+//         c.push(i)       
+//     }
+// }
+// console.log(c.join(''));
+// ==============================================================================================
+// let a  ='webb'
+// let c = ''
+// for(i of a){
+//     i += i
+//     c += i    
+// }
+// console.log(c);
+// ==============================================================================================
+// let a = 'kiyik'
+// let b = `${a} is a mentioned word`
+// for (let i = 0; i < a.length; i++) {    
+//     for (let j = a.length; j > -1; j--) {   
+//         if(a[i]===a[j]){
+//             a = b;
+//         }
+//     }
+// }
+// console.log(b);
+// =================================================================================================
+// let a = 'web'
+// let c = 'bwe'
+// let b = a.split('')
+// let res = b.sort((a, b)=>a.localeCompare(b))
+// let res1 = b.sort((a, b)=>a.localeCompare(b))
+// let g = res.join('')
+// let n = res1.join('')
+// console.log(g === n);
+// ========================================================================================
+let a = 'be'
+let b = {}
+for(i in a){
+    
 }
-check(4, {brand : 'Chevrolet'})
-check(5, {engine : 3})
-check(6, {year : 2005, engine : 5, brand : 'Spark'})
-
-
-
