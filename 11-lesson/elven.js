@@ -370,8 +370,97 @@
 // let n = res1.join('')
 // console.log(g === n);
 // ========================================================================================
-let a = 'be'
-let b = {}
-for(i in a){
-    
-}
+// let a = 'becomeFighterOfYourDream'
+// let b = {}
+// for(i of a.toLowerCase()){
+//     if(b[i]){
+//         b[i]++
+//     } else {
+//         b[i] = 1
+//     }
+// }
+// console.log(b);
+// =========================================================================================
+// let obj = {name : 'John', title : 'student'}
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+// ========================================================================================
+// let a = [1, 2, 2, 3, 4, 4, 4, 4, 4]
+// let b = []
+// let res = a.map((value)=>{
+//     if (b.includes(value)) {
+//         value = ''
+//     } else {
+//         b.push(value)
+//     }
+// })
+// console.log(b);
+// ======================================================================================
+// let obj = {
+//     title : 'student',
+//     age : 2,
+//     child : {
+//         age : 4,
+//         name : 'webBrain',
+//         child : {
+//             age : 4
+//         }
+//     }
+// }
+// let b = 0
+// while (obj) {
+//     b += obj.age
+//     obj.age = obj.child.age
+// }
+// console.log(b);
+// ========================================================================================
+// let obj = {
+//     age : 17,
+//     title : 'student',
+//     university : true,
+//     boolean : false
+// }
+// let b = Object.values(obj)
+// let res = b.filter((value)=> (value === true) || (value === false) )
+// console.log(res);
+// ===========================================================================================
+// let a = [12, 1, 98147, 34]
+// let res = a.filter((value)=>value > 9 && value < 100)
+// console.log(res);
+// ========================================================================================
+// let a = [1, 2, 3]
+// let b = [1, 2, 3]
+// let c = a.join('')
+// let d = b.join('')
+// console.log(c, d);
+// console.log(c === d);
+// console.log(c == d);
+// =====================================================================================
+// let a = [2, 3, 4, 2]
+// let f = null
+// while (a.length > 1) {
+//     let res = a.sort((a, b)=>a - b)
+//     let s = res.splice(0, 2)
+//     let  minus = s[1]-s[0]
+//     let p = res.push(minus)    
+//     f = res    
+// }
+// console.log(f);
+// ========================================================================================
+// let b = 'webBrain'
+// let a = ''
+// let c = b.toLowerCase()
+// let d = 1
+// for(i=0; i<c.length;i++){
+//     if (c[i] === c[i+1]) {
+//         d++
+//     } else {
+//         a += c[i]
+//         if (d>1) {
+//             a += d
+//             d = 1
+//         }
+//     }
+// }
+// console.log(a);
+// ================================================================================================
