@@ -13,21 +13,21 @@ let player = {
 }
 
 console.log('started');
-let  a = new Promise((resolve, reject)=>{
-    setTimeout(() => {        
-        if (player.Sterling.club === 'Chelsea' && player.Sterling.number === '10') {
-        return resolve(`Hitherto Sterling won ${player.Sterling.trophy} and plays under the number 10`)
-        } else {
-        return reject(`Ouh! Sorry, but there is no such a player with the data provided`)
-        }
-    }, 3000);
-})
-const final = async()=>{
-    let b = await a
-    console.log(b);
-    console.log('finished');
-}
-final()
+// let  a = new Promise((resolve, reject)=>{
+//     setTimeout(() => {        
+//         if (player.Sterling.club === 'Chelsea' && player.Sterling.number === '10') {
+//         return resolve(`Hitherto Sterling won ${player.Sterling.trophy} and plays under the number 10`)
+//         } else {
+//         return reject(`Ouh! Sorry, but there is no such a player with the data provided`)
+//         }
+//     }, 3000);
+// })
+// const final = async()=>{
+//     let b = await a
+//     console.log(b);
+//     console.log('finished');
+// }
+// final()
 // let all = Promise.all([
 //     new Promise((resolve, reject)=>{
 //         setTimeout(() => {        
@@ -68,3 +68,13 @@ final()
 // let receive = check('Chelsea', '10')
 // console.log(receive)
 // console.log('finished')
+import { player } from "./mock1";
+
+function check(lg, pw){
+    if (player.Sterling.number === pw && player.Sterling.club === lg) {
+        return `Sterling plays under the number 10 and won ${player.Sterling.trophy}`
+    } else {
+        return `There is no such a player with the given data`
+    }
+}
+check('Chelsea', '10')
