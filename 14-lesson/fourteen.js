@@ -57,7 +57,7 @@
 // b.add('d')
 // console.log(b);
 // console.log(b.has(a));
-// Distructure
+// Destructure
 // let age = 16
 // let a = {age:17, name:'me', child:{title:'student'}}
 
@@ -69,12 +69,12 @@
 // const c = ([title]) =>  console.log(title);
 
 // c('he')
-// distructure array
+// destructure array
 // let a = [1, 2, 3, 4, 5]
 
-// let [ikki,,uch] = a
+// let [two,,uch] = a
 
-// console.log(ikki);
+// console.log(two);
 // =====================newDate======================
 // let a = new Date();
 
@@ -85,7 +85,7 @@
 // console.log(a.getMonth());
 // console.log(a.getDate());
 // console.log(a.getFullYear());
-// console.log(a.getTime()) // `1970 yildan bowlkab hisoblaganda milisekundlarni chqariberadi
+// console.log(a.getTime()) // ` you will get time since 1970 
 // =============JSON=====================
 // let b = {age:17, name:'me'}
 
@@ -99,14 +99,14 @@
 //     // console.log(i);
 //     if ( i == 2 || i == 3 || i == 5)console.log(`${i}- tub son`);
 //     else if ((i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0 && i % 11 !== 0)) console.log(`${i}- tub son`);                
-//     else console.log(`${i}- karali son`);
+//     else console.log(`${i}- dividable son`);
     
 // // console.log(i);
 // }
 // for (i=1;i<100;i++) {
 //     if ( (i == 2 || i == 3 || i == 5))console.log(`${i}- tub son`);
 //     else if ((i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0 && i % 11 !== 0)) console.log(`${i}- tub son`);                
-//     else console.log(`${i}- karali son`);
+//     else console.log(`${i}- dividable son`);
 // }
 // let n = -5.678
 
@@ -118,19 +118,19 @@
 // console.log(parseInt(n));
 // let title = 'name';
 // let obj = {
-//     name:'webbrain',
+//     name:'webBrain',
 //     title:'IT Center',
-//     [title]:'Webbrain Academy',
+//     [title]:'WebBrain Academy',
 //     title,
 // }
 
 // console.log(obj[title]);
 // console.log(obj.title);
 // console.log(obj.name);
-// console.log(null??'webbrain');
+// console.log(null??'webBrain');
 // ============================================
 // let a = {
-//     name : 'Abdulakhad',
+//     name : 'John',
 //     age : 17, 
 //     gender : 'male',
 //     title : 'student',
@@ -150,9 +150,9 @@
 //     console.log(a, b, c);
 // }
 
-// getInfo.call(a, 'IELTS 7.5', 'SAT 1370', '41 universities')
-// getInfo.apply(b, ['IELTS 7.5', 'SAT 1370', '41 universities'])
-// getInfo.bind(a, 'IELTS 7.5', 'SAT 1370', '41 universities')()
+// getInfo.call(a, 'Test 7.5', 'SAT 1370', '41 universities')
+// getInfo.apply(b, ['Test 7.5', 'SAT 1370', '41 universities'])
+// getInfo.bind(a, 'Test 7.5', 'SAT 1370', '41 universities')()
 // setTimeout((a, b)=>{console.log(a, b); console.log(1);}, 9000, 'hey', 'you')
 // const trial = ({trait, id, place}) => {
 //     console.log(trait, id, place);
@@ -166,7 +166,7 @@
 // let a = {
 //     honor : 'I have entered',
 //     number : 41,
-//     place : 'univeersities' 
+//     place : 'universities' 
 // }
 
 // Object.entries(a).map(([key, value]) => {
@@ -267,7 +267,7 @@
 //     return second
 // }
 
-// first('Abdulakhad')
+// first('John')
 // ==============Faktorial solving==============
 // let b = '';
 // const math = (a) => {    
@@ -281,27 +281,27 @@
 // math(3)
 // console.log(eval(b.split('').join('*')));
 // ============================================================
-let list = [
-    {id : 1, name : 'Toshmat', title : 'CEO'},
-    {id : 1, name : 'Eshmat', title : 'CTO'},
-    {id : 1, name : 'Toshmat', title : 'CEO'},
-    {id : 1, name : 'Eshmat', title : 'CTO'}
-]
+// let list = [
+//     {id : 1, name : 'Tom', title : 'CEO'},
+//     {id : 1, name : 'Smith', title : 'CTO'},
+//     {id : 1, name : 'Tom', title : 'CEO'},
+//     {id : 1, name : 'Smith', title : 'CTO'}
+// ]
 
-let big = {ceo:[], cto:[]}
+// let big = {ceo:[], cto:[]}
 
-list.map((value)=>{
-    if (value.title === 'CEO') {
-    let {ceo} = big
-    let a = list.filter((value)=>{value.title==='CEO'})
-    let b = [...ceo]
-    // let b = [...ceo, value]
-    console.log(b);
-    }
- else { 
-    list.filter((value)=>value.title==='CTO')
-}
-})
+// list.map((value)=>{
+//     if (value.title === 'CEO') {
+//     let {ceo} = big
+//     let a = list.filter((value)=>{value.title==='CEO'})
+//     let b = [...ceo]
+//     // let b = [...ceo, value]
+//     console.log(b);
+//     }
+//  else { 
+//     list.filter((value)=>value.title==='CTO')
+// }
+// })
 
 // let big = {ceo:[], cto:[]}
 
@@ -335,5 +335,93 @@ list.map((value)=>{
 //   console.log(obj);
 // }
 
-// password('Adn_6554@#$%Abdulakhad')
+// password('Adn_6554@#$%John')
+// let a = [1, 2, 3, [4, [5, 6], 7], 8]
 
+// let [one, two, three, four, eight] = a
+// let [next, nestedOne, seven] = four
+// let [five, six] = nestedOne
+// console.log(five);
+// let player = {
+//     Sterling: {
+//         club : 'Chelsea',
+//         number : '10',
+//         trophy : 'EPL'
+//     }, 
+//     Stones : {
+//         club : 'Manchester city',
+//         number : '5',
+//         trophy : 'EPL'
+//     }
+// }
+// console.log('started');
+// function check (lg, pw, callback){
+//     setTimeout(() => {        
+//         if (player.Sterling.club === lg && player.Sterling.number === pw) {
+//             return callback(`Hitherto Sterling won ${player.Sterling.trophy} and plays under the number 10`)
+//         } else {
+//             return callback(`Ouh! Sorry, but there is no such a player with the data provided`)
+//         }
+//     }, 3000);
+// }
+// let pr = new Promise((resolve, reject)=>{
+//     setTimeout(() => {        
+//         if (player.Sterling.club === 'Chelsea' && player.Sterling.number === '10') {
+//             return resolve(`Hitherto Sterling won ${player.Sterling.trophy} and plays under the number 10`)
+//         } else {
+//             return reject(`Ouh! Sorry, but there is no such a player with the data provided`)
+//         }
+//     }, 3000);
+// })
+// pr.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+// ==========================================================================================
+// check('Chelsea', '10', (final)=>{
+//     console.log(final);
+//     console.log('finished');
+// })
+// console.log('finished');
+// console.log(check('Chelsea', '10'));
+// let receive = check('Chelsea', '10')
+// console.log(receive);
+// ==========================================================================================
+// let a = {name  : 'me'}
+// let b = new Map([[undefined, 'web'], [null, 'ItCenter'], [17, 'age'], [7.5, 'band']])
+// let c = b.entries()
+// console.log(c.next());
+// console.log(c.next());
+// console.log(c.next());
+// console.log(c.next());
+// console.log(c.next());
+// console.log(Object.fromEntries(b));
+// for(value of b.entries()){
+//     console.log(value);
+// }
+// b.forEach((element) => {
+//     console.log(element);
+// });
+// ================================================================================================
+// a.name = 'web'
+// b.title = 'ItCenter'
+// b.set('age', 17)
+// b.set('age', 18)
+// b.set('student', 18)
+// b.set('status', 18)
+// b.set('brand', 18)
+// b.set('table', 18)
+// console.log(a.name);
+// console.log(b.has('title'));
+// console.log(b.get('age'));
+// console.log(b.delete('title')); // when we console log the b.delete('age') then it refers to the true or false
+// console.log(b.clear()); // this code will refer to the undefined
+// console.log(b);
+// =======================================NEW SET=========================================
+// let a = new Set()
+// a.add(17)
+// a.add(17)
+// a.add(17)
+// a.add(17)
+// a.add(1)
+// a.add(19)
+// a.add(18)
+// console.log(a.clear());
+// console.log(a);
