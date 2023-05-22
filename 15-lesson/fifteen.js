@@ -89,13 +89,13 @@
 // =========================================================
 //0 1 1 2 3 5 8 13 
 // console.log(a);
-let a = [0, 1]
-function calculate(stop){
-    if(stop) return a[stop]
-    else {
-        let b = a.at(-1) + a.at(-2)
-        let c = a.push(b)
-        return calculate(a.length+1)
-    }
-}
-console.log(calculate(4))
+// let a = [0, 1]
+// function calculate(stop){
+//     if(stop) return a[stop]
+//     else {
+//         let b = a.at(-1) + a.at(-2)
+//         let c = a.push(b)
+//         return calculate(a.length+1)
+//     }
+// }
+// console.log(calculate(4))

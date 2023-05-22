@@ -162,24 +162,24 @@
 //   console.log(res);
 // }
 // truncate(res, "$1200");
-// let a = 'webbrain academy';
-// let b = 'webbrain academy';
+// let a = 'web brain academy';
+// let b = 'web brain academy';
 
 // if (a === b) {
-//     console.log('Boshqalarga qaraganda koproq oxwawrogi');
+//     console.log('The most similar compared to other alternatives');
 // } else if (a.includes(b)) {
-//     console.log('sal oxwawrogi');
+//     console.log('a little bit similar');
 // } else {
-//     console.log('bowqlarga qaraganda oxwamaydigani');
+//     console.log('the one that distinguishes from other options');
 // }
 //===============================================================
 // function first(a, b) {
 //     if (a === b) {
-//     console.log('Boshqalarga qaraganda koproq oxwawrogi');
+//     console.log('The most similar compared to other alternatives');
 // } else if (a.includes(b)) {
-//     console.log('sal oxwawrogi');
+//     console.log('a little bit similar');
 // } else {
-//     console.log('bowqlarga qaraganda oxwamaydigani');
+//     console.log('the one that distinguishes from other options');
 // }
 // }
 
@@ -188,19 +188,19 @@
 //============================================================
 // function word(a) {
   //         if (a.startsWith([0]) == a.endsWith([a.length])) {
-//             console.log(`ustoz aytgan so'z`);
+//             console.log(`mentioned word so'z`);
 //         } else {
-//             console.log(`ustoz aytgan so'zni teskarisi`);
+//             console.log(`mentioned word's opposite option'`);
 //         }
 // }
 
-// word('kiyib') // ustoz aytgan soz
+// word('kiyib') // mentioned word soz
 
 // console.log(a.indexOf('kiy') == a.lastIndexOf('kiy'));
 // if (a.indexOf('kiy') == a.lastIndexOf('kiy')) {
-//     console.log(`ustoz aytgan so'z`);
+//     console.log(`mentioned word so'z`);
 // } else {
-//     console.log(`ustoz aytgan so'zni teskarisi`);
+//     console.log(`mentioned word's opposite option'`);
 // }
 
 // let b = `kiyik`;
@@ -208,9 +208,9 @@
 // function word(a) {
 //     for (i of a) {
 //         if (a.startsWith([0]) == a.endsWith([a.length -1])) {
-//             console.log(`ustoz aytgan so'z`);
+//             console.log(`mentioned word so'z`);
 //         } else {
-//             console.log(`ustoz aytgan so'zni teskarisi`);
+//             console.log(`mentioned word's opposite option'`);
 //         }
 //     }
 // }
@@ -224,9 +224,9 @@
 //     a[1] == a[a.length - 2] &&
 //     a[2] == a[a.length - 3]
 //   ) {
-//     console.log(`ustoz aytgan so'z`);
+//     console.log(`mentioned word so'z`);
 //   } else {
-//     console.log(`ustoz aytgan so'zni teskarisi`);
+//     console.log(`mentioned word's opposite option'`);
 //   }
 // }
 
@@ -236,7 +236,7 @@
 
 // console.log(a[a.length -2]);
 //======================================================
-// function curency(a) {
+// function currency(a) {
 //   if (isNaN(a[0])) {
 //     console.log(+(a.slice(1)));
 //   } else {
@@ -296,32 +296,32 @@
   // }
   // repeat('webbraaainn')
   //=================================================
-  function quantity(b) {
-  let res = {};
-  for (i of b) {
-          if ([i] in res) {
-              ++res[i]
-          } else {
-              res[i] = 1
-          }
-      } console.log(res);
-  }
+//   function quantity(b) {
+//   let res = {};
+//   for (i of b) {
+//           if ([i] in res) {
+//               ++res[i]
+//           } else {
+//               res[i] = 1
+//           }
+//       } console.log(res);
+//   }
   
-  quantity(`web-brain`);
+//   quantity(`web-brain`);
 
-function counting(a) {
-  let res = ''
-  for (i in a) {
-    if(i in res) {
-      i += res++
-    } else {
-      i += res
-    }
-  }
-  console.log(res);
-}
+// function counting(a) {
+//   let res = ''
+//   for (i in a) {
+//     if(i in res) {
+//       i += res++
+//     } else {
+//       i += res
+//     }
+//   }
+//   console.log(res);
+// }
 
-counting('weeebbbbbraaiinn')
+// counting('weeebbbbbraaiinn')
 //======================================================
 // let a = 107;
 // console.log(a.toString(2));

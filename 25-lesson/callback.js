@@ -68,7 +68,7 @@ console.log('started');
 // let receive = check('Chelsea', '10')
 // console.log(receive)
 // console.log('finished')
-import { player } from "./mock1";
+// import { player } from "./mock1";
 
 function check(lg, pw){
     if (player.Sterling.number === pw && player.Sterling.club === lg) {

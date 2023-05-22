@@ -210,7 +210,7 @@ function moment(){
             ll : `${months[time.getMonth()].slice(0, 3)} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()}`,
             LLL : `${months[time.getMonth()]} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()} ${time.getHours()<10?"0":''}${time.getHours()}:${time.getMinutes()} ${time.getHours()<10?'AM':'PM'}`,
             lll : `${months[time.getMonth()]} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()} ${time.getHours()<10?"0":''}${time.getHours()} : ${time.getMinutes()} ${time.getHours()<10?'AM':'PM'`,
-            LLLL : `${time.getDay()}
+            LLLL : `${time.getDay()} ${}`
         
         }
         console.log(data[type]);

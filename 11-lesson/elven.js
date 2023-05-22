@@ -1,10 +1,10 @@
 //   let cars = [
-//     {id:1, year:1998, engine:1, brand:`Tico`},
-//     {id:2, year:2005, engine:1.2, brand:`Matiz`},
-//     {id:3, year:2010, engine:1.6, brand:`Gentra`},
+//     {id:1, year:1998, engine:1, brand:`Spark`},
+//     {id:2, year:2005, engine:1.2, brand:`Traverse`},
+//     {id:3, year:2010, engine:1.6, brand:`Chevrolet`},
 //     {id:4, year:2010, engine:1.5, brand:`Cobalt`},
 //     {id:5, year:2012, engine:2, brand:`Malibu`},
-//     {id:6, year:2000, engine:1.2, brand:`Damas`},
+//     {id:6, year:2000, engine:1.2, brand:`Toyota`},
 //     {id:7, year:2018, engine:2.4, brand:`Tracker`}
 // ]
 
@@ -16,15 +16,13 @@
 // let filter = cars.sort((a,b)=>a.engine-b.engine)
 // let filter = cars.sort((a,b)=> a.brand.localeCompare(b.brand))
 // let filter = cars.filter((value)=> value.year < 2000 )
-// filter.value.push(endi=`eski`)
+// filter.value.push(endi=`old`)
 // console.log(filter);
-// 2010 - 2022 yillarda chiqgan mashinalarga status : "Yangi" degan malumot qoshing ?
+
 
 // const model = (data) => {
 //   let res = data.map((value) =>
-//     value.year < 2022 && value.year > 2010
-//       ? { ...value, status: "Yangi" }
-//       : value
+//     value.year < 2022 && value.year > 2010 ? { ...value, status: "New" } : value
 //   );
 
 //   cars = res;
@@ -32,8 +30,7 @@
 // model(cars);
 
 // const model1 = (data) => {
-//   let res = data.map((value)=>value.year <= 2000
-//   ? {...value, status: `Eski`}
+//   let res = data.map((value)=>value.year <= 2000 ? {...value, status: `Old`}
 //   : value
 //   );
 //   cars = res
@@ -41,8 +38,7 @@
 // model1(cars);
 
 // const model2 = (data) => {
-//   let res = data.map((value)=> value.year > 2000 && value.year <= 2010
-//   ? {...value, status: `Norm`}
+//   let res = data.map((value)=> value.year > 2000 && value.year <= 2010 ? {...value, status: `Norm`}
 //   : value
 //   )
 //   cars = res
@@ -124,9 +120,9 @@
 //   console.log(res);
 // }
 
-// quantity(`webbrain`);
+// quantity(`webBrain`.toLowerCase());
 // ========================================================
-// let a = 'AbdulaAkhaD';
+// let a = 'John';
 // let count = 0;
 // let count2 = 0;
 // let b = ""
@@ -134,10 +130,10 @@
 // for(i of a) {
 //     if (i === i.toUpperCase()) {
 //         count++
-//        b = `Katta harf - ${count}`
+//        b = `Uppercase - ${count}`
 //     } else {
 //         count2++
-//        c= `Kichkina harf - ${count2}`
+//        c= `Lowercase - ${count2}`
 //     }
 
 // }
@@ -161,7 +157,7 @@
 // console.log(b);
 // let a = "webbrraaiin";
 
-// function duble(a) {
+// function double(a) {
 //   let res2 = "";
 //   for (let i = 0; i < a.length; i++) {
 //     if (a[i] !== a[i + 1]) {
@@ -170,7 +166,7 @@
 //   }
 //   console.log(res2);
 // }
-// duble(a);
+// double(a);
 // for (i of a) {
 //   if (b[i]) {
 //     b += "";
@@ -464,3 +460,7 @@
 // }
 // console.log(a);
 // ================================================================================================
+
+
+
+

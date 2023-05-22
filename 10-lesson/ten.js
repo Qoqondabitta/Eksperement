@@ -307,10 +307,15 @@
 // addUser({id:cars.length+1, year : 2022, engine:2, brand:'Oni'})
 // console.log(cars);
 // =================================================================================================
-const updateUser = (info)=>{
-  let res = cars.map((value)=>value.id === info.id ? {...value, [info.brand]: info.name}:value)
-  cars = res
-} 
-updateUser({id:2, brand:'brand', name:'Oni'})
-updateUser({id:2, brand:'year', name:2022})
-console.log(cars);
+// const updateUser = (info)=>{
+//   let res = cars.map((value)=>value.id === info.id ? {...value, [info.brand]: info.name}:value)
+//   cars = res
+// } 
+// updateUser({id:2, brand:'brand', name:'Oni'})
+// updateUser({id:2, brand:'year', name:2022})
+// console.log(cars);
+// console.log([]+0);
+// console.log([]+'0');
+// let a = [1, 2, 3, 4, 3]
+// let res = a.fill(5, 4, 5)
+// console.log(res);

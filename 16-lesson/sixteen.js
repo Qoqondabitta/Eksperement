@@ -59,7 +59,7 @@
 // ochib ketadi. L.E iwlaw tarziga misol :
 // let a = 'b';
 // function test () {
-        // // agar variable function ichida bomasa tawqaridan
+        // agar variable function ichida bomasa tawqaridan
         // oladi variable ni, lkn agar scope ichida bolsa unda
         // owani oladi, birinchi ichidagini qidiradi
         // bomasa kn tepaga chiqadi.
@@ -67,3 +67,11 @@
 // }
 // test()
 // 
+// ===================================May 21, 2023==================================
+// let id = setInterval(() => {
+//         let time = 10
+//         console.log(time--);
+//         if (time === 0) {
+//                 clearInterval(id)
+//         }
+// }, 1000);

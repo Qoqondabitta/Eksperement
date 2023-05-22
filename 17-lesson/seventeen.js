@@ -25,6 +25,7 @@
 // functionni block scope ichidagina chaqirolamiz yo
 // iwlatolamiz tawqarida iwlatsa eror beradi
 // ========================new Function===================
-// bzga odiy function yasaberadi
+// new Function was the method of creating function before the function expression, 
+// declaration and arrow function
 // let a = new Function(`console.log('hey')`)
 // a()
