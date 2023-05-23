@@ -28,14 +28,14 @@
 // 'November', 
 // 'December'], ' ')
 // ============================================================
-// const hoursMinuts = (sign) => {
+// const hoursMinutes = (sign) => {
 //     let date = new Date();
 //     console.log(`${date.getHours()}${sign}${date.getMinutes()} PM`);
 // }
 
-// hoursMinuts(':')
+// hoursMinutes(':')
 // ====================================================
-// let a = {name:'me', age:17, gender:'male', info:{test:'IELTS'}}
+// let a = {name:'me', age:17, gender:'male', info:{test:'certificate'}}
 
 // let {name, age, gender, info:{test}} = a
 
@@ -78,7 +78,7 @@
 //     return moment.locale = (title) => {
 //         let time = new Date();
 //         let hours = time.getHours() % 12;
-//         let minuts = time.getMinutes();
+//         let minutes = time.getMinutes();
 //         let seconds = time.getSeconds();
 //         let weekday = time.getDay();
 //         let date = time.getDate();
@@ -103,7 +103,7 @@
 //             'Sunday',
 //             'Monday',
 //             'Tuesday',
-//             'Thurswday',
+//             'Thursday',
 //             'Wednesday',
 //             'Friday',
 //             'Saturday'
@@ -111,16 +111,16 @@
         
 //         time.getHours() < 12 ? sign = 'AM' : sign = 'PM'
     
-//         if (title === 'LT') return `${hours}:${minuts} ${sign}`;
-//         else if (title === 'LTS') return `${hours}:${minuts}:${seconds} ${sign}`
+//         if (title === 'LT') return `${hours}:${minutes} ${sign}`;
+//         else if (title === 'LTS') return `${hours}:${minutes}:${seconds} ${sign}`
 //         else if (title === 'L') return `${month < 10 ? '0' + month : month}/${date < 10 ? '0' + date : date}/${year}`
 //         else if (title==='l') return `${month}/${date}/${year}`
 //         else if (title==='LL') return `${nameMonth[month]} ${date}, ${year}`
 //         else if (title==='ll') return `${nameMonth[month].slice(0,3)} ${date}, ${year}`
-//         else if (title==='LLL') return `${nameMonth[month]} ${date}, ${year} ${hours}:${minuts} ${sign}`
-//         else if (title==='lll') return `${nameMonth[month].slice(0,3)} ${date}, ${year} ${hours}:${minuts} ${sign}`
-//         else if (title==='LLLL') return `${weekdays[weekday]}, ${nameMonth[month]} ${date}, ${year} ${hours}:${minuts} ${sign}`
-//         else if (title==='llll') return `${weekdays[weekday].slice(0,3)}, ${nameMonth[month]} ${date}, ${year} ${hours}:${minuts} ${sign}`
+//         else if (title==='LLL') return `${nameMonth[month]} ${date}, ${year} ${hours}:${minutes} ${sign}`
+//         else if (title==='lll') return `${nameMonth[month].slice(0,3)} ${date}, ${year} ${hours}:${minutes} ${sign}`
+//         else if (title==='LLLL') return `${weekdays[weekday]}, ${nameMonth[month]} ${date}, ${year} ${hours}:${minutes} ${sign}`
+//         else if (title==='llll') return `${weekdays[weekday].slice(0,3)}, ${nameMonth[month]} ${date}, ${year} ${hours}:${minutes} ${sign}`
 //     }
 // }
 // moment()
@@ -194,29 +194,29 @@
 //     }
 // }
 // ================================================
-function moment(){
-    moment.locale = (country)=> console.log(country)
-    let time = new Date()
-    let weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-    let months = ['January', 'February', 'March', 'April', 'May', "June", 'July', 'August', 'September', 'October', 'November', 'December']
-    return {
-        format(type){
-        let data = {
-            LT : (`${time.getHours()} : ${time.getMinutes()} ${time.getHours()< 13 ? 'AM': 'PM'}`), 
-            LTS : `${time.getHours()} : ${time.getMinutes()} : ${time.getSeconds()} ${time.getHours( )< 13 ? 'AM' : 'PM'}`, 
-            L : `${time.getMonth()<10 ? '0' : ''}${time.getMonth()+1}/${time.getDate()<10 ? '0':''}${time.getDate()}/${time.getFullYear()}`,
-            l : `${time.getMonth()}/${time.getDate()}/${time.getFullYear()}`,
-            LL : `${time.getMonth()} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()}`,
-            ll : `${months[time.getMonth()].slice(0, 3)} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()}`,
-            LLL : `${months[time.getMonth()]} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()} ${time.getHours()<10?"0":''}${time.getHours()}:${time.getMinutes()} ${time.getHours()<10?'AM':'PM'}`,
-            lll : `${months[time.getMonth()]} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()} ${time.getHours()<10?"0":''}${time.getHours()} : ${time.getMinutes()} ${time.getHours()<10?'AM':'PM'`,
-            LLLL : `${time.getDay()} ${}`
-        
-        }
-        console.log(data[type]);
-        return data[type]
-    }}
-}
-moment()
-moment.locale('en')
-moment().format('lll')
+// function moment(){
+//     moment.locale = (country)=> console.log(country)
+//     let time = new Date()
+//     let weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+//     let months = ['January', 'February', 'March', 'April', 'May', "June", 'July', 'August', 'September', 'October', 'November', 'December']
+//     return {
+//         format(type){
+//         let data = {
+//             LT : (`${time.getHours()} : ${time.getMinutes()} ${time.getHours()< 13 ? 'AM': 'PM'}`), 
+//             LTS : `${time.getHours()} : ${time.getMinutes()} : ${time.getSeconds()} ${time.getHours( )< 13 ? 'AM' : 'PM'}`, 
+//             L : `${time.getMonth()<10 ? '0' : ''}${time.getMonth()+1}/${time.getDate()<10 ? '0':''}${time.getDate()}/${time.getFullYear()}`,
+//             l : `${time.getMonth()}/${time.getDate()}/${time.getFullYear()}`,
+//             LL : `${time.getMonth()} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()}`,
+//             ll : `${months[time.getMonth()].slice(0, 3)} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()}`,
+//             LLL : `${months[time.getMonth()]} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()} ${time.getHours()<10?"0":''}${time.getHours()}:${time.getMinutes()} ${time.getHours()<10?'AM':'PM'}`,
+//             lll : `${months[time.getMonth()]} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()} ${time.getHours()<10?"0":''}${time.getHours()} : ${time.getMinutes()} ${time.getHours()<10?'AM':'PM'}`,
+//             LLLL : `${weekdays[time.getDay()-1]}, ${months[time.getMonth()]} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()} ${time.getHours()} : ${time.getMinutes()} ${time.getHours()< 13 ? 'AM': 'PM'}`,
+//             llll : `${weekdays[time.getDay()-1].slice(0, 3)}, ${months[time.getMonth()]} ${time.getDate()<10?'0':''}${time.getDate()}, ${time.getFullYear()} ${time.getHours()} : ${time.getMinutes()} ${time.getHours()< 13 ? 'AM': 'PM'}`
+//         }
+//         console.log(data[type]);
+//         return data[type]
+//     }}
+// }
+// moment()
+// moment.locale('en')
+// moment().format('llll')
