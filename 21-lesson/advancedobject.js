@@ -4,7 +4,7 @@
 //     last : 'IT Center'
 // }
 
-// // console.log(Object.getOwnPropertyDescriptors(a));
+// console.log(Object.getOwnPropertyDescriptors(a));
 // Object.defineProperty(a, 'name', {writable:false})
 // Object.defineProperty(a, 'name', {configurable:false})
 // Object.defineProperty(a, 'name', {enumerable:false})
@@ -33,3 +33,15 @@
 // }
 // a.getFullName = {name : "Harry", last:'Kane'}
 // a.getFullName
+// ============================================================================================
+let player = {
+    name : 'Leo',
+    number : 10,
+    nationality : 'Argentina',
+    status : 'captain'
+}
+
+// console.log(Object.getOwnPropertyDescriptor(player, 'name'));
+Object.defineProperty(player, 'name', {writable:false})
+player.name = 'harry'
+console.log(player.name);
