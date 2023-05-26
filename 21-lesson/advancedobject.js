@@ -40,8 +40,26 @@ let player = {
     nationality : 'Argentina',
     status : 'captain'
 }
-
+let a = [1, 2, 3, 4, 5]
+a.__proto__.delete = function (...res) {
+    // res.map((i)=>{
+    //     return a.filter((value)=>value !== i)
+    //     // console.log(count);
+    // })
+    
+    for(var i of res){
+        this.filter((value)=>value !== i)
+    }
+    console.log(i);
+   
+    
+}
+a.delete(1, 2, 3)
+console.log(a)
+// player.a = 'b'
+// Reflect.set(player, 'a', 'b')
+// console.log(player.a);
 // console.log(Object.getOwnPropertyDescriptor(player, 'name'));
-Object.defineProperty(player, 'name', {writable:false})
-player.name = 'harry'
-console.log(player.name);
+// Object.defineProperty(player, 'name', {writable:false})
+// player.name = 'harry'
+// console.log(player.name);
