@@ -425,3 +425,27 @@
 // a.add(18)
 // console.log(a.clear());
 // console.log(a);
+// =======================================json 30/05/2023=============================================
+let a = {
+    a: 'b',
+    c : 'd',
+    e : 'f'
+}
+// console.log(JSON.stringify(a, ["c", "e"], 2));
+// console.log(JSON.stringify(a, ["c", "e"], 4));
+// console.log(JSON.stringify(a, ["c", "e"], 0));
+// console.log(JSON.stringify(a, ["c", "e"], -1));
+// console.log(JSON.stringify(a, ["c", "e"], -2));
+// let json = JSON.stringify(a, ["c", "e"], 2)
+// let json = JSON.stringify(a)
+// console.log(JSON.parse(json));
+// console.log(0.1 + 0.2);
+let b = 1_000
+// console.log(parseInt(b));
+// let c= 0.00123
+// console.log(c.toPrecision(3));
+// let obj = {
+    // b : 'c',
+    // h : {v}
+// }
+// console.log(obj.h.v);
