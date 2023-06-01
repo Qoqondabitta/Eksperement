@@ -199,3 +199,31 @@
 // // class Rabbit extends Animals {}
 // let rb = new Animals('Rabbit')
 // let wf = new Animals('Wolf')
+// ===========================================================
+class Calculator {
+    constructor(sign){
+        if(sign==='plus') this.sign = '+'
+        if(sign==='minus') this.sign = '-'
+        if(sign==='multiply') this.sign = '*'
+    }
+    Cal(...rest){
+        console.log(eval(rest.join(`${this.sign}`)));
+    }
+}
+let plus = new Calculator('plus')
+let minus = new Calculator('minus')
+let multiply = new Calculator('multiply')
+
+multiply.Cal(1, 2, 3, 4)
+plus.Cal(1, 2, 3, 4)
+minus.Cal(1, 2, 3, 4)
+
+
+
+
+
+
+
+
+
+
