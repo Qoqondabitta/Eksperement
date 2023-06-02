@@ -200,25 +200,47 @@
 // let rb = new Animals('Rabbit')
 // let wf = new Animals('Wolf')
 // ===========================================================
-class Calculator {
-    constructor(sign){
-        if(sign==='plus') this.sign = '+'
-        if(sign==='minus') this.sign = '-'
-        if(sign==='multiply') this.sign = '*'
-    }
-    Cal(...rest){
-        console.log(eval(rest.join(`${this.sign}`)));
+// class Calculator {
+//     constructor(sign){
+//         if(sign==='plus') this.sign = '+'
+//         if(sign==='minus') this.sign = '-'
+//         if(sign==='multiply') this.sign = '*'
+//     }
+//     Cal(...rest){
+//         console.log(eval(rest.join(`${this.sign}`)));
+//     }
+// }
+// let plus = new Calculator('plus')
+// let minus = new Calculator('minus')
+// let multiply = new Calculator('multiply')
+
+// multiply.Cal(1, 2, 3, 4)
+// plus.Cal(1, 2, 3, 4)
+// minus.Cal(1, 2, 3, 4)
+// ==========================================================================
+// class Company {
+//     static age = 1;
+//     getAge(){
+//         console.log(++Company.age);
+//     }
+// }
+// let first = new Company()
+// let second = new Company()
+// first.getAge()
+// first.getAge()
+// second.getAge()
+// second.getAge()
+// first.getAge()
+class Company {
+    static age = 1;
+    static getAge(){
+        console.log(++this.age);
     }
 }
-let plus = new Calculator('plus')
-let minus = new Calculator('minus')
-let multiply = new Calculator('multiply')
-
-multiply.Cal(1, 2, 3, 4)
-plus.Cal(1, 2, 3, 4)
-minus.Cal(1, 2, 3, 4)
-
-
+Company.getAge()
+Company.getAge()
+Company.getAge()
+Company.getAge()
 
 
 
