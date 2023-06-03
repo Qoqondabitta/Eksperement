@@ -231,21 +231,85 @@
 // second.getAge()
 // second.getAge()
 // first.getAge()
-class Company {
-    static age = 1;
-    static getAge(){
-        console.log(++this.age);
-    }
+// class Company {
+//     static age = 1;
+//     static getAge(){
+//         console.log(++this.age);
+//     }
+// }
+// Company.getAge()
+// Company.getAge()
+// Company.getAge()
+// Company.getAge()
+// class Type {
+//     #name  = 'Harry'
+//     #title = 'player'
+//     #age = 34
+//     set getInfo(value){
+//         this.#name =  value[0]
+//         this.#title = value[1]
+//         this.#age = value[2]
+//     }
+//     get getInfo(){
+//         return console.log(`${this.#name} is ${this.#age}-year-old football ${this.#title}`);
+//     }
+// }
+// let usr1 = new Type()
+// usr1.getInfo = ['web', 'developer', 40]
+// console.log(usr1.getInfo);
+// ====================================================================================================
+// class a {
+//     #b = 'c'
+//     d = 'e'
+// }
+// let f = new a()
+// console.log(f);
+// ======================================
+// class Animal{
+//     constructor(title){
+//         this.title = title 
+//     }
+// }
+// class Rabbit extends Animal{
+//     constructor(title){
+//         super(title)
+//     }
+// }
+// let rabbit = new Rabbit('White Rabbit')
+// console.log(rabbit.title);
+// class Person {
+//     constructor(firstName = 'John', lastName = 'Doe', age = 0, gender = 'male'){
+//         this.firstName = firstName
+//         this.lastName = lastName
+//         this.age = age
+//         this.gender = gender
+//     }
+//     sayFullName(){
+//         return console.log(this.firstName, this.lastName);
+//     }
+//     static greetExtraTerrestrials(creatures){
+//         return console.log(`Welcome to the Earth ${creatures}`);
+//     }
+// }
+// let human = new Person()
+// human.sayFullName()
+// Person.greetExtraTerrestrials('Martians')
+// ==========================================================================================
+function Person(name, age){
+        this.name = name
+        this.age = age
 }
-Company.getAge()
-Company.getAge()
-Company.getAge()
-Company.getAge()
-
-
-
-
-
-
-
-
+Person.prototype.getInfo = function(){
+    console.log(this.name, this.age);
+}
+function Human(name, age){
+    this.name = name
+    this.age  = age
+}
+Person.prototype.__proto__ = Human.prototype
+// Human.prototype  = Object.create(Person.prototype)
+let first = new Person('Peter', 40)
+let second = new Person('John', 30)
+second.getInfo()
+// console.log(first.name, 'is', first.age, 'year-old-guy');
+// console.log(first);
