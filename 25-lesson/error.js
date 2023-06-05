@@ -524,3 +524,13 @@
 // }
 // login('Lionel', 'Right Winger', (par)=>{console.log(par);console.log('finished');})
 // console.log(take);
+// =========================================================================================================
+try {
+    // if (a===false) {
+    //     throw ('You are using the variable that is  not defined')
+    // }
+    throw ('Just give some value to the a, then call it')
+    console.log(a);
+} catch(err){
+    console.log('Error happened :', err);
+}
