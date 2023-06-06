@@ -529,8 +529,9 @@ try {
     // if (a===false) {
     //     throw ('You are using the variable that is  not defined')
     // }
-    throw ('Just give some value to the a, then call it')
+    throw new ReferenceError ('Just give some value to the a, then call it')
     console.log(a);
 } catch(err){
-    console.log('Error happened :', err);
+    console.log('Error happened :', err.name);
+    console.log('Error happened :', err.message);
 }
