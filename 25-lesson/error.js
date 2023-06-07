@@ -583,3 +583,92 @@ function addCar(car, callback){
 }
 // addCar({id:4, name : 'Tracker', year : 2019}, render)
 }
+// ==========================================================================
+// ================================Promise===================================
+{
+    let cars = [
+        {id : 1, name : 'Spark', year : 2012},
+        {id : 2, name : 'Traverse', year : 2021},
+        {id : 3, name : 'Tahoe', year : 2020},
+    ]
+    function render (){
+        setTimeout(() => {
+        cars.forEach(value=>{
+            console.log(value);
+        })        
+        }, 1000);
+    }
+    // render()
+    function deleteCar(id){
+        return new Promise((resolve, reject)=>{
+            setTimeout(() => {
+                let res = cars.filter(value=>value.id !== id)
+                cars = res 
+                let error = false
+                if (!error) resolve() 
+                else reject('There is an error that you should fix')
+                }, 3000);  
+        })
+    }
+    // deleteCar(1).then(render).catch(error=>console.log(error))
+    function addCar(car){
+        return new Promise((resolve, reject)=>{
+            setTimeout(() => {        
+                cars = [...cars, car]
+                let error = false 
+                if(!error) resolve()
+                else reject('There is an error that you should fix')
+                }, 2000);
+        })
+    }
+    // addCar({id:4, name : 'Tracker', year : 2019}).then(render).catch(error=>console.log(error))
+}
+// =============================Async await function=====================================
+{
+    let cars = [
+        {id : 1, name : 'Spark', year : 2012},
+        {id : 2, name : 'Traverse', year : 2021},
+        {id : 3, name : 'Tahoe', year : 2020},
+    ]
+    function render (){
+        setTimeout(() => {
+        cars.forEach(value=>{
+            console.log(value);
+        })        
+        }, 1000);
+    }
+    // render()
+    // function deleteCar(id){
+    //     return new Promise((resolve, reject)=>{
+    //         setTimeout(() => {
+    //             let res = cars.filter(value=>value.id !== id)
+    //             cars = res 
+    //             let error = false
+    //             if (!error) resolve() 
+    //             else reject('There is an error that you should fix')
+    //             }, 3000);  
+    //     })
+    // }
+    // deleteCar(1).then(render).catch(error=>console.log(error))
+    // async function wait(){
+    //     await deleteCar(1).then(render).catch(error=>console.log(error))
+    // }
+    // wait()
+    // async function deleteCar(id){            
+    //             let res = await cars.filter(value=>value.id !== id)
+    //             cars = res        
+    //             render()
+    // }
+    // deleteCar(1)
+    function addCar(car){
+        return new Promise((resolve, reject)=>{
+            setTimeout(() => {        
+                cars = [...cars, car]
+                let error = false 
+                if(!error) resolve()
+                else reject('There is an error that you should fix')
+                }, 2000);
+        })
+    }
+    // addCar({id:4, name : 'Tracker', year : 2019}).then(render).catch(error=>console.log(error))
+}
