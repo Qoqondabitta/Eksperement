@@ -359,6 +359,7 @@
 // ]);
 // all.then((res)=>console.log(res)).catch((error)=>console.log(error))
 // ============================================================================
+{
 // console.log('started');
 // let check = new Promise((resolve, reject)=>{
 //   setTimeout(()=>{
@@ -384,7 +385,9 @@
 
 
 // check.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+}
 // ================================video tutorial on callback functions=======================================================
+{
 // let player = {
 //   forward : {
 //     name : 'HLuis',
@@ -401,7 +404,7 @@
 // let promise = new Promise((resolve, reject)=>{
 //   setTimeout(()=>{
 //     if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 10){
-//       resolve('Lionel Messi is from Argentina.')
+//       resolve('Lionel Harry is from Argentina.')
 //     } else {
 //       reject('Ouh, sorry but there is no such a player with the information provided above!')
 //     }
@@ -411,7 +414,7 @@
 //   new Promise((resolve, reject)=>{
 //     setTimeout(()=>{
 //       if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 10){
-//         resolve('Lionel Messi is from Argentina.')
+//         resolve('Lionel Harry is from Argentina.')
 //       } else {
 //         reject('Ouh, sorry but there is no such a player with the information provided above!')
 //       }
@@ -420,7 +423,7 @@
 //   new Promise((resolve, reject)=>{
 //     setTimeout(()=>{
 //       if(player["Right Winger"].name === 'Lionel' && player["Right Winger"].number === 1){
-//         resolve('Lionel Messi is from Argentina.')
+//         resolve('Lionel Harry is from Argentina.')
 //       } else {
 //         reject('Ouh, sorry but there is no such a player with the information provided above!')
 //       }
@@ -428,14 +431,16 @@
 //   })
 // ])
 // all.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
-// // let async = async()=>{
-// //   res = await promise
-// //   console.log(promise);
-// //   console.log('finished');
-// // }
-// // async()
-// // promise.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
-// ================================================================
+// let async = async()=>{
+//   res = await promise
+//   console.log(promise);
+//   console.log('finished');
+// }
+// async()
+// promise.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+}
+// ==========================toFixed and toString======================================
+{
 // let a = 1234564874896
 // let b = 0
 // const calculator = (a)=>{
@@ -448,8 +453,10 @@
 // calculator(a)
 // let a = 1.0465
 // console.log(toFixed(a));
+}
 // ====================================================================================
 // ======just recalling callback, promise and async await====================
+{
 // let player = {
 //     Barcelona : {
 //         name : 'Lionel',
@@ -463,7 +470,9 @@
 //     }
 // }
 // console.log('started');
+}
 // ======================================async await function=============================================
+{
 // let promise = new Promise((resolve, reject)=>{
 //     setTimeout(() => {        
 //         if (player.Barcelona.name==='Lionel' && player.Barcelona.position==='Right Winger') {
@@ -479,7 +488,9 @@
 //     console.log('finished');
 // }
 // another()
+}
 // ======================================promise and promise all========================================
+{
 // let promise = new Promise((resolve, reject)=>{
 //     setTimeout(() => {
         
@@ -514,8 +525,10 @@
 //     })
 // ])
 // all.then((res)=>console.log(res)).catch((error)=>{console.log(error)}).finally(()=>console.log('finished'))
+}
 // ========================================Callback====================================================
-// function login(lg, pw, callback){
+{
+    // function login(lg, pw, callback){
     //     setTimeout(() => {        
         //         if(lg === player.Barcelona.name && pw === player.Barcelona.position){
 //             return callback(`${player.Barcelona.name} plays under the number ${player.Barcelona.number}.`)
@@ -524,14 +537,49 @@
 // }
 // login('Lionel', 'Right Winger', (par)=>{console.log(par);console.log('finished');})
 // console.log(take);
+}
 // =========================================================================================================
-try {
+{
+    // try {
     // if (a===false) {
     //     throw ('You are using the variable that is  not defined')
     // }
-    throw new ReferenceError ('Just give some value to the a, then call it')
-    console.log(a);
-} catch(err){
-    console.log('Error happened :', err.name);
-    console.log('Error happened :', err.message);
+//     throw new ReferenceError ('Just give some value to the a, then call it')
+//     console.log(a);
+// } catch(err){
+//     console.log('Error happened :', err.name);
+//     console.log('Error happened :', err.message);
+// }
+}
+// ==================================================================================================
+// ===============================================Callback new Tutor===================================================
+{
+let cars = [
+    {id : 1, name : 'Spark', year : 2012},
+    {id : 2, name : 'Traverse', year : 2021},
+    {id : 3, name : 'Tahoe', year : 2020},
+]
+function render (looper){
+    setTimeout(() => {
+    looper.forEach(value=>{
+        console.log(value);
+    })        
+    }, 1000);
+}
+// render(cars)
+function deleteCar(id, callback){
+    setTimeout(() => {
+    let res = cars.filter(value=>value.id !== id)
+    cars = res  
+    callback(cars)     
+    }, 3000);    
+}
+// deleteCar(1, render)
+function addCar(car, callback){
+    setTimeout(() => {        
+    cars = [...cars, car]
+    callback(cars)
+    }, 2000);
+}
+// addCar({id:4, name : 'Tracker', year : 2019}, render)
 }
