@@ -3,6 +3,9 @@
 //     yield 2
 // }
 
+// const { log } = require("console");
+// const Generator = require("yeoman-generator");
+
 // const generator = data()
 // const gr1  = data()
 
@@ -44,20 +47,26 @@
 // let c = new b()
 // c.getBoth()
 // ==================================================
-class a {
-    #name = 'me'    
-    set getPrivate(value){
-        this.#name = value
-        console.log(value);
-    }
-    get getPrivate(){
-        console.log(this.#name);
-    }
-}
-let b = new a()
-b.getPrivate
-
-
+// class a {
+//     #name = 'me'    
+//     set getPrivate(value){
+//         this.#name = value
+//         console.log(value);
+//     }
+//     get getPrivate(){
+//         console.log(this.#name);
+//     }
+// }
+// let b = new a()
+// b.getPrivate
+// ===========================6/June/2023======================
+// function* Lionel(){
+//     let res =  yield 1
+//     yield 2 + res
+// }
+// let Leo = Lionel()
+// console.log(Leo.next().value);
+// console.log(Leo.next(5).value);
 
 
 
