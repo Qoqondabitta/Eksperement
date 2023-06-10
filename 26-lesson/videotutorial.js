@@ -6,7 +6,7 @@
 // const { async } = require("rxjs");
 
 // const { async } = require("rxjs");
-// =============================promise, async await and callback========================================
+// =============================promise, async await and callback======================================
 {
 // let cars = [
 //     {id : 1, brand : 'spark', year : 2010},
@@ -51,20 +51,45 @@
 // }
 // deleteCar(1)
 // =============================async await2============================================
-function deleteCar(id){
-    return new Promise((resolve, rejects)=>{
-        setTimeout(() => {
-            let res = cars.filter(value=>value.id !== id)
-            cars = res
-            let error = false
-            if(!error) resolve()
-            else rejects(`There is an error that you should fix.`)
-        }, 2000);
-    })
-}
-async function final(){
-    await deleteCar(1)
-    render()
-}
+// function deleteCar(id){
+    // return new Promise((resolve, rejects)=>{
+    //     setTimeout(() => {
+    //         let res = cars.filter(value=>value.id !== id)
+    //         cars = res
+    //         let error = false
+    //         if(!error) resolve()
+    //         else rejects(`There is an error that you should fix.`)
+    //     }, 2000);
+    // })
+// }
+// async function final(){
+    // await deleteCar(1)
+    // render()
+// }
 // final()
 }
+// ====================================================================================================
+// let cars = [
+//     {id : 1, brand : 'spark', year : 2010},
+//     {id : 2, brand : 'Traverse', year : 2021},
+//     {id : 3, brand : 'Tracker2', year : 2022},
+// ] 
+// function deleteCar(id){
+//     let res = cars.filter((value)=>value.id!==id)
+//     cars = res
+// }
+// function addCar(usr){
+//     cars = [...cars, {id : eval(`${cars.at(-1).id}+1`), name : usr}]
+// }
+// addCar('Tahoe')
+// deleteCar(2)
+// addCar('ELantra')
+// addCar('Sonata')
+// console.log(cars);
+// let b = cars.slice(1)
+// let v = b.map((value)=>{
+//     return value.id -1    
+// })
+// console.log(cars.slice(1));
+// console.log(v);
+// ==============================================================
