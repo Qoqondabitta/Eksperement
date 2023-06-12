@@ -19,7 +19,7 @@
 // =======================loop of generator==========================
 // ====================for loop=======================
 // for (i of generator){
-    // console.log(i);
+// console.log(i);
 // }
 // ======================array spread operator===================
 // console.log([...generator]);
@@ -48,7 +48,7 @@
 // c.getBoth()
 // ==================================================
 // class a {
-//     #name = 'me'    
+//     #name = 'me'
 //     set getPrivate(value){
 //         this.#name = value
 //         console.log(value);
@@ -68,62 +68,55 @@
 // console.log(Leo.next().value);
 // console.log(Leo.next(5).value);
 // ======================generator for looping=========================================
-function* getData(){
-    yield 1
-    yield 2
-    yield 3
+function* getData() {
+  yield 1;
+  yield 2;
+  yield 3;
 }
-let first = getData()
-let second = getData()
+let first = getData();
+let second = getData();
 
 // for(vl of first){
-    // console.log(vl);
+// console.log(vl);
 // }
 console.log([...first]);
 // =========================================]
 let cars = [
-    {id : 1, brand : 'spark', year : 2010},
-    {id : 2, brand : 'Traverse', year : 2021},
-    {id : 3, brand : 'Tracker2', year : 2022},
-    {id : 4, brand : 'Malibu', year : 2020},
-    {id : 5, brand : 'Ferrari', year : 2002},
-    {id : 6, brand : 'Lamborghini', year : 2000},
-] 
-function deleteCar(id){
-    let res = cars.filter((value)=>value.id!==id)
-    cars = res
+  { id: 1, brand: "spark", year: 2010 },
+  { id: 2, brand: "Traverse", year: 2021 },
+  { id: 3, brand: "Tracker2", year: 2022 },
+  { id: 4, brand: "Malibu", year: 2020 },
+  { id: 5, brand: "Ferrari", year: 2002 },
+  { id: 6, brand: "Lamborghini", year: 2000 },
+];
+function deleteCar(id) {
+  let res = cars.filter((value) => value.id !== id);
+  cars = res;
 }
-function addCar(usr){
-    cars = [...cars, {id : eval(`${cars.at(-1).id}+1`), name : usr}]
+function addCar(usr) {
+  cars = [...cars, { id: eval(`${cars.at(-1).id}+1`), name: usr }];
 }
-addCar('Tahoe')
-deleteCar(3)
-addCar('ELantra')
-addCar('Sonata')
+addCar("Tahoe");
+deleteCar(3);
+addCar("ELantra");
+addCar("Sonata");
 // console.log(cars);
 // let b = cars.slice(1)
 // let v = b.map((value)=>{
-//     return value.id -1    
+//     return value.id -1
 // })
 // console.log(cars.slice(1));
 // console.log(v);
 // ==============================================================
 
+let user = {
+  name : "WebBrain",
+  pw : 123124,
+};
+let proxy = new Proxy(user, {
+  //   get(target, prop) {
+  //     return target[prop];
+  //   },
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(proxy.eshmat);
