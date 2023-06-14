@@ -91,17 +91,52 @@
 // }
 // findNextSquare(121)
 // console.log(Math.pow(2, 2));
-function arrayDiff(a, b) {
-    let res = a.filter((value)=>{
-        if(!b.includes(value)){
-            console.log(value);            
-        }
-    })
+// function arrayDiff(a, b) {
+    // let res = a.filter((value)=>{
+        // if(!b.includes(value)){
+            // console.log(value);            
+        // }
+    // })
     // console.log(res);
-    return res
-}
+    // return res
+// }
 // arrayDiff([2, 0, -1, 2], [])
 
 // arrayDiff([5,10,3,10,-7,-14,-20,-1,14,20,0,-10,-8,15],[5,10,3,10])
-arrayDiff([10,12,13,10,8,0,-5,14,8,-9,-14],[])
+// arrayDiff([10,12,13,10,8,0,-5,14,8,-9,-14],[])
 // arrayDiff([8,-14,-5,-18,-14,-12,-20,-11,12,-1,11,-20,-3,-11,18,11,0],[8,-14,-5,-18,-14,-12,-20,-11])
+// const a = document.querySelector('div')
+// // a.style.background = 'red'
+// a.style.cssText=`
+// `
+// function likes(names) {
+//         if(names.length===0) {
+//             return console.log(`No one likes this`);
+//         } else if (names.length===1) {
+//             return console.log(`${names[0]} likes this`);
+//         } else if(names.length===2) {
+//             return console.log(`${names[0]} and ${names[1]} like this`);
+//         } else if (names.length===3) {
+//             return console.log(`${names[0]}, ${names[1]} and ${names[2]} like this`);
+//         } else if (names.length>=4) {
+//             return console.log(`${names[0]}, ${names[1]} and ${names.length-2} others like this`);
+//         }
+// }
+// likes(["han", 'mark', 'sue'])
+function divisors(integer) {
+    let gain = []
+    if(integer) {
+    for(i=2;i<integer;i++){
+        if (parseInt(integer/i)===integer/i) {
+            gain.push(integer/i)
+        } else if(integer % 2 !== 0 && integer % 3 !== 0 && integer % 5 !== 0 && integer % 7 !== 0) {
+            return console.log(`${integer} is prime`);
+        } else if(integer===2||integer==3||integer===5||integer===7 ) {
+            return console.log(`${integer} is prime`);
+        }
+    }
+    return console.log(gain.sort((a, b)=>a-b));
+} 
+
+};
+divisors(253)
