@@ -21,17 +21,25 @@ console.log('================================================');
 // }
 // mask('9572irhu')
 // ===================================================================
-let a = 'aaabbbcccaadd'
-let b = []
-let c = []
-for(vl in a){
-    if(a[vl]===a[vl -1]) b.push(a[vl])
-    else c.push(a[vl])
+// let a = 'aaabbbcccaadd'
+// let b = []
+// let c = []
+// for(vl in a){
+//     if(a[vl]===a[vl -1]) b.push(a[vl])
+//     else c.push(a[vl])
     // console.log(a[vl+1], vl);
     // console.log();
 }
+// console.log(c);
+// var uniqueInOrder=function(iterable){
+//     var s = []
+//     for(i in iterable){
+//         if(iterable[i]!==iterable[i-1]) s.push(iterable[i])
+//     }
+//     return console.log(s);
+// }
+// uniqueInOrder([1, 2, 3])
 // console.log(b);
-console.log(c);
 // function last(a) {
 //   let res = ' '
 //    for ( i in a) {
