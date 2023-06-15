@@ -123,20 +123,29 @@
 //         }
 // }
 // likes(["han", 'mark', 'sue'])
-function divisors(integer) {
-    let gain = []
-    if(integer) {
-    for(i=2;i<integer;i++){
-        if (parseInt(integer/i)===integer/i) {
-            gain.push(integer/i)
-        } else if(integer % 2 !== 0 && integer % 3 !== 0 && integer % 5 !== 0 && integer % 7 !== 0) {
-            return console.log(`${integer} is prime`);
-        } else if(integer===2||integer==3||integer===5||integer===7 ) {
-            return console.log(`${integer} is prime`);
-        }
-    }
-    return console.log(gain.sort((a, b)=>a-b));
-} 
+// function divisors(integer) {
+//     let gain = []
+//     if(integer) {
+//     for(i=2;i<integer;i++){
+//         if (parseInt(integer/i)===integer/i) {
+//             gain.push(integer/i)
+//         } else if(integer % 2 !== 0 && integer % 3 !== 0 && integer % 5 !== 0 && integer % 7 !== 0) {
+//             return console.log(`${integer} is prime`);
+//         } else if(integer===2||integer==3||integer===5||integer===7 ) {
+//             return console.log(`${integer} is prime`);
+//         }
+//     }
+//     return console.log(gain.sort((a, b)=>a-b));
+// } 
 
-};
-divisors(253)
+// };
+// divisors(253)
+// function divisors(integer) {
+//     let gain = []
+//     for(i=2;i<integer;i++){
+//         if (integer%i!==0) {
+            
+//         }
+//     }
+// };
+// divisors(253)
