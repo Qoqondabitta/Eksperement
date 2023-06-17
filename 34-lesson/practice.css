@@ -18,12 +18,12 @@
     object-fit: cover;
     /* object-position: center; */
     position: absolute;
-    width: 500px;
+    width: 600px;
     height: 500px;
 }
 #next {
     position: relative;
-    left: 260px;
+    left: 360px;
     top: -300px;
 }
 #previous{
@@ -46,4 +46,15 @@
 }
 .active{
     z-index: 2;
+    color: blue;
+    font-size:  25px;
+}
+#names{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+.name{
+    /* color: blue; */
+    font-size: 25px;
 }
