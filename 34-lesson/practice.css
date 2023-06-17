@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#carusel{
+    /* width: 800px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+#caruselItems{
+    width: 600px;
+    height: 500px;
+}
+.img{
+    object-fit: cover;
+    /* object-position: center; */
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+#next {
+    position: relative;
+    left: 260px;
+    top: -300px;
+}
+#previous{
+    position: relative;
+    left: -363px;
+    top: -355px;
+}
+.twobtn{
+    /* width: 200px; */
+    border-radius: 50px;
+}
+#btnimg1 {
+    width: 50px;
+    height: 50px;
+}
+#btnimg2 {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.active{
+    z-index: 2;
+}

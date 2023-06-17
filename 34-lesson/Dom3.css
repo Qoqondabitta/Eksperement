@@ -26,3 +26,25 @@
     height: 50px;
     width: 50px;
 }
+#boxHolder{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+}
+.all{
+    /* position: fixed; */
+    background-color: skyblue;
+    border: 1px solid white;
+    width: 1000px;
+    height: 400px;
+}
+.many{
+    width: 50px;
+    border-radius: 35%;
+    padding: 5px;
+    position: relative;
+    left: 900px;
+    top: 20px;
+}
