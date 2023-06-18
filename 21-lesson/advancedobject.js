@@ -43,19 +43,26 @@ let player = {
 let a = [1, 2, 3, 4, 5]
 a.__proto__.delete = function (...res) {
     // res.map((i)=>{
-    //     return a.filter((value)=>value !== i)
-    //     // console.log(count);
+    //     count =  a.map((value)=>value)
+    //     console.log(count);
+        
     // })
+    let count = a.filter((value)=>{
+        //  if(!res.includes(value)){
+        //     return value
+        // }
+        return res !== value
+    })
+    return console.log(count);
+    // for(var i of res){
+    //     this.filter((value)=>value !== i)
+    // }
+    // console.log(i);
     
-    for(var i of res){
-        this.filter((value)=>value !== i)
-    }
-    console.log(i);
-   
     
 }
 a.delete(1, 2, 3)
-console.log(a)
+// console.log(a)
 // player.a = 'b'
 // Reflect.set(player, 'a', 'b')
 // console.log(player.a);

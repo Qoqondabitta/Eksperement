@@ -4,11 +4,11 @@
 // // let b = a.splice(2)
 // a.pop()
 // a.pop()
-// console.log(a.splice(1, 1, 'can wear number'));
+
 // console.log(a);
 //==============================
 // let a = [1,  'me', 10, true, false];
-
+// console.log(a.splice(1, 1, 'can wear number'));
 // console.log(a.indexOf(true));
 //=======================================
 // let a = [1, 9, 10, 5] 
@@ -91,8 +91,8 @@
 //     } console.log(res);
 // }
 
-// quantity(`webbrainacademy`)
-//  let a = ['menda u', 'hesenemi']
+// quantity(`academy`)
+//  let a = ['it is me', 'I will catch you']
 //  let b ={};
 // //  console.log(a.join())
 //  for( i of a)
@@ -121,7 +121,7 @@
 // }
 
 // last(`-web-brain-academy`)
-// const capitilize1 = (str) => {
+// const capitalize1 = (str) => {
 //     let res = "";
 //     for (key in str) {
 //       if (str[key - 1] === "-") {
@@ -132,8 +132,8 @@
 //     }
 //     return res;
 //   };
-//   console.log(capitilize1("-mister-akram").split('-').join(''));
-//   console.log(capitilize1.join());
+//   console.log(capitalize1("-mister").split('-').join(''));
+//   console.log(capitalize1.join());
 // const camel = (a) => {
 //     let res = "";
 //     for( i in a) {
@@ -228,12 +228,12 @@
 // console.log([]==0);
 // ==========================================================================================
 //   let cars = [
-//     {id:1, year:1998, engine:1, brand:`Tico`},
-//     {id:2, year:2005, engine:1.2, brand:`Matiz`},
-//     {id:3, year:2010, engine:1.6, brand:`Gentra`},
+//     {id:1, year:1998, engine:1, brand:`Spark`},
+//     {id:2, year:2005, engine:1.2, brand:`Malibu`},
+//     {id:3, year:2010, engine:1.6, brand:`Traverse`},
 //     {id:4, year:2010, engine:1.5, brand:`Cobalt`},
 //     {id:5, year:2012, engine:2, brand:`Malibu`},
-//     {id:6, year:2000, engine:1.2, brand:`Damas`},
+//     {id:6, year:2000, engine:1.2, brand:`Tahoe`},
 //     {id:7, year:2018, engine:2.4, brand:`Tracker`}
 // ]
 // let res = cars.filter((value)=>value.year<2000) // 2000 before 2000
@@ -268,12 +268,12 @@
 // console.log(b);
 // ==============================================================================================
   let cars = [
-    {id:1, year:1998, engine:1, brand:`Tico`},
-    {id:2, year:2005, engine:1.2, brand:`Matiz`},
-    {id:3, year:2010, engine:1.6, brand:`Gentra`},
+    {id:1, year:1998, engine:1, brand:`Spark`},
+    {id:2, year:2005, engine:1.2, brand:`Malibu`},
+    {id:3, year:2010, engine:1.6, brand:`Traverse`},
     {id:4, year:2010, engine:1.5, brand:`Cobalt`},
     {id:5, year:2012, engine:2, brand:`Malibu`},
-    {id:6, year:2000, engine:1.2, brand:`Damas`},
+    {id:6, year:2000, engine:1.2, brand:`tahoe`},
     {id:7, year:2018, engine:2.4, brand:`Tracker`}
 ]
 // const sortByYear = ()=>{

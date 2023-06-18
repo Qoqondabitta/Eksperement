@@ -18,18 +18,18 @@
 //         return ()=>{
 //             console.log(`${this.b}`);
 //         }
-//     } 
+//     }
 // }
 // a.n()()
 // =====================================================================
 // let count = 10
 // let id = setInterval(() => {
-    // let time = new Date()
-    // console.log(time.getSeconds());
-    // if(time.getSeconds() == 36) clearInterval(id)
-    // console.log(time.getSeconds());
-    // console.log(count--);
-    // if(count===0) clearInterval(id)
+// let time = new Date()
+// console.log(time.getSeconds());
+// if(time.getSeconds() == 36) clearInterval(id)
+// console.log(time.getSeconds());
+// console.log(count--);
+// if(count===0) clearInterval(id)
 // }, 1000);
 // ===========================================================
 // let a = 5
@@ -37,3 +37,23 @@
 //     console.log(a--);
 //     if(a===0) clearInterval(id)
 // }, 1000)
+// =======================================================================================================
+// let a = {
+//     b : 'c',
+//     l : function(){
+//         return ()=>{
+//             console.log(this.b);
+//         }
+//     }
+// }
+// a.l()()
+
+// const getSum = (a) => {
+//   return function (b) {
+//     if (b) {
+//       return getSum(a + b);
+//     }
+//     return a;
+//   };
+// };
+// console.log(getSum(1)(2)(3)(5)());

@@ -1,9 +1,12 @@
+{
 // try {
 //     console.log(number);
 // } catch  {
 //     console.log('Ups, went something wrong');
 // }
+}
 // ===============================================
+{
 // try {
 //     console.log(number);
 // } catch (error){
@@ -15,7 +18,9 @@
 // } catch (error){
 //     console.log(error.message);
 // }
+}
 //===============================================
+{
 // try{
 //     class a {
 //     name = 'me'
@@ -32,13 +37,17 @@
 // } catch(error){
 //     console.log(error.message);
 // }
+}
 // ======================================================
+{
 // try {
 //     console.log(number);
 // } catch (error){
 //     console.log(error.name);
 // }
+}
 // ==================================
+{
 // try {
 //     console.log(number``);
 //     JSON.parse('{name:"me"}')
@@ -53,13 +62,17 @@
 //     console.log(error.name);
 //     console.log(error.message);
 // }
+}
 // =================================================================
+{
 // try {
 //     throw new Error('Ups, something went wrong!')
 // } catch (error){
 //     // console.log('Ups, something went wrong!');
 // }
+}
 // ============================================================
+{
 // let database = {
 //     us1 :{
 //         username:'John',
@@ -73,7 +86,9 @@
 //     }
 // }
 // console.log('started');
+}
 // ==================promise:then, catch and finally=================
+{
 // let promise = new Promise((resolve, reject)=>{
 //     if (database.us1.username==='John'&&database.us1.password===111) {
 //         resolve('yes')
@@ -85,8 +100,10 @@
 // promise.then((b)=>console.log(b))
 // .catch((err)=>{console.log(err)})
 // .finally(()=>{console.log('finished');})
+}
 // ==================================================================
 // ====================Promise all================================
+{
 // let all = Promise.all([
 //     new Promise((resolve, reject)=>{
 //             if (database.us1.username==='John'&&database.us1.password===111) {
@@ -102,6 +119,7 @@
 //             }})
 // ])
 // all.then((res)=>console.log(res)).catch((err)=>{console.log(err)})
+}
 // ================================================================
 // ====================handling problem with callback===============
 // console.log('Started');
@@ -672,3 +690,4 @@ function addCar(car, callback){
     }
     // addCar({id:4, name : 'Tracker', year : 2019}).then(render).catch(error=>console.log(error))
 }
+ 

@@ -295,21 +295,22 @@
 // human.sayFullName()
 // Person.greetExtraTerrestrials('Martians')
 // ==========================================================================================
-function Person(name, age){
-        this.name = name
-        this.age = age
-}
-Person.prototype.getInfo = function(){
-    console.log(this.name, this.age);
-}
-function Human(name, age){
-    this.name = name
-    this.age  = age
-}
-Person.prototype.__proto__ = Human.prototype
+// function Person(name, age){
+//         this.name = name
+//         this.age = age
+// }
+// Person.prototype.getInfo = function(){
+//     console.log(this.name, this.age);
+// }
+// function Human(name, age){
+//     this.name = name
+//     this.age  = age
+// }
+// Person.prototype.__proto__ = Human.prototype
 // Human.prototype  = Object.create(Person.prototype)
-let first = new Person('Peter', 40)
-let second = new Person('John', 30)
-second.getInfo()
+// let first = new Person('Peter', 40)
+// let second = new Person('John', 30)
+// second.getInfo()
 // console.log(first.name, 'is', first.age, 'year-old-guy');
 // console.log(first);
+// ====================================================================================

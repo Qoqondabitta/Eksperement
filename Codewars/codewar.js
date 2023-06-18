@@ -29,7 +29,7 @@ console.log('================================================');
 //     else c.push(a[vl])
     // console.log(a[vl+1], vl);
     // console.log();
-}
+// }
 // console.log(c);
 // var uniqueInOrder=function(iterable){
 //     var s = []

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="apply">        
+            <form action="'https://jsonplaceholder.typicode.com/todos/1'" name="login">
+                <p>If you are returning user</p>
+                <input type="email" placeholder="Login" id="login"> <br>
+                <div id="fault"></div>
+                <input type="password" placeholder="password">
+            </form>            
+            <form action="" name="register">
+                <p>Create an account</p>
+                <input type="email" placeholder="Register"> <br>
+                <input type="password" name="re" value="hey" placeholder="New Password"><br>
+                <select name="select" id="select">
+                    <option value="uz">Uzb</option>
+                    <option value="ru">Rus</option>
+                    <option value="en">Eng</option>
+                </select>
+            </form>
+        </div>
+        <input type="submit" placeholder="Submit">
+    <script src="./Form.js"></script>
+</body>
+</html>
