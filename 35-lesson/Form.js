@@ -32,20 +32,50 @@ function sayHello(value ){
     return 'Hi'
    }
 }
+// const checkPassword = (value)=>{
+//     if(value.length>1 && value.length>=8){
+//         boxItem[0].style.backgroundColor = 'green'
+//         boxItem[1].style.backgroundColor = 'green'
+//         boxItem[2].style.backgroundColor = 'green'
+//         boxItem[3].style.backgroundColor = 'green'
+//         return {message:'strong password'}
+//     } else if(value.length===0){
+//         boxItem[0].style.backgroundColor = 'rgb(236, 231, 231)'
+//         boxItem[1].style.backgroundColor = 'rgb(236, 231, 231)'
+//         boxItem[2].style.backgroundColor = 'rgb(236, 231, 231)'
+//         boxItem[3].style.backgroundColor = 'rgb(236, 231, 231)'
+//         return {message:''}
+//     } else {
+//         boxItem[0].style.backgroundColor = 'yellow'
+//         boxItem[1].style.backgroundColor = 'yellow'
+//         boxItem[2].style.backgroundColor = 'rgb(236, 231, 231)'
+//         boxItem[3].style.backgroundColor = 'rgb(236, 231, 231)'
+//         return {message:'normal password'}
+//     }
+// }
 hello.innerText = sayHello(forms.select.value)
 forms.select.addEventListener('input', ({target:{value}})=>{
     hello.innerText = sayHello(value)
 })
+
 const boxHolder = document.querySelector('#boxHolder')
 const boxItem = document.querySelectorAll('#boxItems')
 const checkPassword = (value)=>{
-    if(value.length>1 && value.length>=8){
-        boxItem[0].style.backgroundColor = 'green'
-        boxItem[1].style.backgroundColor = 'green'
-        boxItem[2].style.backgroundColor = 'green'
-        boxItem[3].style.backgroundColor = 'green'
-        return {message:'strong password'}
-    } else if(value.length===0){
+        for(i=0;i<value.length;i++){
+        if( value.length>1 && value.length>=8 
+            && ( value.includes('@') || value.includes('!') ||value.includes('#') ||value.includes('$') 
+            ||value.includes('%') ||value.includes('^') ||value.includes('&') ||value.includes('*') ||value.includes('(') 
+            ||value.includes(')') ||value.includes('_') ||value.includes('-') ||value.includes('=') ||value.includes('+') 
+            ||value.includes('/') ||value.includes('?') ||value.includes('>') ||value.includes('<') ||value.includes('.') 
+            ||value.includes(',')) 
+            && ( value.includes('0') || value.includes('1') || value.includes('2') || value.includes('3') || value.includes('4') 
+            || value.includes('5') || value.includes('6') || value.includes('7') || value.includes('8') || value.includes('9') ) ){
+            boxItem[0].style.backgroundColor = 'green'
+            boxItem[1].style.backgroundColor = 'green'
+            boxItem[2].style.backgroundColor = 'green'
+            boxItem[3].style.backgroundColor = 'green'
+            return {message:'strong password'}
+        } else if(value.length===0){
         boxItem[0].style.backgroundColor = 'rgb(236, 231, 231)'
         boxItem[1].style.backgroundColor = 'rgb(236, 231, 231)'
         boxItem[2].style.backgroundColor = 'rgb(236, 231, 231)'
@@ -58,6 +88,8 @@ const checkPassword = (value)=>{
         boxItem[3].style.backgroundColor = 'rgb(236, 231, 231)'
         return {message:'normal password'}
     }
+    // break
+}
 }
 forma[1].addEventListener('input', ({target:{value}})=>{
     warning.innerText = checkPassword(value).message
