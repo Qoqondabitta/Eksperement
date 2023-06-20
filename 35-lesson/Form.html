@@ -9,11 +9,11 @@
 </head>
 <body>
     <div class="apply">        
-            <form action="'https://jsonplaceholder.typicode.com/todos/1'" name="login">
+            <form action="" name="login">
                 <p>If you are returning user</p>
                 <input type="email" placeholder="Login" id="login"> <br>
                 <div id="fault"></div>
-                <input type="password" placeholder="password">
+                <input type="password" placeholder="password" id="pass">
                 <div id="boxHolder">
                     <div id="boxItems"></div>
                     <div id="boxItems"></div>
@@ -21,6 +21,13 @@
                     <div id="boxItems"></div>
                 </div>
                 <span id="warning"></span>
+                <select name="n" id="n">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <button type="submit" id="enter">Submit</button>
             </form>            
             <form action="" name="register">
                 <p>Create an account</p>

@@ -57,7 +57,8 @@ hello.innerText = sayHello(forms.select.value)
 forms.select.addEventListener('input', ({target:{value}})=>{
     hello.innerText = sayHello(value)
 })
-
+const pass = document.forms.login.pass
+let passwordValue;
 const boxHolder = document.querySelector('#boxHolder')
 const boxItem = document.querySelectorAll('#boxItems')
 const checkPassword = (value)=>{
@@ -93,10 +94,28 @@ const checkPassword = (value)=>{
 }
 forma[1].addEventListener('input', ({target:{value}})=>{
     warning.innerText = checkPassword(value).message
+    // passwordValue = 
     boxHolder.style.display = 'block'
     boxHolder.style.cssText = `
     padding: 5px 5px 5px 0;
     display: flex;
     column-gap: 5px;
     `
+})
+pass.addEventListener('input', ({target:{value}})=>{
+    passwordValue = pass.length
+})
+const newValue = forms.n.value
+forms.login.n.addEventListener('input', ({target:{value}})=>{
+    newValue = value
+})
+forms.login.addEventListener('submit', (e)=>{
+    if(passwordValue>=8){
+        e.preventDefault()
+        alert('you can process')
+    } else {
+        alert('password is not strong enough')
+    }
+    // e.preventDefault()
+    forms.login.action = `https://jsonplaceholder.typicode.com/users${newValue}`
 })
