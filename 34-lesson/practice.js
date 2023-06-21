@@ -66,6 +66,7 @@ function buttonAction(type){
     }
     
 } 
+// =================================
 next.addEventListener('click', ()=>buttonAction('next'))
 prev.addEventListener('click', ()=>buttonAction('prev'))
 // for(i=0;i<image.length;i++){
