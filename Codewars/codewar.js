@@ -77,3 +77,31 @@
 // console.log(res);
 // console.log(a.includes(b));
 // cars.sort((a,b)=> a.brand.localeCompare(b.brand))
+// let a = 78671
+// let b = ''
+// let c = b + a
+// let d = []
+// let k;
+// let n;
+// let m;
+// console.log(k, 7e5, n);
+// for(i=1;i>2;i++){
+//     let k = +`${parseInt(a / +`1e${c.length-i}`)}`
+//     let n =  +`${k}e${c.length-i}`
+//     // m = d.push(n)
+//     // console.log(m);
+//     console.log(n);
+//     break
+// }
+
+// console.log(+`1e${c.length-1}`);
+// let i =1
+// while (+`1e${c.length-i++}`>1) {
+//     d.push(a % +`1e${c.length-1}`)
+//     d.push(a % +`1e${c.length-i++}`)
+//     // console.log(d.join('+'));
+//     // console.log(i);
+// }
+// console.log(b + a);
+// let test=['me', 'he']
+// console.log(test.join('+'));
