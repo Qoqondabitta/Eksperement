@@ -10,7 +10,7 @@
 // let b = a.split('')
 // let c = b.fill('*', 0, b.length-4)
 // console.log(c);
-console.log('================================================');
+// console.log('================================================');
 // function mask(code){
 //     if(code.length<5) return console.log(code);
 //     else {        
@@ -53,3 +53,27 @@ console.log('================================================');
 // }
 
 // last(`-web-brain-academy`)
+// ========================23.06.2023===========================================
+// let b = ['bc', 'sale', 'te']
+// let a = ['academic', 'bale', 'readme']
+// console.log(c);
+// function inArray(array1,array2){
+//     let c = []
+//     let d = []
+//     let res = array1.map(value=>{
+//         return array2.filter(vl=>{
+//             if(vl.includes(value)){
+//                 if(c.includes(value)) d.push(value)
+//                 else {
+//                     c.push(value)
+//                 }
+//             }
+//         })
+//     })
+//     return console.log(c.sort((a, b)=>a.localeCompare(b)));
+// }
+// inArray(['bc', 'sale', 'te'], ['academic', 'bale', 'readme'])
+// inArray(['ic', 'sale', 'me', 'me'], ['academic', 'bale', 'readme'])
+// console.log(res);
+// console.log(a.includes(b));
+// cars.sort((a,b)=> a.brand.localeCompare(b.brand))
