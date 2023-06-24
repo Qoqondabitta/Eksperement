@@ -13,7 +13,7 @@
 // console.log('================================================');
 // function mask(code){
 //     if(code.length<5) return console.log(code);
-//     else {        
+//     else {
 //         let b = code.split('')
 //         let c = b.fill('*', 0, b.length-4)
 //         return console.log(c.join(''));
@@ -27,8 +27,8 @@
 // for(vl in a){
 //     if(a[vl]===a[vl -1]) b.push(a[vl])
 //     else c.push(a[vl])
-    // console.log(a[vl+1], vl);
-    // console.log();
+// console.log(a[vl+1], vl);
+// console.log();
 // }
 // console.log(c);
 // var uniqueInOrder=function(iterable){
@@ -43,7 +43,7 @@
 // function last(a) {
 //   let res = ' '
 //    for ( i in a) {
-//     res += 
+//     res +=
 //     if((a[i -1] === '-')) {
 //       console.log(a[i].toUpperCase());
 //     } else {
@@ -139,7 +139,7 @@
 //         } else {
 //             return console.log(false);
 //         }
-//     }   
+//     }
 // }
 // console.log(d);
 // let a = [12, 3, 5, 6]
@@ -148,3 +148,53 @@
 // let power = b.sort((a, b)=>a-b)
 // let f =  a.map(value =>value * value).every((v, i)=>v===b[i])
 // console.log(f);
+// let a = ['academic', 'purpose', 'get', 'masterDegree', 'is', 'to', 'degree']
+// let b = a.splice(0, 2).join('')
+// let c = a.splice(0, 2).join('')
+// let k = a.splice(0, 2).join('')
+// console.log(c);
+// d.push(b)
+// d.push(c)
+// d.push(k)
+// console.log(d.sort((a, b)=>b.length-a.length)[0]);
+// console.log(a.splice(0, 2).join(''), a);
+// function longestConsec(star, k) {
+//   let d = [];
+//   for (i = 0; i < star.length; i++) {
+//     d.push(star.slice(i, k + i).join(""));
+//   }
+//   let g = d.sort((a, b)=>b.length-a.length)[0]
+//   return g;
+// }
+// console.log(
+//     longestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], 2)
+// );
+// let d = []
+// while(a.length>0){
+// d.push(a.splice(0, 2).join(''))
+// }
+// let g = d.sort((a, b)=>b.length-a.length)[0]
+// console.log(g);
+// ===================================================================================
+// let a = {A:1, B:2}
+// a['C']=3
+// Object.entries(a).map(([data])=>console.log(data))
+// function compare(first, second){
+//   let a = first.split('')
+//   let b = second.split('')
+//   let c = a.sort((a, b)=>a.localeCompare(b))
+//   let d = b.sort((a, b)=>a.localeCompare(b))
+//   let e = c.join()
+//   let f = d.join()
+//   return f === e
+// }
+// console.log(compare('asd', 'dsa'));
+// let obj1 = {title:'web'}
+// let obj2 = {title:'web'}
+// console.log(obj1===obj2, obj1==obj2);
+// let a = [2, 3, 12, 1, 34]
+// let order = a.sort((a, b)=>b-a)
+// console.log(order);
+// let a = [2, 3, 12, 1, 34]
+// a.splice(2, 0, 'web')
+// console.log(a);
