@@ -105,3 +105,46 @@
 // console.log(b + a);
 // let test=['me', 'he']
 // console.log(test.join('+'));
+// let a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+// let b = ''
+// let c = 'webAcademy'
+// for(i of a){
+//     for(j of c.toLowerCase()){
+//         if(i===j){
+//             b += i
+//         }
+//     }
+// }
+// console.log(b);
+// class Calculator {
+//     constructor(action){
+//         if(action==='plus'){
+//             this.plus = '+'
+//         } if(action==='minus') this.minus = '-'
+//         if(action==='times') this.times = '*'
+//         if(action==='dividedBy') this.divided = '/'
+
+//     }
+
+// }
+// let a = [12, 3, 5, 6]
+// let b = [47, 9, 36, 25, 144]
+// let res = a.sort((a, b)=>a-b)
+// let power = b.sort((a, b)=>a-b)
+// let d;
+// for(j of a){
+//     for(i of b){
+//         if(i === j ** 2){
+//             return console.log(true);
+//         } else {
+//             return console.log(false);
+//         }
+//     }   
+// }
+// console.log(d);
+// let a = [12, 3, 5, 6]
+// let b = [ 9, 36, 25, 144]
+// let res = a.sort((a, b)=>a-b)
+// let power = b.sort((a, b)=>a-b)
+// let f =  a.map(value =>value * value).every((v, i)=>v===b[i])
+// console.log(f);
