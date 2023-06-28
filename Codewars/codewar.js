@@ -198,3 +198,25 @@
 // let a = [2, 3, 12, 1, 34]
 // a.splice(2, 0, 'web')
 // console.log(a);
+let a = 'abc'
+let b = []
+for(i=0;i<a.length;i++){
+    if(a.length%2===0){
+        let v = c.join('').slice(i, i++)
+        b.unshift(v)
+    } else {
+        let c = a.split('')
+        c.push('_')
+        let g = c.join('').slice(-2)
+        b.push(g)
+    }
+}
+
+// let d = a.split('')
+// d.push('_')
+// let g = d.join('').slice(-2)
+// b.push(g)
+// let v = d.join('').slice(0, 2)
+// b.unshift(v)
+
+console.log(b);
