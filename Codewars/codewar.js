@@ -200,16 +200,19 @@
 // console.log(a);
 let a = 'abc'
 let b = []
+let c;
+let g;
 for(i=0;i<a.length;i++){
-    if(a.length%2===0){
-        let v = c.join('').slice(i, i++)
+    if(a.length%2===0) {
+        // let c = a.split('')
+        let v = a.slice(i, i = i + 2)
         b.unshift(v)
-    } else {
+    } else if(!a.length%2===0){
         let c = a.split('')
         c.push('_')
         let g = c.join('').slice(-2)
         b.push(g)
-    }
+    } 
 }
 
 // let d = a.split('')
