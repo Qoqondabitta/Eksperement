@@ -198,22 +198,22 @@
 // let a = [2, 3, 12, 1, 34]
 // a.splice(2, 0, 'web')
 // console.log(a);
-let a = 'abc'
-let b = []
-let c;
-let g;
-for(i=0;i<a.length;i++){
-    if(a.length%2===0) {
-        // let c = a.split('')
-        let v = a.slice(i, i = i + 2)
-        b.unshift(v)
-    } else if(!a.length%2===0){
-        let c = a.split('')
-        c.push('_')
-        let g = c.join('').slice(-2)
-        b.push(g)
-    } 
-}
+// let a = 'abc'
+// let b = []
+// let c;
+// let g;
+// for(i=0;i<a.length;i++){
+//     if(a.length%2===0) {
+//         // let c = a.split('')
+//         let v = a.slice(i, i = i + 2)
+//         b.unshift(v)
+//     } else if(!a.length%2===0){
+//         let c = a.split('')
+//         c.push('_')
+//         let g = c.join('').slice(-2)
+//         b.push(g)
+//     } 
+// }
 
 // let d = a.split('')
 // d.push('_')
@@ -222,4 +222,20 @@ for(i=0;i<a.length;i++){
 // let v = d.join('').slice(0, 2)
 // b.unshift(v)
 
-console.log(b);
+// console.log(b);
+let a = 3600
+let b = 60
+let c = 3600
+let d = ['00', '00']
+if(a<b){
+    d.push(a.toString())
+    console.log(d.join(':'));
+} else if(a===b){
+    d.splice(1, 0, '01')
+    console.log(d.join(':'));
+} else if(a===c){
+    d.unshift('01')
+    console.log(d.join(':'));
+} else if(a>c){
+    
+}
