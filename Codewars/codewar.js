@@ -223,7 +223,7 @@
 // b.unshift(v)
 
 // console.log(b);
-let a = 3600
+let a = 3700
 let b = 60
 let c = 3600
 let d = ['00', '00']
@@ -232,10 +232,29 @@ if(a<b){
     console.log(d.join(':'));
 } else if(a===b){
     d.splice(1, 0, '01')
+    d.push('00')
     console.log(d.join(':'));
 } else if(a===c){
     d.unshift('01')
     console.log(d.join(':'));
 } else if(a>c){
-    
+    let e = parseInt(a/c)
+    d.unshift(`${e<10?'0'+e:e}`)
+    let f = a % c
+    if(f>b){
+        let g = parseInt(f/b)
+        d.splice(1, 0, `${g<10?'0'+g:g}` )
+        // d.push('00')
+        let h = f % b
+        d.push(h.toString())
+    } else if(f<b){
+        d.push(f.toString())
+    }
+    console.log(d.join(':'));
+} else if(a<c&&a>b){
+    let i = parseInt(a/b)
+    d.splice(1, 0, `${i<10?'0'+i:i}`)
+    let j = a % b
+    d.push((j).toString());
+    console.log(d.join(':'));
 }
