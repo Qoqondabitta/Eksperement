@@ -223,6 +223,13 @@
 // b.unshift(v)
 
 // console.log(b);
+{
+// =================================================================================
+// =================================================================================
+// I was asked to make function that converts seconds to the time that can human understand
+// 60 = 00:01:00
+// 360 = 01:00:00
+{
 function humanReadable(seconds) {
 let a = seconds    
 let b = 60
@@ -249,9 +256,13 @@ console.log(d.join(':'));
         let g = parseInt(f/b)
         d[1] = `${g<10?'0'+g:g}`
         let h = f % b
-        d.push(h.toString())
+        if(h===0){
+            d.push('00')
+        } else {
+            d.push(`${h.toString()<10?'0'+h.toString():h.toString()}`)
+        }
     } else if(f<b){
-        d.push(f.toString())
+        d.push('00')
     }
     console.log(d.join(':'));
 } else if(a<c&&a>b){
@@ -263,4 +274,8 @@ console.log(d.join(':'));
     console.log(d.join(':'));
 }
 }
-humanReadable(86400)
+humanReadable(254107)
+}
+// =================================================================================
+// =================================================================================
+}
